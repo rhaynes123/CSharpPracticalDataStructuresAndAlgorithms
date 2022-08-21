@@ -51,13 +51,13 @@ While out the box C# does provide many of the classic data structures like Array
  # Data Structures
  ## Array
  So we are going to start off with the most common and basic data structure in programming the Array. Note this is not the most common in the C# realm as that honor goes to List for reasons I'll get into in the list section but this is still the best place to start.
-[Code Example](../CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Array/)
+[Code Example](../CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Array/README.md)
  ## Dictionary
  ## IEnumerable
  ## Lists
  Because of the power, flexibility and popularity of Lists in C# I've broken this section out into a number of sub-sections to go over some of what I believe to be very good use cases for different types of Lists. In C# please note that none of these derivatives of list are exclusive to list alone.
- * List [Code Example](../CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Lists/List/)
- * ReadOnly [Code Example](../CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Lists/ReadOnly/)
+ * List [Code Example](../CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Lists/List/SecretaryOfStateQue/README.md)
+ * ReadOnly [Code Example](../CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Lists/ReadOnly/CourseRegistration/README.md)
  
 
  # Algorithims
