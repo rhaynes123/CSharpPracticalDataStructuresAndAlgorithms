@@ -1,4 +1,38 @@
 ﻿<Properties StartupConfiguration="{8C61664E-4A08-4728-9114-AD305086F0D9}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.SecretaryOfStateQue FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.SecretaryOfStateQue PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecretaryOfStateQue/Pages/FetchData.razor">
+    <Files>
+      <File FileName="SecretaryOfStateQue/Program.cs" Line="18" Column="30" />
+      <File FileName="SecretaryOfStateQue/Pages/FetchData.razor" Line="23" Column="17" />
+      <File FileName="SecretaryOfStateQue/Pages/Index.razor" Line="25" Column="39" />
+      <File FileName="SecretaryOfStateQue/Models/Customer.cs" Line="6" Column="50" />
+      <File FileName="SecretaryOfStateQue/appsettings.Development.json" Line="11" Column="39" />
+      <File FileName="SecretaryOfStateQue/Shared/SurveyPrompt.razor" Line="1" Column="1" />
+      <File FileName="SecretaryOfStateQue/Hubs/CustomerHub.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SecretaryOfStateQue" expanded="True">
+            <Node name="SecretaryOfStateQue" expanded="True">
+              <Node name="Hubs" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Shared" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
