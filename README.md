@@ -2,7 +2,7 @@
 The repo contains practical examples of use cases for C# data structures and algorithms 
 
 # Why?
-So you might be thinking to yourself if you are reading this "Why would someone make a github repo about data structures and algorithims when there are just so many?". That would be an excellent question. The reason I began this repo was because after years of being a C# developer I've found that the internet is very lacking(at least at the time I wrote this anyway) with examples of data structures and algorithims that I as a developer can apply in the real world. Also after years of programming I also would rarely see code in C# that even matched with any of the examples I remembered or found in books especially in regards to C#. After so time I came up with 4 major factors for why that is. 
+So you might be thinking to yourself if you are reading this "Why would someone make a github repo about data structures and algorithims when there are just so many?". That would be an excellent question. The reason I began this repo was because after years of being a C# developer I've found that the internet is very lacking(at least at the time I wrote this anyway) with examples of data structures and algorithims that I as a developer can apply in the real world. Also after years of programming I also would rarely see code in C# that even matched with any of the examples I remembered or found in books especially in regards to C#. After some time I came up with 4 major factors for why that is. 
 ### 1. They've Become Built In
 Long gone are the days where a developer may need to roll their own sort Algorithim or Binary Search and not because those algorithims have no value in the real world because they absoluetly still do but at this point in programming many of those algorithims have just become a part of the languages we use. For example in C# the Array class has a built in BinarySearch function meaning needs to write my own , while maybe fun are honestly wasteful. [Array Binary Search](https://docs.microsoft.com/en-us/dotnet/api/system.array.binarysearch?view=net-6.0). 
 ### 2. Database Querying
@@ -50,7 +50,7 @@ While out the box C# does provide many of the classic data structures like Array
  To attempt to try and make each project as easy to follow I've seperated the projects into two main groups Data Structures and Algorithims. This does not mean that you will not find projects that do no use both in fact that defeats much of the reason this project exists however there are situations where a particular data structure is best for a problem regardless of the algorithim and there are times where an algorithim is best for a use case regardless of the data structure. Again I intend to do my best to point all of that out as we go on this journey.
  # Data Structures
  ## Array
- So we are going to start off with the most common and basic data structure in programming the Array. Note this is not the most common in the C# realm as that honor goes to List for reasons I'll get into in the list section but this is still the best place to start.
+ So we are going to start off with the most common and basic data structure in programming the Array. **Note** this is not the most common in the C# realm as that honor goes to List for reasons I'll get into in the list section but this is still the best place to start.
 [Code Example](src/DataStructures/Array)
  ## Dictionary
  ## IEnumerable

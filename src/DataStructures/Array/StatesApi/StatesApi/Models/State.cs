@@ -3,7 +3,9 @@ namespace StatesApi.Models
 {
     /// <summary>
     /// State Enumeration Listed in Order of Admission
-    /// Link For Technique Details: https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/enumeration-classes-over-enum-types
+    /// Link For Technique Details:
+    /// https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/enumeration-classes-over-enum-types
+    /// https://www.youtube.com/watch?v=CEZ6cF8eoeg
     /// https://en.wikipedia.org/wiki/List_of_U.S._state_and_territory_abbreviations
     /// https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union
     /// </summary>
@@ -27,7 +29,7 @@ namespace StatesApi.Models
         /// This is a great use case for an array because all of the states will be static they won't be dynamic and its extremely unlikely that they will go beyond 50 values
         /// They can also be indexed in the order the where admitted into the Country
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Array of Enumeration Class of States</returns>
         public static State[] GetAll()
         {
             return new State[]
