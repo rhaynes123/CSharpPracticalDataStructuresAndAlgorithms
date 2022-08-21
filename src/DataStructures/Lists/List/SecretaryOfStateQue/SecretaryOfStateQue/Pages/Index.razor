@@ -1,0 +1,67 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.SignalR.Client
+@using SecretaryOfStateQue.Models
+@inject NavigationManager NavigationManager
+@implements IAsyncDisposable
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to The Secretary of State.
+
+Current Number of Customers In Line : @CustomerCount
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+<div class="form-group">
+    <label>Name: <input @bind="customer.Name" /></label>
+    <label>Phone Number: <input @bind="customer.Phone" /></label>
+    <button class="btn btn-success" @onclick="JoinQueue">Join Queue</button>
+</div>
+
+
+
+@code {
+    private HubConnection connection = default!;
+    private Customer customer = new();
+    private List<Customer> Customers = new List<Customer>();
+    private int CustomerCount = 0;
+    protected override async Task OnInitializedAsync()
+    {
+        connection = new HubConnectionBuilder()
+        .WithUrl(NavigationManager.ToAbsoluteUri("/customerQue"))
+        .Build();
+
+        connection.On<Customer>("QueuedCustomer", (customer) =>
+        {
+            Customers.Add(customer);
+            CustomerCount = Customers.Count;
+            InvokeAsync(StateHasChanged);
+        });
+
+        await connection.StartAsync();
+    }
+
+    private async Task JoinQueue()
+    {
+        if (connection is null)
+        {
+            ArgumentNullException.ThrowIfNull(connection);
+        }
+        if (customer is not null && customer != default)
+        {
+            customer.PlaceInLine = CustomerCount + 1;
+            CustomerCount = customer.PlaceInLine;
+            await connection.SendAsync("SendMessageAsync", customer);
+            customer = new();
+        }
+
+    }
+    public async ValueTask DisposeAsync()
+    {
+        if (connection is not null)
+        {
+            await connection.DisposeAsync();
+        }
+    }
+}
+

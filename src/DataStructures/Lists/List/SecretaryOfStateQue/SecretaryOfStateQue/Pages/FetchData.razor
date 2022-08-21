@@ -1,0 +1,94 @@
+﻿@page "/fetchdata"
+@using Microsoft.AspNetCore.SignalR.Client
+@using SecretaryOfStateQue.Models
+@inject NavigationManager NavigationManager
+@implements IAsyncDisposable
+<PageTitle>Customer Queue</PageTitle>
+
+@using SecretaryOfStateQue.Data
+@inject WeatherForecastService ForecastService
+
+<h1>Customer Queue. Current Count: @Customers.Count </h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (Customers == null || !Customers.Any())
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Finished?</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Customers)
+            {
+               
+                <tr>
+                    <td>@customer.PlaceInLine</td>
+                    <td>@customer.Id</td>
+                    <td>@customer.Name</td>
+                    <td>@customer.Phone</td>
+                    <td><button class="btn btn-warning" @onclick="() => FinishCustomer(customer)">Finish</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    //So the main reason here we are using a list might not be as obvious as one might think
+    //First of all while in the real world a queue is what is used in either the DMV of social security the software engineering queue is while very similiar doesn't compare to well
+    //A real world queue is typically handled by multiple tellers or employees and handle customers out of order from when they joined the queue.
+    //Also each customer may have issues or need services that take longer than one another. You may join the queue before someone else but finish after them.
+    //In C# a List is a better data structure for that since it has functions that allow adding and removing from the list as well as accessing its elements individually
+    //Now in this use case an IList can also be used over the List however here we are using the List versus the IList because a List is a bit faster to loop over
+    // Here's a link to an article that benchmarks that very thing https://levelup.gitconnected.com/ilist-t-vs-list-t-performance-dad1688a374f
+    // Here's another https://bytelanguage.net/2021/12/02/why-is-foreach-iteration-over-listt-faster-than-ilistt/
+    // Now something to also keep in mind is that the general speed is so small in the real world is a very minor optimization meaning you are very likely not going to gain a lot from using List
+    // Also any interface is likely to be preffered over a concrete implementation when writing code that other pieces of code may find value from
+    // Below are a number of stack over flow articles I find valuable in thinking about which to use over the other
+    // https://stackoverflow.com/questions/3628425/ienumerable-vs-list-what-to-use-how-do-they-work
+    // https://stackoverflow.com/questions/23536541/performance-between-iterating-through-ienumerablet-and-listt
+
+
+    private HubConnection connection = default!;
+
+    private List<Customer> Customers = new List<Customer>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        connection = new HubConnectionBuilder()
+        .WithUrl(NavigationManager.ToAbsoluteUri("/customerQue"))
+        .Build();
+
+        connection.On<Customer>("QueuedCustomer", (customer) =>
+        {
+            Customers.Add(customer);
+            InvokeAsync(StateHasChanged);
+        });
+
+        await connection.StartAsync();
+    }
+    private async Task FinishCustomer(Customer customer)
+    {
+        Customers.Remove(customer);
+        await InvokeAsync(StateHasChanged);
+    }
+    public async ValueTask DisposeAsync()
+    {
+        if (connection is not null)
+        {
+            await connection.DisposeAsync();
+        }
+    }
+}
+
