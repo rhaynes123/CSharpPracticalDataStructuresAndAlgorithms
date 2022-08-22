@@ -82,3 +82,5 @@ namespace StatesApi.Models
 
 
 ```
+
+![Demo](../Array/Images/GraphQLArrayDemo.png)
