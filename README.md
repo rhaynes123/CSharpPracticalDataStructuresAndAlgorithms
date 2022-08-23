@@ -56,6 +56,8 @@ While out the box C# does provide many of the classic data structures like Array
  The next section I've layed out is also very simple in that we are using a Dictionary.
  [Code Example](src/DataStructures/Dictionary/)
  ## IEnumerable
+ This section was amazingly simple to flesh out because the IEnumerable type is among the simpliest collections types to use and because of that it ends up being the most flexible out of all the collection types in C#.
+ [Code Example](src/DataStructures/Enumerable/)
  ## Lists
  Because of the power, flexibility and popularity of Lists in C# I've broken this section out into a number of sub-sections to go over some of what I believe to be very good use cases for different types of Lists. In C# please note that none of these derivatives of list are exclusive to list alone.
  * List [Code Example](src/DataStructures/Lists/List/SecretaryOfStateQue)
