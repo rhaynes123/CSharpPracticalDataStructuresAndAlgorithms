@@ -65,3 +65,5 @@ While out the box C# does provide many of the classic data structures like Array
  
 
  # Algorithims
+ ## QuickSort
+ This is our first Algorithim just do to ease of use. C# provides a number of functions in its data structures that take advantage of the Quick sort algorithim. Array.Sort, List.Sort and IEnumerable.OrderBy all use the Quick sort logic
