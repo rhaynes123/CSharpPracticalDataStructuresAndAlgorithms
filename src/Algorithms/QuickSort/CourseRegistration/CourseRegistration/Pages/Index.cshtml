@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <table class="table table-borded">
+        <thead class="thead-dark">
+            <tr>
+                <th>#</th>
+                <th>Course Name</th>
+                <th>Course Start Date</th>
+                <th>Register</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Courses is not null && Model.Courses.Any())
+            {
+                foreach (var item in Model.Courses)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Created</td>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <td><a class="btn btn-warning" asp-page="./Register" asp-route-id="@item.Id">Register</a></td>
+                        }
+
+                    </tr>
+                }
+            }
+        </tbody>
+
+    </table>
+</div>

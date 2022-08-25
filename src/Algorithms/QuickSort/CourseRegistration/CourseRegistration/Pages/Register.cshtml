@@ -1,0 +1,18 @@
+@page
+@model CourseRegistration.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<h1>Registrations Successful</h1>
+<div class="text-center">
+    <div class="alert alert-success" role="alert">
+        <a href="./Index">Click Here To Register For More Classes</a>
+    </div>
+
+</div>

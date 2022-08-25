@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{9430C852-2BBA-4AA6-AA0C-24FB2F166D9A}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.CourseRegistration PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CourseRegistration/Repositories/ReadCoursesRepository.cs">
+    <Files>
+      <File FileName="CourseRegistration/Models/Course.cs" Line="7" Column="6" />
+      <File FileName="CourseRegistration/Models/UserCourse.cs" Line="8" Column="41" />
+      <File FileName="CourseRegistration/Program.cs" Line="9" Column="87" />
+      <File FileName="CourseRegistration/Pages/Index.cshtml.cs" Line="19" Column="86" />
+      <File FileName="CourseRegistration/Repositories/IReadCoursesRepository.cs" Line="7" Column="6" />
+      <File FileName="CourseRegistration/Repositories/ReadCoursesRepository.cs" Line="17" Column="46" />
+      <File FileName="CourseRegistration/Pages/Index.cshtml" Line="4" Column="46" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CourseRegistration" expanded="True">
+            <Node name="CourseRegistration" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Index.cshtml" expanded="True" />
+                <Node name="Register.cshtml" expanded="True" />
+              </Node>
+              <Node name="Repositories" expanded="True">
+                <Node name="ReadCoursesRepository.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
