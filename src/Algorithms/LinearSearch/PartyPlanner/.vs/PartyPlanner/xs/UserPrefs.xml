@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{DD8B251E-D15C-4996-B81F-8E8CCF44D1CC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PartyPlanner/Pages/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="PartyPlanner/Pages/Index.cshtml.cs" Line="75" Column="18" />
+      <File FileName="PartyPlanner/Pages/Index.cshtml" Line="73" Column="1" />
+      <File FileName="PartyPlanner/Pages/Shared/_Layout.cshtml" Line="42" Column="40" />
+      <File FileName="PartyPlanner/Pages/Details.cshtml.cs" Line="36" Column="35" />
+      <File FileName="PartyPlanner/Pages/Details.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PartyPlanner" expanded="True">
+            <Node name="PartyPlanner" expanded="True">
+              <Node name="Features" expanded="True">
+                <Node name="Parties" expanded="True">
+                  <Node name="Models" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Details.cshtml" expanded="True" />
+                <Node name="Index.cshtml" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.PartyPlanner PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>
