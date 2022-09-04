@@ -26,12 +26,12 @@ public class IndexModel : PageModel
 
     public async Task<IActionResult> OnGet()
     {
-        if (User.Identity is null)
+        if (User.Identity is null || string.IsNullOrWhiteSpace(User.Identity.Name))
         {
             _logger.LogWarning("User isn't Logged In");
             return Page();
         }
-        IList<Party> myParties = await GetMyPartiesWithNoTrackingAsync(User.Identity!.Name!);
+        IList<Party> myParties = await GetMyPartiesWithNoTrackingAsync(User.Identity.Name);
 
         if (myParties is null || !myParties.Any())
         {

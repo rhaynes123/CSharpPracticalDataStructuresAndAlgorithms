@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Your Movie List</h1>
+</div>
+
+<div>
+    <table class="table table-borded">
+        <thead class="thead-dark">
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Release Date</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Movies is not null && Model.Movies.Any())
+            {
+                foreach (var movie in Model.Movies)
+                {
+                    <tr>
+                        <td>@movie.ID</td>
+                        <td>@movie.Title</td>
+                        <td>@movie.Genre</td>
+                        <td>@Html.DisplayFor(modelItem => movie.ReleaseDate)</td>
+                        <td>@movie.Price</td>
+                        <td><a input="submit" class="btn btn-info" asp-page="./Edit" asp-route-id="@movie.ID">Edit</a></td>
+                    </tr>
+                }
+
+            }
+            </tbody>
+        </table>
+</div>
