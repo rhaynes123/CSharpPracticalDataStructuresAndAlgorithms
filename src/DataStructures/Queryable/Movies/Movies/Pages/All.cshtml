@@ -12,8 +12,7 @@
 </p>
 <form>
     <p>
-        <select asp-for="MovieGenre" asp-items="Model.Genres">
-            <option value="">All</option>
+        <select asp-for="MovieGenre" asp-items="Html.GetEnumSelectList<Features.Models.Enums.Genre>()">
         </select>
         Title: <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />

@@ -28,7 +28,7 @@ namespace Movies.Pages
         public string? SearchString { get; set; }
         public SelectList? Genres { get; set; }
         [BindProperty(SupportsGet = true)]
-        public string? MovieGenre { get; set; }
+        public Genre MovieGenre { get; set; } = Genre.All;
 
         public async Task OnGetAsync()
         {
@@ -40,7 +40,7 @@ namespace Movies.Pages
                 movies = movies.Where(s => s.Title.Contains(SearchString));
             }
 
-            if (!string.IsNullOrEmpty(MovieGenre))
+            if (MovieGenre != Genre.All)
             {
                 movies = movies.Where(x => x.Genre == MovieGenre);
             }

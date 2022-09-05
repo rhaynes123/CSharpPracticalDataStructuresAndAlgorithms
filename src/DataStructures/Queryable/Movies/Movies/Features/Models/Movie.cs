@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
+using Movies.Features.Models.Enums;
 
 namespace Movies.Features.Models
 {
@@ -16,7 +17,7 @@ namespace Movies.Features.Models
         [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}")]
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; } = DateTime.Today;
-        public string Genre { get; set; } = string.Empty;
+        public Genre Genre { get; set; } = Genre.None;
         public decimal Price { get; set; }
     }
 }
