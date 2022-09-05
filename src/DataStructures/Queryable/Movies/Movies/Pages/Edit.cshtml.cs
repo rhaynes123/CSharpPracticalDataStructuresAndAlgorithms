@@ -2,76 +2,80 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Movies.Data;
+using Movies.Features;
 using Movies.Features.Models;
 
-namespace Movies.Pages
+namespace Movies.Pages;
+/// <summary>
+/// Built via
+/// https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/da1?view=aspnetcore-6.0
+/// </summary>
+public class EditModel : PageModel
 {
-    public class EditModel : PageModel
-    {
-        private readonly Movies.Data.MovieDbContext _context;
+    private readonly IMediator _mediator;
 
-        public EditModel(Movies.Data.MovieDbContext context)
+    public EditModel(IMediator mediator)
+    {
+        _mediator = mediator;
+    }
+
+    [BindProperty]
+    public Movie Movie { get; set; } = default!;
+
+    public async Task<IActionResult> OnGetAsync(int? id)
+    {
+        var movies = await _mediator.Send(new GetAllMoviesQuery());
+        if (id == null || !movies.Any())
         {
-            _context = context;
+            return NotFound();
         }
 
-        [BindProperty]
-        public Movie Movie { get; set; } = default!;
-
-        public async Task<IActionResult> OnGetAsync(int? id)
+        var movie =  await movies.FirstOrDefaultAsync(m => m.ID == id);
+        if (movie == null)
         {
-            if (id == null || _context.Movies == null)
-            {
-                return NotFound();
-            }
+            return NotFound();
+        }
+        Movie = movie;
+        return Page();
+    }
 
-            var movie =  await _context.Movies.FirstOrDefaultAsync(m => m.ID == id);
-            if (movie == null)
-            {
-                return NotFound();
-            }
-            Movie = movie;
+    // To protect from overposting attacks, enable the specific properties you want to bind to.
+    // For more details, see https://aka.ms/RazorPagesCRUD.
+    public async Task<IActionResult> OnPostAsync()
+    {
+        if (!ModelState.IsValid)
+        {
             return Page();
         }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see https://aka.ms/RazorPagesCRUD.
-        public async Task<IActionResult> OnPostAsync()
+        try
         {
-            if (!ModelState.IsValid)
+            var result = await _mediator.Send(new ModifyMovieCommand(Movie));
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            if (!await MovieExists(Movie.ID))
             {
-                return Page();
+                return NotFound();
             }
-
-            _context.Attach(Movie).State = EntityState.Modified;
-
-            try
+            else
             {
-                await _context.SaveChangesAsync();
+                throw;
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!MovieExists(Movie.ID))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return RedirectToPage("./Index");
         }
 
-        private bool MovieExists(int id)
-        {
-          return (_context.Movies?.Any(e => e.ID == id)).GetValueOrDefault();
-        }
+        return RedirectToPage("./Index");
+    }
+
+    private async Task<bool> MovieExists(int id)
+    {
+        var movies = await _mediator.Send(new GetAllMoviesQuery());
+        return (movies?.Any(e => e.ID == id)).GetValueOrDefault();
     }
 }

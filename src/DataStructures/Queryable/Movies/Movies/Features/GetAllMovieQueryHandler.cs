@@ -15,7 +15,7 @@ namespace Movies.Features
 
         public async Task<IQueryable<Movie>> Handle(GetAllMoviesQuery request, CancellationToken cancellationToken)
         {
-            return await Task.FromResult(_context.Movies.AsNoTracking());
+            return await Task.FromResult(_context.Movies);
         }
     }
 }

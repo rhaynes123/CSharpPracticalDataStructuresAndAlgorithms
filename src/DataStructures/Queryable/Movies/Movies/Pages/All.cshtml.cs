@@ -23,7 +23,7 @@ namespace Movies.Pages
             _mediator = mediator;
         }
 
-        public IList<Movie> Movie { get;set; } = default!;
+        public IReadOnlyList<Movie> Movie { get;set; } = default!;
         [BindProperty(SupportsGet = true)]
         public string? SearchString { get; set; }
         public SelectList? Genres { get; set; }
@@ -45,7 +45,7 @@ namespace Movies.Pages
                 movies = movies.Where(x => x.Genre == MovieGenre);
             }
             Genres = new SelectList(genres);
-            Movie = await movies.ToListAsync();
+            Movie = (await movies.AsNoTracking().ToListAsync()).AsReadOnly();
         }
     }
 }

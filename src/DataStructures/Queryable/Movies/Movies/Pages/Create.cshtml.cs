@@ -2,21 +2,23 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Movies.Data;
+using Movies.Features;
 using Movies.Features.Models;
 
 namespace Movies.Pages
 {
     public class CreateModel : PageModel
     {
-        private readonly Movies.Data.MovieDbContext _context;
+        private readonly IMediator _mediator;
 
-        public CreateModel(Movies.Data.MovieDbContext context)
+        public CreateModel(IMediator mediator)
         {
-            _context = context;
+            _mediator = mediator;
         }
 
         public IActionResult OnGet()
@@ -31,13 +33,21 @@ namespace Movies.Pages
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Movies == null || Movie == null)
+            if (!ModelState.IsValid || Movie is null || Movie == default)
             {
+                ModelState.AddModelError(string.Empty, "Model Invalid");
                 return Page();
             }
 
-            _context.Movies.Add(Movie);
-            await _context.SaveChangesAsync();
+            try
+            {
+                var result = await _mediator.Send(new CreateMovieCommand(Movie));
+            }
+            catch(Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+                return Page();
+            }
 
             return RedirectToPage("./Index");
         }
