@@ -1,0 +1,1524 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 12 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f
+// command took 0.85s and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f
+// command took 1.96s and exited with 0
+// ***** Done, took 00:00:03 (3.15 sec)   *****
+// Found 12 benchmarks:
+//   MovieDbContextBenchMark.FirstOrDefaultOnIquerayble: DefaultJob [id=0]
+//   MovieDbContextBenchMark.FirstOrDefaultOnList: DefaultJob [id=0]
+//   MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync: DefaultJob [id=0]
+//   MovieDbContextBenchMark.FirstOrDefaultOnListAsync: DefaultJob [id=0]
+//   MovieDbContextBenchMark.FirstOrDefaultOnIquerayble: DefaultJob [id=1]
+//   MovieDbContextBenchMark.FirstOrDefaultOnList: DefaultJob [id=1]
+//   MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync: DefaultJob [id=1]
+//   MovieDbContextBenchMark.FirstOrDefaultOnListAsync: DefaultJob [id=1]
+//   MovieDbContextBenchMark.FirstOrDefaultOnIquerayble: DefaultJob [id=10]
+//   MovieDbContextBenchMark.FirstOrDefaultOnList: DefaultJob [id=10]
+//   MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync: DefaultJob [id=10]
+//   MovieDbContextBenchMark.FirstOrDefaultOnListAsync: DefaultJob [id=10]
+
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnIquerayble: DefaultJob [id=0]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnIquerayble(id: 0)" --job Default --benchmarkId 0 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 124792.00 ns, 124.7920 us/op
+WorkloadJitting  1: 1 op, 362250917.00 ns, 362.2509 ms/op
+
+OverheadJitting  2: 1 op, 167.00 ns, 167.0000 ns/op
+WorkloadJitting  2: 1 op, 31298958.00 ns, 31.2990 ms/op
+
+OverheadJitting  3: 16 op, 135416.00 ns, 8.4635 us/op
+WorkloadJitting  3: 16 op, 327638209.00 ns, 20.4774 ms/op
+
+WorkloadPilot    1: 16 op, 240974084.00 ns, 15.0609 ms/op
+WorkloadPilot    2: 32 op, 380714792.00 ns, 11.8973 ms/op
+WorkloadPilot    3: 64 op, 738095500.00 ns, 11.5327 ms/op
+
+OverheadWarmup   1: 64 op, 1458.00 ns, 22.7812 ns/op
+OverheadWarmup   2: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadWarmup   3: 64 op, 416.00 ns, 6.5000 ns/op
+OverheadWarmup   4: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadWarmup   5: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadWarmup   6: 64 op, 458.00 ns, 7.1562 ns/op
+OverheadWarmup   7: 64 op, 125.00 ns, 1.9531 ns/op
+
+OverheadActual   1: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   2: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   3: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   4: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   5: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual   6: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   7: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual   8: 64 op, 125.00 ns, 1.9531 ns/op
+OverheadActual   9: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  10: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  11: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  12: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  13: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  14: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  15: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  16: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  17: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  18: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  19: 64 op, 708.00 ns, 11.0625 ns/op
+OverheadActual  20: 64 op, 375.00 ns, 5.8594 ns/op
+
+WorkloadWarmup   1: 64 op, 741163084.00 ns, 11.5807 ms/op
+WorkloadWarmup   2: 64 op, 731203375.00 ns, 11.4251 ms/op
+WorkloadWarmup   3: 64 op, 740611500.00 ns, 11.5721 ms/op
+WorkloadWarmup   4: 64 op, 739984958.00 ns, 11.5623 ms/op
+WorkloadWarmup   5: 64 op, 740611334.00 ns, 11.5721 ms/op
+WorkloadWarmup   6: 64 op, 748496625.00 ns, 11.6953 ms/op
+WorkloadWarmup   7: 64 op, 740883208.00 ns, 11.5763 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 737343041.00 ns, 11.5210 ms/op
+WorkloadActual   2: 64 op, 746621167.00 ns, 11.6660 ms/op
+WorkloadActual   3: 64 op, 731950208.00 ns, 11.4367 ms/op
+WorkloadActual   4: 64 op, 744209459.00 ns, 11.6283 ms/op
+WorkloadActual   5: 64 op, 744173250.00 ns, 11.6277 ms/op
+WorkloadActual   6: 64 op, 741111666.00 ns, 11.5799 ms/op
+WorkloadActual   7: 64 op, 749546417.00 ns, 11.7117 ms/op
+WorkloadActual   8: 64 op, 747603000.00 ns, 11.6813 ms/op
+WorkloadActual   9: 64 op, 739400041.00 ns, 11.5531 ms/op
+WorkloadActual  10: 64 op, 750501792.00 ns, 11.7266 ms/op
+WorkloadActual  11: 64 op, 747421417.00 ns, 11.6785 ms/op
+WorkloadActual  12: 64 op, 743587292.00 ns, 11.6186 ms/op
+WorkloadActual  13: 64 op, 749597542.00 ns, 11.7125 ms/op
+WorkloadActual  14: 64 op, 749742458.00 ns, 11.7147 ms/op
+WorkloadActual  15: 64 op, 745863083.00 ns, 11.6541 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 737342832.00 ns, 11.5210 ms/op
+WorkloadResult   2: 64 op, 746620958.00 ns, 11.6660 ms/op
+WorkloadResult   3: 64 op, 731949999.00 ns, 11.4367 ms/op
+WorkloadResult   4: 64 op, 744209250.00 ns, 11.6283 ms/op
+WorkloadResult   5: 64 op, 744173041.00 ns, 11.6277 ms/op
+WorkloadResult   6: 64 op, 741111457.00 ns, 11.5799 ms/op
+WorkloadResult   7: 64 op, 749546208.00 ns, 11.7117 ms/op
+WorkloadResult   8: 64 op, 747602791.00 ns, 11.6813 ms/op
+WorkloadResult   9: 64 op, 739399832.00 ns, 11.5531 ms/op
+WorkloadResult  10: 64 op, 750501583.00 ns, 11.7266 ms/op
+WorkloadResult  11: 64 op, 747421208.00 ns, 11.6785 ms/op
+WorkloadResult  12: 64 op, 743587083.00 ns, 11.6185 ms/op
+WorkloadResult  13: 64 op, 749597333.00 ns, 11.7125 ms/op
+WorkloadResult  14: 64 op, 749742249.00 ns, 11.7147 ms/op
+WorkloadResult  15: 64 op, 745862874.00 ns, 11.6541 ms/op
+
+// AfterAll
+// Benchmark Process 12742 has exited with code 0.
+
+Mean = 11.634 ms, StdErr = 0.021 ms (0.18%), N = 15, StdDev = 0.082 ms
+Min = 11.437 ms, Q1 = 11.599 ms, Median = 11.654 ms, Q3 = 11.696 ms, Max = 11.727 ms
+IQR = 0.097 ms, LowerFence = 11.453 ms, UpperFence = 11.842 ms
+ConfidenceInterval = [11.546 ms; 11.722 ms] (CI 99.9%), Margin = 0.088 ms (0.75% of Mean)
+Skewness = -0.88, Kurtosis = 2.83, MValue = 2
+
+// ** Remained 11 (91.7%) benchmark(s) to run. Estimated finish 2022-09-10 14:07 (0h 3m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnList: DefaultJob [id=0]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnList(id: 0)" --job Default --benchmarkId 1 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 101291.00 ns, 101.2910 us/op
+WorkloadJitting  1: 1 op, 339940167.00 ns, 339.9402 ms/op
+
+OverheadJitting  2: 1 op, 167.00 ns, 167.0000 ns/op
+WorkloadJitting  2: 1 op, 30968375.00 ns, 30.9684 ms/op
+
+OverheadJitting  3: 16 op, 190167.00 ns, 11.8854 us/op
+WorkloadJitting  3: 16 op, 350742666.00 ns, 21.9214 ms/op
+
+WorkloadPilot    1: 16 op, 255659084.00 ns, 15.9787 ms/op
+WorkloadPilot    2: 32 op, 418971083.00 ns, 13.0928 ms/op
+WorkloadPilot    3: 64 op, 780543459.00 ns, 12.1960 ms/op
+
+OverheadWarmup   1: 64 op, 1083.00 ns, 16.9219 ns/op
+OverheadWarmup   2: 64 op, 500.00 ns, 7.8125 ns/op
+OverheadWarmup   3: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadWarmup   4: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadWarmup   5: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadWarmup   6: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadWarmup   7: 64 op, 291.00 ns, 4.5469 ns/op
+
+OverheadActual   1: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual   2: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual   3: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   4: 64 op, 416.00 ns, 6.5000 ns/op
+OverheadActual   5: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   6: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual   7: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   8: 64 op, 416.00 ns, 6.5000 ns/op
+OverheadActual   9: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual  10: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  11: 64 op, 583.00 ns, 9.1094 ns/op
+OverheadActual  12: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  13: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  14: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  15: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual  16: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual  17: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadActual  18: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  19: 64 op, 1125.00 ns, 17.5781 ns/op
+OverheadActual  20: 64 op, 333.00 ns, 5.2031 ns/op
+
+WorkloadWarmup   1: 64 op, 781748250.00 ns, 12.2148 ms/op
+WorkloadWarmup   2: 64 op, 776041750.00 ns, 12.1257 ms/op
+WorkloadWarmup   3: 64 op, 775243708.00 ns, 12.1132 ms/op
+WorkloadWarmup   4: 64 op, 785436834.00 ns, 12.2725 ms/op
+WorkloadWarmup   5: 64 op, 783187250.00 ns, 12.2373 ms/op
+WorkloadWarmup   6: 64 op, 777521792.00 ns, 12.1488 ms/op
+WorkloadWarmup   7: 64 op, 768261875.00 ns, 12.0041 ms/op
+WorkloadWarmup   8: 64 op, 786317333.00 ns, 12.2862 ms/op
+WorkloadWarmup   9: 64 op, 789317750.00 ns, 12.3331 ms/op
+WorkloadWarmup  10: 64 op, 776640666.00 ns, 12.1350 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 787898250.00 ns, 12.3109 ms/op
+WorkloadActual   2: 64 op, 792015833.00 ns, 12.3752 ms/op
+WorkloadActual   3: 64 op, 781841084.00 ns, 12.2163 ms/op
+WorkloadActual   4: 64 op, 790601875.00 ns, 12.3532 ms/op
+WorkloadActual   5: 64 op, 792463208.00 ns, 12.3822 ms/op
+WorkloadActual   6: 64 op, 781937875.00 ns, 12.2178 ms/op
+WorkloadActual   7: 64 op, 795098166.00 ns, 12.4234 ms/op
+WorkloadActual   8: 64 op, 782890667.00 ns, 12.2327 ms/op
+WorkloadActual   9: 64 op, 791531958.00 ns, 12.3677 ms/op
+WorkloadActual  10: 64 op, 783221292.00 ns, 12.2378 ms/op
+WorkloadActual  11: 64 op, 781635000.00 ns, 12.2130 ms/op
+WorkloadActual  12: 64 op, 786565917.00 ns, 12.2901 ms/op
+WorkloadActual  13: 64 op, 787347375.00 ns, 12.3023 ms/op
+WorkloadActual  14: 64 op, 789225959.00 ns, 12.3317 ms/op
+WorkloadActual  15: 64 op, 784418333.00 ns, 12.2565 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 787897937.50 ns, 12.3109 ms/op
+WorkloadResult   2: 64 op, 792015520.50 ns, 12.3752 ms/op
+WorkloadResult   3: 64 op, 781840771.50 ns, 12.2163 ms/op
+WorkloadResult   4: 64 op, 790601562.50 ns, 12.3531 ms/op
+WorkloadResult   5: 64 op, 792462895.50 ns, 12.3822 ms/op
+WorkloadResult   6: 64 op, 781937562.50 ns, 12.2178 ms/op
+WorkloadResult   7: 64 op, 795097853.50 ns, 12.4234 ms/op
+WorkloadResult   8: 64 op, 782890354.50 ns, 12.2327 ms/op
+WorkloadResult   9: 64 op, 791531645.50 ns, 12.3677 ms/op
+WorkloadResult  10: 64 op, 783220979.50 ns, 12.2378 ms/op
+WorkloadResult  11: 64 op, 781634687.50 ns, 12.2130 ms/op
+WorkloadResult  12: 64 op, 786565604.50 ns, 12.2901 ms/op
+WorkloadResult  13: 64 op, 787347062.50 ns, 12.3023 ms/op
+WorkloadResult  14: 64 op, 789225646.50 ns, 12.3317 ms/op
+WorkloadResult  15: 64 op, 784418020.50 ns, 12.2565 ms/op
+
+// AfterAll
+// Benchmark Process 12746 has exited with code 0.
+
+Mean = 12.301 ms, StdErr = 0.018 ms (0.15%), N = 15, StdDev = 0.070 ms
+Min = 12.213 ms, Q1 = 12.235 ms, Median = 12.302 ms, Q3 = 12.360 ms, Max = 12.423 ms
+IQR = 0.125 ms, LowerFence = 12.047 ms, UpperFence = 12.548 ms
+ConfidenceInterval = [12.226 ms; 12.375 ms] (CI 99.9%), Margin = 0.074 ms (0.61% of Mean)
+Skewness = 0.15, Kurtosis = 1.5, MValue = 2
+
+// ** Remained 10 (83.3%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 3m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync: DefaultJob [id=0]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync(id: 0)" --job Default --benchmarkId 2 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 109458.00 ns, 109.4580 us/op
+WorkloadJitting  1: 1 op, 357173458.00 ns, 357.1735 ms/op
+
+OverheadJitting  2: 1 op, 125.00 ns, 125.0000 ns/op
+WorkloadJitting  2: 1 op, 31241291.00 ns, 31.2413 ms/op
+
+OverheadJitting  3: 16 op, 151625.00 ns, 9.4766 us/op
+WorkloadJitting  3: 16 op, 322568333.00 ns, 20.1605 ms/op
+
+WorkloadPilot    1: 16 op, 207179084.00 ns, 12.9487 ms/op
+WorkloadPilot    2: 32 op, 379666583.00 ns, 11.8646 ms/op
+WorkloadPilot    3: 64 op, 747728125.00 ns, 11.6833 ms/op
+
+OverheadWarmup   1: 64 op, 1417.00 ns, 22.1406 ns/op
+OverheadWarmup   2: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadWarmup   3: 64 op, 416.00 ns, 6.5000 ns/op
+OverheadWarmup   4: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadWarmup   5: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadWarmup   6: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup   7: 64 op, 208.00 ns, 3.2500 ns/op
+
+OverheadActual   1: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   2: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   3: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   4: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   5: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   6: 64 op, 334.00 ns, 5.2188 ns/op
+OverheadActual   7: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadActual   8: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   9: 64 op, 125.00 ns, 1.9531 ns/op
+OverheadActual  10: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  11: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual  12: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual  13: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  14: 64 op, 125.00 ns, 1.9531 ns/op
+OverheadActual  15: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  16: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  17: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  18: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual  19: 64 op, 416.00 ns, 6.5000 ns/op
+OverheadActual  20: 64 op, 875.00 ns, 13.6719 ns/op
+
+WorkloadWarmup   1: 64 op, 750633500.00 ns, 11.7286 ms/op
+WorkloadWarmup   2: 64 op, 731825166.00 ns, 11.4348 ms/op
+WorkloadWarmup   3: 64 op, 741382250.00 ns, 11.5841 ms/op
+WorkloadWarmup   4: 64 op, 745307625.00 ns, 11.6454 ms/op
+WorkloadWarmup   5: 64 op, 745006959.00 ns, 11.6407 ms/op
+WorkloadWarmup   6: 64 op, 742206250.00 ns, 11.5970 ms/op
+WorkloadWarmup   7: 64 op, 746509125.00 ns, 11.6642 ms/op
+WorkloadWarmup   8: 64 op, 743139125.00 ns, 11.6115 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 750481208.00 ns, 11.7263 ms/op
+WorkloadActual   2: 64 op, 743423250.00 ns, 11.6160 ms/op
+WorkloadActual   3: 64 op, 750870083.00 ns, 11.7323 ms/op
+WorkloadActual   4: 64 op, 744989833.00 ns, 11.6405 ms/op
+WorkloadActual   5: 64 op, 743252958.00 ns, 11.6133 ms/op
+WorkloadActual   6: 64 op, 745881917.00 ns, 11.6544 ms/op
+WorkloadActual   7: 64 op, 753822917.00 ns, 11.7785 ms/op
+WorkloadActual   8: 64 op, 744639292.00 ns, 11.6350 ms/op
+WorkloadActual   9: 64 op, 744972833.00 ns, 11.6402 ms/op
+WorkloadActual  10: 64 op, 748560583.00 ns, 11.6963 ms/op
+WorkloadActual  11: 64 op, 754440167.00 ns, 11.7881 ms/op
+WorkloadActual  12: 64 op, 745568209.00 ns, 11.6495 ms/op
+WorkloadActual  13: 64 op, 745408833.00 ns, 11.6470 ms/op
+WorkloadActual  14: 64 op, 742029792.00 ns, 11.5942 ms/op
+WorkloadActual  15: 64 op, 746197500.00 ns, 11.6593 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 750480916.00 ns, 11.7263 ms/op
+WorkloadResult   2: 64 op, 743422958.00 ns, 11.6160 ms/op
+WorkloadResult   3: 64 op, 750869791.00 ns, 11.7323 ms/op
+WorkloadResult   4: 64 op, 744989541.00 ns, 11.6405 ms/op
+WorkloadResult   5: 64 op, 743252666.00 ns, 11.6133 ms/op
+WorkloadResult   6: 64 op, 745881625.00 ns, 11.6544 ms/op
+WorkloadResult   7: 64 op, 753822625.00 ns, 11.7785 ms/op
+WorkloadResult   8: 64 op, 744639000.00 ns, 11.6350 ms/op
+WorkloadResult   9: 64 op, 744972541.00 ns, 11.6402 ms/op
+WorkloadResult  10: 64 op, 748560291.00 ns, 11.6963 ms/op
+WorkloadResult  11: 64 op, 754439875.00 ns, 11.7881 ms/op
+WorkloadResult  12: 64 op, 745567917.00 ns, 11.6495 ms/op
+WorkloadResult  13: 64 op, 745408541.00 ns, 11.6470 ms/op
+WorkloadResult  14: 64 op, 742029500.00 ns, 11.5942 ms/op
+WorkloadResult  15: 64 op, 746197208.00 ns, 11.6593 ms/op
+
+// AfterAll
+// Benchmark Process 12747 has exited with code 0.
+
+Mean = 11.671 ms, StdErr = 0.015 ms (0.13%), N = 15, StdDev = 0.060 ms
+Min = 11.594 ms, Q1 = 11.638 ms, Median = 11.649 ms, Q3 = 11.711 ms, Max = 11.788 ms
+IQR = 0.074 ms, LowerFence = 11.527 ms, UpperFence = 11.822 ms
+ConfidenceInterval = [11.608 ms; 11.735 ms] (CI 99.9%), Margin = 0.064 ms (0.55% of Mean)
+Skewness = 0.71, Kurtosis = 2.13, MValue = 2
+
+// ** Remained 9 (75.0%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 3m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnListAsync: DefaultJob [id=0]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnListAsync(id: 0)" --job Default --benchmarkId 3 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 104333.00 ns, 104.3330 us/op
+WorkloadJitting  1: 1 op, 340853708.00 ns, 340.8537 ms/op
+
+OverheadJitting  2: 1 op, 41.00 ns, 41.0000 ns/op
+WorkloadJitting  2: 1 op, 30968584.00 ns, 30.9686 ms/op
+
+OverheadJitting  3: 16 op, 133000.00 ns, 8.3125 us/op
+WorkloadJitting  3: 16 op, 334858250.00 ns, 20.9286 ms/op
+
+WorkloadPilot    1: 16 op, 218476666.00 ns, 13.6548 ms/op
+WorkloadPilot    2: 32 op, 399754709.00 ns, 12.4923 ms/op
+WorkloadPilot    3: 64 op, 774315625.00 ns, 12.0987 ms/op
+
+OverheadWarmup   1: 64 op, 1417.00 ns, 22.1406 ns/op
+OverheadWarmup   2: 64 op, 500.00 ns, 7.8125 ns/op
+OverheadWarmup   3: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadWarmup   4: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadWarmup   5: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadWarmup   6: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadWarmup   7: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadWarmup   8: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup   9: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadWarmup  10: 64 op, 250.00 ns, 3.9062 ns/op
+
+OverheadActual   1: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   2: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual   3: 64 op, 458.00 ns, 7.1562 ns/op
+OverheadActual   4: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadActual   5: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   6: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   7: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual   8: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadActual   9: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  10: 64 op, 334.00 ns, 5.2188 ns/op
+OverheadActual  11: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  12: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  13: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  14: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  15: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  16: 64 op, 1209.00 ns, 18.8906 ns/op
+OverheadActual  17: 64 op, 500.00 ns, 7.8125 ns/op
+OverheadActual  18: 64 op, 334.00 ns, 5.2188 ns/op
+OverheadActual  19: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  20: 64 op, 208.00 ns, 3.2500 ns/op
+
+WorkloadWarmup   1: 64 op, 781574083.00 ns, 12.2121 ms/op
+WorkloadWarmup   2: 64 op, 782922708.00 ns, 12.2332 ms/op
+WorkloadWarmup   3: 64 op, 774355750.00 ns, 12.0993 ms/op
+WorkloadWarmup   4: 64 op, 785449041.00 ns, 12.2726 ms/op
+WorkloadWarmup   5: 64 op, 790555125.00 ns, 12.3524 ms/op
+WorkloadWarmup   6: 64 op, 788653416.00 ns, 12.3227 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 785287917.00 ns, 12.2701 ms/op
+WorkloadActual   2: 64 op, 774154541.00 ns, 12.0962 ms/op
+WorkloadActual   3: 64 op, 783302041.00 ns, 12.2391 ms/op
+WorkloadActual   4: 64 op, 784989208.00 ns, 12.2655 ms/op
+WorkloadActual   5: 64 op, 777814167.00 ns, 12.1533 ms/op
+WorkloadActual   6: 64 op, 778135250.00 ns, 12.1584 ms/op
+WorkloadActual   7: 64 op, 781370000.00 ns, 12.2089 ms/op
+WorkloadActual   8: 64 op, 784790666.00 ns, 12.2624 ms/op
+WorkloadActual   9: 64 op, 780374625.00 ns, 12.1934 ms/op
+WorkloadActual  10: 64 op, 789121375.00 ns, 12.3300 ms/op
+WorkloadActual  11: 64 op, 790395333.00 ns, 12.3499 ms/op
+WorkloadActual  12: 64 op, 787131375.00 ns, 12.2989 ms/op
+WorkloadActual  13: 64 op, 781324167.00 ns, 12.2082 ms/op
+WorkloadActual  14: 64 op, 791775833.00 ns, 12.3715 ms/op
+WorkloadActual  15: 64 op, 790834250.00 ns, 12.3568 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 785287625.00 ns, 12.2701 ms/op
+WorkloadResult   2: 64 op, 774154249.00 ns, 12.0962 ms/op
+WorkloadResult   3: 64 op, 783301749.00 ns, 12.2391 ms/op
+WorkloadResult   4: 64 op, 784988916.00 ns, 12.2655 ms/op
+WorkloadResult   5: 64 op, 777813875.00 ns, 12.1533 ms/op
+WorkloadResult   6: 64 op, 778134958.00 ns, 12.1584 ms/op
+WorkloadResult   7: 64 op, 781369708.00 ns, 12.2089 ms/op
+WorkloadResult   8: 64 op, 784790374.00 ns, 12.2623 ms/op
+WorkloadResult   9: 64 op, 780374333.00 ns, 12.1933 ms/op
+WorkloadResult  10: 64 op, 789121083.00 ns, 12.3300 ms/op
+WorkloadResult  11: 64 op, 790395041.00 ns, 12.3499 ms/op
+WorkloadResult  12: 64 op, 787131083.00 ns, 12.2989 ms/op
+WorkloadResult  13: 64 op, 781323875.00 ns, 12.2082 ms/op
+WorkloadResult  14: 64 op, 791775541.00 ns, 12.3715 ms/op
+WorkloadResult  15: 64 op, 790833958.00 ns, 12.3568 ms/op
+
+// AfterAll
+// Benchmark Process 12748 has exited with code 0.
+
+Mean = 12.251 ms, StdErr = 0.021 ms (0.17%), N = 15, StdDev = 0.082 ms
+Min = 12.096 ms, Q1 = 12.201 ms, Median = 12.262 ms, Q3 = 12.314 ms, Max = 12.371 ms
+IQR = 0.114 ms, LowerFence = 12.030 ms, UpperFence = 12.485 ms
+ConfidenceInterval = [12.163 ms; 12.338 ms] (CI 99.9%), Margin = 0.088 ms (0.71% of Mean)
+Skewness = -0.15, Kurtosis = 1.83, MValue = 2
+
+// ** Remained 8 (66.7%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 2m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnIquerayble: DefaultJob [id=1]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnIquerayble(id: 1)" --job Default --benchmarkId 4 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 111583.00 ns, 111.5830 us/op
+WorkloadJitting  1: 1 op, 357501625.00 ns, 357.5016 ms/op
+
+OverheadJitting  2: 1 op, 125.00 ns, 125.0000 ns/op
+WorkloadJitting  2: 1 op, 31753750.00 ns, 31.7537 ms/op
+
+OverheadJitting  3: 16 op, 155291.00 ns, 9.7057 us/op
+WorkloadJitting  3: 16 op, 351545791.00 ns, 21.9716 ms/op
+
+WorkloadPilot    1: 16 op, 267514000.00 ns, 16.7196 ms/op
+WorkloadPilot    2: 32 op, 380097459.00 ns, 11.8780 ms/op
+WorkloadPilot    3: 64 op, 750059875.00 ns, 11.7197 ms/op
+
+OverheadWarmup   1: 64 op, 1125.00 ns, 17.5781 ns/op
+OverheadWarmup   2: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadWarmup   3: 64 op, 458.00 ns, 7.1562 ns/op
+OverheadWarmup   4: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup   5: 64 op, 125.00 ns, 1.9531 ns/op
+OverheadWarmup   6: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadWarmup   7: 64 op, 125.00 ns, 1.9531 ns/op
+
+OverheadActual   1: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual   2: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   3: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   4: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   5: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadActual   6: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual   7: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual   8: 64 op, 125.00 ns, 1.9531 ns/op
+OverheadActual   9: 64 op, 125.00 ns, 1.9531 ns/op
+OverheadActual  10: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  11: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  12: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  13: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  14: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  15: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  16: 64 op, 125.00 ns, 1.9531 ns/op
+OverheadActual  17: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  18: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual  19: 64 op, 541.00 ns, 8.4531 ns/op
+OverheadActual  20: 64 op, 291.00 ns, 4.5469 ns/op
+
+WorkloadWarmup   1: 64 op, 741698458.00 ns, 11.5890 ms/op
+WorkloadWarmup   2: 64 op, 742343875.00 ns, 11.5991 ms/op
+WorkloadWarmup   3: 64 op, 747013709.00 ns, 11.6721 ms/op
+WorkloadWarmup   4: 64 op, 740902916.00 ns, 11.5766 ms/op
+WorkloadWarmup   5: 64 op, 743185584.00 ns, 11.6123 ms/op
+WorkloadWarmup   6: 64 op, 748895708.00 ns, 11.7015 ms/op
+WorkloadWarmup   7: 64 op, 756868000.00 ns, 11.8261 ms/op
+WorkloadWarmup   8: 64 op, 749018333.00 ns, 11.7034 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 751166334.00 ns, 11.7370 ms/op
+WorkloadActual   2: 64 op, 755128458.00 ns, 11.7989 ms/op
+WorkloadActual   3: 64 op, 748458416.00 ns, 11.6947 ms/op
+WorkloadActual   4: 64 op, 756810083.00 ns, 11.8252 ms/op
+WorkloadActual   5: 64 op, 748349042.00 ns, 11.6930 ms/op
+WorkloadActual   6: 64 op, 749664542.00 ns, 11.7135 ms/op
+WorkloadActual   7: 64 op, 751688125.00 ns, 11.7451 ms/op
+WorkloadActual   8: 64 op, 749978583.00 ns, 11.7184 ms/op
+WorkloadActual   9: 64 op, 753359416.00 ns, 11.7712 ms/op
+WorkloadActual  10: 64 op, 764383500.00 ns, 11.9435 ms/op
+WorkloadActual  11: 64 op, 755923625.00 ns, 11.8113 ms/op
+WorkloadActual  12: 64 op, 748466792.00 ns, 11.6948 ms/op
+WorkloadActual  13: 64 op, 756224917.00 ns, 11.8160 ms/op
+WorkloadActual  14: 64 op, 763600666.00 ns, 11.9313 ms/op
+WorkloadActual  15: 64 op, 749721667.00 ns, 11.7144 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 751166125.00 ns, 11.7370 ms/op
+WorkloadResult   2: 64 op, 755128249.00 ns, 11.7989 ms/op
+WorkloadResult   3: 64 op, 748458207.00 ns, 11.6947 ms/op
+WorkloadResult   4: 64 op, 756809874.00 ns, 11.8252 ms/op
+WorkloadResult   5: 64 op, 748348833.00 ns, 11.6930 ms/op
+WorkloadResult   6: 64 op, 749664333.00 ns, 11.7135 ms/op
+WorkloadResult   7: 64 op, 751687916.00 ns, 11.7451 ms/op
+WorkloadResult   8: 64 op, 749978374.00 ns, 11.7184 ms/op
+WorkloadResult   9: 64 op, 753359207.00 ns, 11.7712 ms/op
+WorkloadResult  10: 64 op, 764383291.00 ns, 11.9435 ms/op
+WorkloadResult  11: 64 op, 755923416.00 ns, 11.8113 ms/op
+WorkloadResult  12: 64 op, 748466583.00 ns, 11.6948 ms/op
+WorkloadResult  13: 64 op, 756224708.00 ns, 11.8160 ms/op
+WorkloadResult  14: 64 op, 763600457.00 ns, 11.9313 ms/op
+WorkloadResult  15: 64 op, 749721458.00 ns, 11.7144 ms/op
+
+// AfterAll
+// Benchmark Process 12750 has exited with code 0.
+
+Mean = 11.774 ms, StdErr = 0.021 ms (0.18%), N = 15, StdDev = 0.081 ms
+Min = 11.693 ms, Q1 = 11.714 ms, Median = 11.745 ms, Q3 = 11.814 ms, Max = 11.943 ms
+IQR = 0.100 ms, LowerFence = 11.564 ms, UpperFence = 11.963 ms
+ConfidenceInterval = [11.687 ms; 11.860 ms] (CI 99.9%), Margin = 0.086 ms (0.73% of Mean)
+Skewness = 0.87, Kurtosis = 2.52, MValue = 2
+
+// ** Remained 7 (58.3%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 2m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnList: DefaultJob [id=1]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnList(id: 1)" --job Default --benchmarkId 5 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 122084.00 ns, 122.0840 us/op
+WorkloadJitting  1: 1 op, 335067458.00 ns, 335.0675 ms/op
+
+OverheadJitting  2: 1 op, 41.00 ns, 41.0000 ns/op
+WorkloadJitting  2: 1 op, 31186666.00 ns, 31.1867 ms/op
+
+OverheadJitting  3: 16 op, 130000.00 ns, 8.1250 us/op
+WorkloadJitting  3: 16 op, 345455500.00 ns, 21.5910 ms/op
+
+WorkloadPilot    1: 16 op, 248887000.00 ns, 15.5554 ms/op
+WorkloadPilot    2: 32 op, 395325083.00 ns, 12.3539 ms/op
+WorkloadPilot    3: 64 op, 770703167.00 ns, 12.0422 ms/op
+
+OverheadWarmup   1: 64 op, 1584.00 ns, 24.7500 ns/op
+OverheadWarmup   2: 64 op, 458.00 ns, 7.1562 ns/op
+OverheadWarmup   3: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadWarmup   4: 64 op, 416.00 ns, 6.5000 ns/op
+OverheadWarmup   5: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup   6: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadWarmup   7: 64 op, 292.00 ns, 4.5625 ns/op
+
+OverheadActual   1: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   2: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   3: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   4: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual   5: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadActual   6: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual   7: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   8: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   9: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual  10: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  11: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  12: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  13: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  14: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  15: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  16: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  17: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  18: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  19: 64 op, 666.00 ns, 10.4062 ns/op
+OverheadActual  20: 64 op, 458.00 ns, 7.1562 ns/op
+
+WorkloadWarmup   1: 64 op, 783324666.00 ns, 12.2394 ms/op
+WorkloadWarmup   2: 64 op, 766109750.00 ns, 11.9705 ms/op
+WorkloadWarmup   3: 64 op, 765549791.00 ns, 11.9617 ms/op
+WorkloadWarmup   4: 64 op, 774187875.00 ns, 12.0967 ms/op
+WorkloadWarmup   5: 64 op, 781938500.00 ns, 12.2178 ms/op
+WorkloadWarmup   6: 64 op, 780273334.00 ns, 12.1918 ms/op
+WorkloadWarmup   7: 64 op, 784478750.00 ns, 12.2575 ms/op
+WorkloadWarmup   8: 64 op, 773358792.00 ns, 12.0837 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 771745875.00 ns, 12.0585 ms/op
+WorkloadActual   2: 64 op, 780497834.00 ns, 12.1953 ms/op
+WorkloadActual   3: 64 op, 782719792.00 ns, 12.2300 ms/op
+WorkloadActual   4: 64 op, 775056208.00 ns, 12.1103 ms/op
+WorkloadActual   5: 64 op, 788962250.00 ns, 12.3275 ms/op
+WorkloadActual   6: 64 op, 787942208.00 ns, 12.3116 ms/op
+WorkloadActual   7: 64 op, 783443375.00 ns, 12.2413 ms/op
+WorkloadActual   8: 64 op, 785396958.00 ns, 12.2718 ms/op
+WorkloadActual   9: 64 op, 782391750.00 ns, 12.2249 ms/op
+WorkloadActual  10: 64 op, 784208083.00 ns, 12.2533 ms/op
+WorkloadActual  11: 64 op, 793424833.00 ns, 12.3973 ms/op
+WorkloadActual  12: 64 op, 787540000.00 ns, 12.3053 ms/op
+WorkloadActual  13: 64 op, 774392791.00 ns, 12.0999 ms/op
+WorkloadActual  14: 64 op, 777486250.00 ns, 12.1482 ms/op
+WorkloadActual  15: 64 op, 783469750.00 ns, 12.2417 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 771745604.50 ns, 12.0585 ms/op
+WorkloadResult   2: 64 op, 780497563.50 ns, 12.1953 ms/op
+WorkloadResult   3: 64 op, 782719521.50 ns, 12.2300 ms/op
+WorkloadResult   4: 64 op, 775055937.50 ns, 12.1102 ms/op
+WorkloadResult   5: 64 op, 788961979.50 ns, 12.3275 ms/op
+WorkloadResult   6: 64 op, 787941937.50 ns, 12.3116 ms/op
+WorkloadResult   7: 64 op, 783443104.50 ns, 12.2413 ms/op
+WorkloadResult   8: 64 op, 785396687.50 ns, 12.2718 ms/op
+WorkloadResult   9: 64 op, 782391479.50 ns, 12.2249 ms/op
+WorkloadResult  10: 64 op, 784207812.50 ns, 12.2532 ms/op
+WorkloadResult  11: 64 op, 793424562.50 ns, 12.3973 ms/op
+WorkloadResult  12: 64 op, 787539729.50 ns, 12.3053 ms/op
+WorkloadResult  13: 64 op, 774392520.50 ns, 12.0999 ms/op
+WorkloadResult  14: 64 op, 777485979.50 ns, 12.1482 ms/op
+WorkloadResult  15: 64 op, 783469479.50 ns, 12.2417 ms/op
+
+// AfterAll
+// Benchmark Process 12751 has exited with code 0.
+
+Mean = 12.228 ms, StdErr = 0.024 ms (0.20%), N = 15, StdDev = 0.093 ms
+Min = 12.059 ms, Q1 = 12.172 ms, Median = 12.241 ms, Q3 = 12.289 ms, Max = 12.397 ms
+IQR = 0.117 ms, LowerFence = 11.997 ms, UpperFence = 12.464 ms
+ConfidenceInterval = [12.128 ms; 12.327 ms] (CI 99.9%), Margin = 0.099 ms (0.81% of Mean)
+Skewness = -0.17, Kurtosis = 2.09, MValue = 2
+
+// ** Remained 6 (50.0%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 1m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync: DefaultJob [id=1]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync(id: 1)" --job Default --benchmarkId 6 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 103041.00 ns, 103.0410 us/op
+WorkloadJitting  1: 1 op, 355251833.00 ns, 355.2518 ms/op
+
+OverheadJitting  2: 1 op, 333.00 ns, 333.0000 ns/op
+WorkloadJitting  2: 1 op, 31393792.00 ns, 31.3938 ms/op
+
+OverheadJitting  3: 16 op, 140125.00 ns, 8.7578 us/op
+WorkloadJitting  3: 16 op, 303077667.00 ns, 18.9424 ms/op
+
+WorkloadPilot    1: 16 op, 232736292.00 ns, 14.5460 ms/op
+WorkloadPilot    2: 32 op, 387521959.00 ns, 12.1101 ms/op
+WorkloadPilot    3: 64 op, 755096250.00 ns, 11.7984 ms/op
+
+OverheadWarmup   1: 64 op, 834.00 ns, 13.0312 ns/op
+OverheadWarmup   2: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadWarmup   3: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadWarmup   4: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadWarmup   5: 64 op, 125.00 ns, 1.9531 ns/op
+OverheadWarmup   6: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadWarmup   7: 64 op, 458.00 ns, 7.1562 ns/op
+OverheadWarmup   8: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadWarmup   9: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup  10: 64 op, 292.00 ns, 4.5625 ns/op
+
+OverheadActual   1: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   2: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   3: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual   4: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadActual   5: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   6: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadActual   7: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual   8: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   9: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadActual  10: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  11: 64 op, 125.00 ns, 1.9531 ns/op
+OverheadActual  12: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadActual  13: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  14: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  15: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  16: 64 op, 625.00 ns, 9.7656 ns/op
+OverheadActual  17: 64 op, 458.00 ns, 7.1562 ns/op
+OverheadActual  18: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual  19: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  20: 64 op, 125.00 ns, 1.9531 ns/op
+
+WorkloadWarmup   1: 64 op, 743643000.00 ns, 11.6194 ms/op
+WorkloadWarmup   2: 64 op, 741685708.00 ns, 11.5888 ms/op
+WorkloadWarmup   3: 64 op, 751136500.00 ns, 11.7365 ms/op
+WorkloadWarmup   4: 64 op, 749805333.00 ns, 11.7157 ms/op
+WorkloadWarmup   5: 64 op, 736753667.00 ns, 11.5118 ms/op
+WorkloadWarmup   6: 64 op, 741641125.00 ns, 11.5881 ms/op
+WorkloadWarmup   7: 64 op, 753712708.00 ns, 11.7768 ms/op
+WorkloadWarmup   8: 64 op, 740103834.00 ns, 11.5641 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 740828333.00 ns, 11.5754 ms/op
+WorkloadActual   2: 64 op, 754471250.00 ns, 11.7886 ms/op
+WorkloadActual   3: 64 op, 754159417.00 ns, 11.7837 ms/op
+WorkloadActual   4: 64 op, 742838250.00 ns, 11.6068 ms/op
+WorkloadActual   5: 64 op, 752130125.00 ns, 11.7520 ms/op
+WorkloadActual   6: 64 op, 748642708.00 ns, 11.6975 ms/op
+WorkloadActual   7: 64 op, 749919875.00 ns, 11.7175 ms/op
+WorkloadActual   8: 64 op, 749711416.00 ns, 11.7142 ms/op
+WorkloadActual   9: 64 op, 760220459.00 ns, 11.8784 ms/op
+WorkloadActual  10: 64 op, 749673125.00 ns, 11.7136 ms/op
+WorkloadActual  11: 64 op, 757579583.00 ns, 11.8372 ms/op
+WorkloadActual  12: 64 op, 763655875.00 ns, 11.9321 ms/op
+WorkloadActual  13: 64 op, 772152000.00 ns, 12.0649 ms/op
+WorkloadActual  14: 64 op, 769629000.00 ns, 12.0255 ms/op
+WorkloadActual  15: 64 op, 770223667.00 ns, 12.0347 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 740828083.00 ns, 11.5754 ms/op
+WorkloadResult   2: 64 op, 754471000.00 ns, 11.7886 ms/op
+WorkloadResult   3: 64 op, 754159167.00 ns, 11.7837 ms/op
+WorkloadResult   4: 64 op, 742838000.00 ns, 11.6068 ms/op
+WorkloadResult   5: 64 op, 752129875.00 ns, 11.7520 ms/op
+WorkloadResult   6: 64 op, 748642458.00 ns, 11.6975 ms/op
+WorkloadResult   7: 64 op, 749919625.00 ns, 11.7175 ms/op
+WorkloadResult   8: 64 op, 749711166.00 ns, 11.7142 ms/op
+WorkloadResult   9: 64 op, 760220209.00 ns, 11.8784 ms/op
+WorkloadResult  10: 64 op, 749672875.00 ns, 11.7136 ms/op
+WorkloadResult  11: 64 op, 757579333.00 ns, 11.8372 ms/op
+WorkloadResult  12: 64 op, 763655625.00 ns, 11.9321 ms/op
+WorkloadResult  13: 64 op, 772151750.00 ns, 12.0649 ms/op
+WorkloadResult  14: 64 op, 769628750.00 ns, 12.0254 ms/op
+WorkloadResult  15: 64 op, 770223417.00 ns, 12.0347 ms/op
+
+// AfterAll
+// Benchmark Process 12752 has exited with code 0.
+
+Mean = 11.808 ms, StdErr = 0.039 ms (0.33%), N = 15, StdDev = 0.152 ms
+Min = 11.575 ms, Q1 = 11.714 ms, Median = 11.784 ms, Q3 = 11.905 ms, Max = 12.065 ms
+IQR = 0.191 ms, LowerFence = 11.427 ms, UpperFence = 12.192 ms
+ConfidenceInterval = [11.646 ms; 11.970 ms] (CI 99.9%), Margin = 0.162 ms (1.37% of Mean)
+Skewness = 0.31, Kurtosis = 1.81, MValue = 2
+
+// ** Remained 5 (41.7%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 1m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnListAsync: DefaultJob [id=1]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnListAsync(id: 1)" --job Default --benchmarkId 7 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 119083.00 ns, 119.0830 us/op
+WorkloadJitting  1: 1 op, 350836541.00 ns, 350.8365 ms/op
+
+OverheadJitting  2: 1 op, 83.00 ns, 83.0000 ns/op
+WorkloadJitting  2: 1 op, 32211250.00 ns, 32.2112 ms/op
+
+OverheadJitting  3: 16 op, 154292.00 ns, 9.6433 us/op
+WorkloadJitting  3: 16 op, 318711375.00 ns, 19.9195 ms/op
+
+WorkloadPilot    1: 16 op, 227967792.00 ns, 14.2480 ms/op
+WorkloadPilot    2: 32 op, 419427417.00 ns, 13.1071 ms/op
+WorkloadPilot    3: 64 op, 794077166.00 ns, 12.4075 ms/op
+
+OverheadWarmup   1: 64 op, 1167.00 ns, 18.2344 ns/op
+OverheadWarmup   2: 64 op, 458.00 ns, 7.1562 ns/op
+OverheadWarmup   3: 64 op, 416.00 ns, 6.5000 ns/op
+OverheadWarmup   4: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadWarmup   5: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadWarmup   6: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadWarmup   7: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup   8: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadWarmup   9: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadWarmup  10: 64 op, 291.00 ns, 4.5469 ns/op
+
+OverheadActual   1: 64 op, 416.00 ns, 6.5000 ns/op
+OverheadActual   2: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   3: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual   4: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   5: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   6: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual   7: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   8: 64 op, 459.00 ns, 7.1719 ns/op
+OverheadActual   9: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  10: 64 op, 334.00 ns, 5.2188 ns/op
+OverheadActual  11: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  12: 64 op, 125.00 ns, 1.9531 ns/op
+OverheadActual  13: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual  14: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  15: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  16: 64 op, 1250.00 ns, 19.5312 ns/op
+OverheadActual  17: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual  18: 64 op, 334.00 ns, 5.2188 ns/op
+OverheadActual  19: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  20: 64 op, 209.00 ns, 3.2656 ns/op
+
+WorkloadWarmup   1: 64 op, 783633916.00 ns, 12.2443 ms/op
+WorkloadWarmup   2: 64 op, 780926708.00 ns, 12.2020 ms/op
+WorkloadWarmup   3: 64 op, 784438166.00 ns, 12.2568 ms/op
+WorkloadWarmup   4: 64 op, 783764375.00 ns, 12.2463 ms/op
+WorkloadWarmup   5: 64 op, 801987625.00 ns, 12.5311 ms/op
+WorkloadWarmup   6: 64 op, 781834375.00 ns, 12.2162 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 786662875.00 ns, 12.2916 ms/op
+WorkloadActual   2: 64 op, 793767500.00 ns, 12.4026 ms/op
+WorkloadActual   3: 64 op, 783265375.00 ns, 12.2385 ms/op
+WorkloadActual   4: 64 op, 790280334.00 ns, 12.3481 ms/op
+WorkloadActual   5: 64 op, 785060000.00 ns, 12.2666 ms/op
+WorkloadActual   6: 64 op, 781187209.00 ns, 12.2061 ms/op
+WorkloadActual   7: 64 op, 798635375.00 ns, 12.4787 ms/op
+WorkloadActual   8: 64 op, 786102583.00 ns, 12.2829 ms/op
+WorkloadActual   9: 64 op, 784150417.00 ns, 12.2524 ms/op
+WorkloadActual  10: 64 op, 796620291.00 ns, 12.4472 ms/op
+WorkloadActual  11: 64 op, 787513000.00 ns, 12.3049 ms/op
+WorkloadActual  12: 64 op, 788076042.00 ns, 12.3137 ms/op
+WorkloadActual  13: 64 op, 780830000.00 ns, 12.2005 ms/op
+WorkloadActual  14: 64 op, 786391500.00 ns, 12.2874 ms/op
+WorkloadActual  15: 64 op, 788368333.00 ns, 12.3183 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 786662583.00 ns, 12.2916 ms/op
+WorkloadResult   2: 64 op, 793767208.00 ns, 12.4026 ms/op
+WorkloadResult   3: 64 op, 783265083.00 ns, 12.2385 ms/op
+WorkloadResult   4: 64 op, 790280042.00 ns, 12.3481 ms/op
+WorkloadResult   5: 64 op, 785059708.00 ns, 12.2666 ms/op
+WorkloadResult   6: 64 op, 781186917.00 ns, 12.2060 ms/op
+WorkloadResult   7: 64 op, 786102291.00 ns, 12.2828 ms/op
+WorkloadResult   8: 64 op, 784150125.00 ns, 12.2523 ms/op
+WorkloadResult   9: 64 op, 787512708.00 ns, 12.3049 ms/op
+WorkloadResult  10: 64 op, 788075750.00 ns, 12.3137 ms/op
+WorkloadResult  11: 64 op, 780829708.00 ns, 12.2005 ms/op
+WorkloadResult  12: 64 op, 786391208.00 ns, 12.2874 ms/op
+WorkloadResult  13: 64 op, 788368041.00 ns, 12.3183 ms/op
+
+// AfterAll
+// Benchmark Process 12754 has exited with code 0.
+
+Mean = 12.286 ms, StdErr = 0.015 ms (0.13%), N = 13, StdDev = 0.056 ms
+Min = 12.200 ms, Q1 = 12.252 ms, Median = 12.287 ms, Q3 = 12.314 ms, Max = 12.403 ms
+IQR = 0.061 ms, LowerFence = 12.160 ms, UpperFence = 12.406 ms
+ConfidenceInterval = [12.219 ms; 12.352 ms] (CI 99.9%), Margin = 0.067 ms (0.54% of Mean)
+Skewness = 0.29, Kurtosis = 2.44, MValue = 2
+
+// ** Remained 4 (33.3%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 1m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnIquerayble: DefaultJob [id=10]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnIquerayble(id: 10)" --job Default --benchmarkId 8 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 101500.00 ns, 101.5000 us/op
+WorkloadJitting  1: 1 op, 354973958.00 ns, 354.9740 ms/op
+
+OverheadJitting  2: 1 op, 292.00 ns, 292.0000 ns/op
+WorkloadJitting  2: 1 op, 31687792.00 ns, 31.6878 ms/op
+
+OverheadJitting  3: 16 op, 136542.00 ns, 8.5339 us/op
+WorkloadJitting  3: 16 op, 334280916.00 ns, 20.8926 ms/op
+
+WorkloadPilot    1: 16 op, 234729916.00 ns, 14.6706 ms/op
+WorkloadPilot    2: 32 op, 386652417.00 ns, 12.0829 ms/op
+WorkloadPilot    3: 64 op, 755117916.00 ns, 11.7987 ms/op
+
+OverheadWarmup   1: 64 op, 1209.00 ns, 18.8906 ns/op
+OverheadWarmup   2: 64 op, 667.00 ns, 10.4219 ns/op
+OverheadWarmup   3: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadWarmup   4: 64 op, 500.00 ns, 7.8125 ns/op
+OverheadWarmup   5: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadWarmup   6: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup   7: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadWarmup   8: 64 op, 250.00 ns, 3.9062 ns/op
+
+OverheadActual   1: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   2: 64 op, 459.00 ns, 7.1719 ns/op
+OverheadActual   3: 64 op, 416.00 ns, 6.5000 ns/op
+OverheadActual   4: 64 op, 541.00 ns, 8.4531 ns/op
+OverheadActual   5: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadActual   6: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   7: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual   8: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   9: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  10: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadActual  11: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual  12: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  13: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual  14: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  15: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  16: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadActual  17: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  18: 64 op, 791.00 ns, 12.3594 ns/op
+OverheadActual  19: 64 op, 459.00 ns, 7.1719 ns/op
+OverheadActual  20: 64 op, 208.00 ns, 3.2500 ns/op
+
+WorkloadWarmup   1: 64 op, 749807750.00 ns, 11.7157 ms/op
+WorkloadWarmup   2: 64 op, 753606208.00 ns, 11.7751 ms/op
+WorkloadWarmup   3: 64 op, 745550416.00 ns, 11.6492 ms/op
+WorkloadWarmup   4: 64 op, 747955042.00 ns, 11.6868 ms/op
+WorkloadWarmup   5: 64 op, 744774834.00 ns, 11.6371 ms/op
+WorkloadWarmup   6: 64 op, 749358209.00 ns, 11.7087 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 750652083.00 ns, 11.7289 ms/op
+WorkloadActual   2: 64 op, 743133167.00 ns, 11.6115 ms/op
+WorkloadActual   3: 64 op, 747265125.00 ns, 11.6760 ms/op
+WorkloadActual   4: 64 op, 758109750.00 ns, 11.8455 ms/op
+WorkloadActual   5: 64 op, 750953792.00 ns, 11.7337 ms/op
+WorkloadActual   6: 64 op, 750815875.00 ns, 11.7315 ms/op
+WorkloadActual   7: 64 op, 748593833.00 ns, 11.6968 ms/op
+WorkloadActual   8: 64 op, 745787833.00 ns, 11.6529 ms/op
+WorkloadActual   9: 64 op, 745962542.00 ns, 11.6557 ms/op
+WorkloadActual  10: 64 op, 752031083.00 ns, 11.7505 ms/op
+WorkloadActual  11: 64 op, 749201583.00 ns, 11.7063 ms/op
+WorkloadActual  12: 64 op, 753114750.00 ns, 11.7674 ms/op
+WorkloadActual  13: 64 op, 754928708.00 ns, 11.7958 ms/op
+WorkloadActual  14: 64 op, 743109958.00 ns, 11.6111 ms/op
+WorkloadActual  15: 64 op, 755882583.00 ns, 11.8107 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 750651770.50 ns, 11.7289 ms/op
+WorkloadResult   2: 64 op, 743132854.50 ns, 11.6115 ms/op
+WorkloadResult   3: 64 op, 747264812.50 ns, 11.6760 ms/op
+WorkloadResult   4: 64 op, 758109437.50 ns, 11.8455 ms/op
+WorkloadResult   5: 64 op, 750953479.50 ns, 11.7336 ms/op
+WorkloadResult   6: 64 op, 750815562.50 ns, 11.7315 ms/op
+WorkloadResult   7: 64 op, 748593520.50 ns, 11.6968 ms/op
+WorkloadResult   8: 64 op, 745787520.50 ns, 11.6529 ms/op
+WorkloadResult   9: 64 op, 745962229.50 ns, 11.6557 ms/op
+WorkloadResult  10: 64 op, 752030770.50 ns, 11.7505 ms/op
+WorkloadResult  11: 64 op, 749201270.50 ns, 11.7063 ms/op
+WorkloadResult  12: 64 op, 753114437.50 ns, 11.7674 ms/op
+WorkloadResult  13: 64 op, 754928395.50 ns, 11.7958 ms/op
+WorkloadResult  14: 64 op, 743109645.50 ns, 11.6111 ms/op
+WorkloadResult  15: 64 op, 755882270.50 ns, 11.8107 ms/op
+
+// AfterAll
+// Benchmark Process 12755 has exited with code 0.
+
+Mean = 11.718 ms, StdErr = 0.018 ms (0.15%), N = 15, StdDev = 0.070 ms
+Min = 11.611 ms, Q1 = 11.666 ms, Median = 11.729 ms, Q3 = 11.759 ms, Max = 11.845 ms
+IQR = 0.093 ms, LowerFence = 11.526 ms, UpperFence = 11.899 ms
+ConfidenceInterval = [11.644 ms; 11.793 ms] (CI 99.9%), Margin = 0.075 ms (0.64% of Mean)
+Skewness = 0.08, Kurtosis = 1.9, MValue = 2
+
+// ** Remained 3 (25.0%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 0m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnList: DefaultJob [id=10]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnList(id: 10)" --job Default --benchmarkId 9 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 98333.00 ns, 98.3330 us/op
+WorkloadJitting  1: 1 op, 344275584.00 ns, 344.2756 ms/op
+
+OverheadJitting  2: 1 op, 125.00 ns, 125.0000 ns/op
+WorkloadJitting  2: 1 op, 31409708.00 ns, 31.4097 ms/op
+
+OverheadJitting  3: 16 op, 145209.00 ns, 9.0756 us/op
+WorkloadJitting  3: 16 op, 345207292.00 ns, 21.5755 ms/op
+
+WorkloadPilot    1: 16 op, 249905042.00 ns, 15.6191 ms/op
+WorkloadPilot    2: 32 op, 399772375.00 ns, 12.4929 ms/op
+WorkloadPilot    3: 64 op, 777658333.00 ns, 12.1509 ms/op
+
+OverheadWarmup   1: 64 op, 1208.00 ns, 18.8750 ns/op
+OverheadWarmup   2: 64 op, 458.00 ns, 7.1562 ns/op
+OverheadWarmup   3: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadWarmup   4: 64 op, 334.00 ns, 5.2188 ns/op
+OverheadWarmup   5: 64 op, 416.00 ns, 6.5000 ns/op
+OverheadWarmup   6: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup   7: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadWarmup   8: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadWarmup   9: 64 op, 250.00 ns, 3.9062 ns/op
+
+OverheadActual   1: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   2: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   3: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   4: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual   5: 64 op, 291.00 ns, 4.5469 ns/op
+OverheadActual   6: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   7: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual   8: 64 op, 334.00 ns, 5.2188 ns/op
+OverheadActual   9: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  10: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  11: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  12: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  13: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  14: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  15: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  16: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  17: 64 op, 500.00 ns, 7.8125 ns/op
+OverheadActual  18: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual  19: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  20: 64 op, 250.00 ns, 3.9062 ns/op
+
+WorkloadWarmup   1: 64 op, 785513250.00 ns, 12.2736 ms/op
+WorkloadWarmup   2: 64 op, 771658000.00 ns, 12.0572 ms/op
+WorkloadWarmup   3: 64 op, 779511708.00 ns, 12.1799 ms/op
+WorkloadWarmup   4: 64 op, 776169667.00 ns, 12.1277 ms/op
+WorkloadWarmup   5: 64 op, 776865792.00 ns, 12.1385 ms/op
+WorkloadWarmup   6: 64 op, 781533833.00 ns, 12.2115 ms/op
+WorkloadWarmup   7: 64 op, 775954292.00 ns, 12.1243 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 779820208.00 ns, 12.1847 ms/op
+WorkloadActual   2: 64 op, 782122583.00 ns, 12.2207 ms/op
+WorkloadActual   3: 64 op, 774552459.00 ns, 12.1024 ms/op
+WorkloadActual   4: 64 op, 784962416.00 ns, 12.2650 ms/op
+WorkloadActual   5: 64 op, 777995208.00 ns, 12.1562 ms/op
+WorkloadActual   6: 64 op, 784120833.00 ns, 12.2519 ms/op
+WorkloadActual   7: 64 op, 795651917.00 ns, 12.4321 ms/op
+WorkloadActual   8: 64 op, 768728958.00 ns, 12.0114 ms/op
+WorkloadActual   9: 64 op, 788085250.00 ns, 12.3138 ms/op
+WorkloadActual  10: 64 op, 784443041.00 ns, 12.2569 ms/op
+WorkloadActual  11: 64 op, 782124375.00 ns, 12.2207 ms/op
+WorkloadActual  12: 64 op, 783592375.00 ns, 12.2436 ms/op
+WorkloadActual  13: 64 op, 786680166.00 ns, 12.2919 ms/op
+WorkloadActual  14: 64 op, 780634958.00 ns, 12.1974 ms/op
+WorkloadActual  15: 64 op, 777836875.00 ns, 12.1537 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 779819937.50 ns, 12.1847 ms/op
+WorkloadResult   2: 64 op, 782122312.50 ns, 12.2207 ms/op
+WorkloadResult   3: 64 op, 774552188.50 ns, 12.1024 ms/op
+WorkloadResult   4: 64 op, 784962145.50 ns, 12.2650 ms/op
+WorkloadResult   5: 64 op, 777994937.50 ns, 12.1562 ms/op
+WorkloadResult   6: 64 op, 784120562.50 ns, 12.2519 ms/op
+WorkloadResult   7: 64 op, 768728687.50 ns, 12.0114 ms/op
+WorkloadResult   8: 64 op, 788084979.50 ns, 12.3138 ms/op
+WorkloadResult   9: 64 op, 784442770.50 ns, 12.2569 ms/op
+WorkloadResult  10: 64 op, 782124104.50 ns, 12.2207 ms/op
+WorkloadResult  11: 64 op, 783592104.50 ns, 12.2436 ms/op
+WorkloadResult  12: 64 op, 786679895.50 ns, 12.2919 ms/op
+WorkloadResult  13: 64 op, 780634687.50 ns, 12.1974 ms/op
+WorkloadResult  14: 64 op, 777836604.50 ns, 12.1537 ms/op
+
+// AfterAll
+// Benchmark Process 12756 has exited with code 0.
+
+Mean = 12.205 ms, StdErr = 0.021 ms (0.18%), N = 14, StdDev = 0.080 ms
+Min = 12.011 ms, Q1 = 12.163 ms, Median = 12.221 ms, Q3 = 12.256 ms, Max = 12.314 ms
+IQR = 0.092 ms, LowerFence = 12.025 ms, UpperFence = 12.394 ms
+ConfidenceInterval = [12.115 ms; 12.295 ms] (CI 99.9%), Margin = 0.090 ms (0.74% of Mean)
+Skewness = -0.85, Kurtosis = 3.05, MValue = 2
+
+// ** Remained 2 (16.7%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 0m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync: DefaultJob [id=10]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync(id: 10)" --job Default --benchmarkId 10 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 113958.00 ns, 113.9580 us/op
+WorkloadJitting  1: 1 op, 363188667.00 ns, 363.1887 ms/op
+
+OverheadJitting  2: 1 op, 125.00 ns, 125.0000 ns/op
+WorkloadJitting  2: 1 op, 31847167.00 ns, 31.8472 ms/op
+
+OverheadJitting  3: 16 op, 158000.00 ns, 9.8750 us/op
+WorkloadJitting  3: 16 op, 340753541.00 ns, 21.2971 ms/op
+
+WorkloadPilot    1: 16 op, 260122583.00 ns, 16.2577 ms/op
+WorkloadPilot    2: 32 op, 400260917.00 ns, 12.5082 ms/op
+WorkloadPilot    3: 64 op, 752167125.00 ns, 11.7526 ms/op
+
+OverheadWarmup   1: 64 op, 833.00 ns, 13.0156 ns/op
+OverheadWarmup   2: 64 op, 458.00 ns, 7.1562 ns/op
+OverheadWarmup   3: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadWarmup   4: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadWarmup   5: 64 op, 334.00 ns, 5.2188 ns/op
+OverheadWarmup   6: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadWarmup   7: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadWarmup   8: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadWarmup   9: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadWarmup  10: 64 op, 250.00 ns, 3.9062 ns/op
+
+OverheadActual   1: 64 op, 500.00 ns, 7.8125 ns/op
+OverheadActual   2: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   3: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   4: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   5: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   6: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual   7: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadActual   8: 64 op, 334.00 ns, 5.2188 ns/op
+OverheadActual   9: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  10: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  11: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  12: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  13: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual  14: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  15: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  16: 64 op, 1334.00 ns, 20.8438 ns/op
+OverheadActual  17: 64 op, 708.00 ns, 11.0625 ns/op
+OverheadActual  18: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual  19: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  20: 64 op, 208.00 ns, 3.2500 ns/op
+
+WorkloadWarmup   1: 64 op, 746188334.00 ns, 11.6592 ms/op
+WorkloadWarmup   2: 64 op, 745135416.00 ns, 11.6427 ms/op
+WorkloadWarmup   3: 64 op, 750670875.00 ns, 11.7292 ms/op
+WorkloadWarmup   4: 64 op, 742900958.00 ns, 11.6078 ms/op
+WorkloadWarmup   5: 64 op, 746084375.00 ns, 11.6576 ms/op
+WorkloadWarmup   6: 64 op, 747615500.00 ns, 11.6815 ms/op
+WorkloadWarmup   7: 64 op, 746465292.00 ns, 11.6635 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 747122500.00 ns, 11.6738 ms/op
+WorkloadActual   2: 64 op, 740184250.00 ns, 11.5654 ms/op
+WorkloadActual   3: 64 op, 751593708.00 ns, 11.7437 ms/op
+WorkloadActual   4: 64 op, 752732833.00 ns, 11.7615 ms/op
+WorkloadActual   5: 64 op, 748502416.00 ns, 11.6954 ms/op
+WorkloadActual   6: 64 op, 744235875.00 ns, 11.6287 ms/op
+WorkloadActual   7: 64 op, 749768958.00 ns, 11.7151 ms/op
+WorkloadActual   8: 64 op, 747859916.00 ns, 11.6853 ms/op
+WorkloadActual   9: 64 op, 752929208.00 ns, 11.7645 ms/op
+WorkloadActual  10: 64 op, 750416375.00 ns, 11.7253 ms/op
+WorkloadActual  11: 64 op, 748361750.00 ns, 11.6932 ms/op
+WorkloadActual  12: 64 op, 754504542.00 ns, 11.7891 ms/op
+WorkloadActual  13: 64 op, 746591042.00 ns, 11.6655 ms/op
+WorkloadActual  14: 64 op, 750268584.00 ns, 11.7229 ms/op
+WorkloadActual  15: 64 op, 752057959.00 ns, 11.7509 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 747122229.00 ns, 11.6738 ms/op
+WorkloadResult   2: 64 op, 740183979.00 ns, 11.5654 ms/op
+WorkloadResult   3: 64 op, 751593437.00 ns, 11.7436 ms/op
+WorkloadResult   4: 64 op, 752732562.00 ns, 11.7614 ms/op
+WorkloadResult   5: 64 op, 748502145.00 ns, 11.6953 ms/op
+WorkloadResult   6: 64 op, 744235604.00 ns, 11.6287 ms/op
+WorkloadResult   7: 64 op, 749768687.00 ns, 11.7151 ms/op
+WorkloadResult   8: 64 op, 747859645.00 ns, 11.6853 ms/op
+WorkloadResult   9: 64 op, 752928937.00 ns, 11.7645 ms/op
+WorkloadResult  10: 64 op, 750416104.00 ns, 11.7253 ms/op
+WorkloadResult  11: 64 op, 748361479.00 ns, 11.6931 ms/op
+WorkloadResult  12: 64 op, 754504271.00 ns, 11.7891 ms/op
+WorkloadResult  13: 64 op, 746590771.00 ns, 11.6655 ms/op
+WorkloadResult  14: 64 op, 750268313.00 ns, 11.7229 ms/op
+WorkloadResult  15: 64 op, 752057688.00 ns, 11.7509 ms/op
+
+// AfterAll
+// Benchmark Process 12757 has exited with code 0.
+
+Mean = 11.705 ms, StdErr = 0.015 ms (0.13%), N = 15, StdDev = 0.058 ms
+Min = 11.565 ms, Q1 = 11.680 ms, Median = 11.715 ms, Q3 = 11.747 ms, Max = 11.789 ms
+IQR = 0.068 ms, LowerFence = 11.578 ms, UpperFence = 11.849 ms
+ConfidenceInterval = [11.644 ms; 11.767 ms] (CI 99.9%), Margin = 0.062 ms (0.53% of Mean)
+Skewness = -0.75, Kurtosis = 2.99, MValue = 2
+
+// ** Remained 1 (8.3%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 0m from now) **
+// **************************
+// Benchmark: MovieDbContextBenchMark.FirstOrDefaultOnListAsync: DefaultJob [id=10]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet eae1a348-b8e3-402b-91d0-f520f203f96f.dll --benchmarkName "MoviesBenchmark.MovieDbContextBenchMark.FirstOrDefaultOnListAsync(id: 10)" --job Default --benchmarkId 11 in /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Release/net6.0/eae1a348-b8e3-402b-91d0-f520f203f96f/bin/Release/net6.0
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,CRC32 VectorSize=128
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 101459.00 ns, 101.4590 us/op
+WorkloadJitting  1: 1 op, 341517042.00 ns, 341.5170 ms/op
+
+OverheadJitting  2: 1 op, 166.00 ns, 166.0000 ns/op
+WorkloadJitting  2: 1 op, 31021000.00 ns, 31.0210 ms/op
+
+OverheadJitting  3: 16 op, 149083.00 ns, 9.3177 us/op
+WorkloadJitting  3: 16 op, 353037375.00 ns, 22.0648 ms/op
+
+WorkloadPilot    1: 16 op, 246933875.00 ns, 15.4334 ms/op
+WorkloadPilot    2: 32 op, 411298459.00 ns, 12.8531 ms/op
+WorkloadPilot    3: 64 op, 777953334.00 ns, 12.1555 ms/op
+
+OverheadWarmup   1: 64 op, 1042.00 ns, 16.2812 ns/op
+OverheadWarmup   2: 64 op, 541.00 ns, 8.4531 ns/op
+OverheadWarmup   3: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadWarmup   4: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup   5: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup   6: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadWarmup   7: 64 op, 375.00 ns, 5.8594 ns/op
+OverheadWarmup   8: 64 op, 166.00 ns, 2.5938 ns/op
+
+OverheadActual   1: 64 op, 250.00 ns, 3.9062 ns/op
+OverheadActual   2: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual   3: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual   4: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual   5: 64 op, 333.00 ns, 5.2031 ns/op
+OverheadActual   6: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual   7: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual   8: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual   9: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  10: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  11: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  12: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual  13: 64 op, 209.00 ns, 3.2656 ns/op
+OverheadActual  14: 64 op, 167.00 ns, 2.6094 ns/op
+OverheadActual  15: 64 op, 166.00 ns, 2.5938 ns/op
+OverheadActual  16: 64 op, 417.00 ns, 6.5156 ns/op
+OverheadActual  17: 64 op, 208.00 ns, 3.2500 ns/op
+OverheadActual  18: 64 op, 833.00 ns, 13.0156 ns/op
+OverheadActual  19: 64 op, 292.00 ns, 4.5625 ns/op
+OverheadActual  20: 64 op, 167.00 ns, 2.6094 ns/op
+
+WorkloadWarmup   1: 64 op, 775499541.00 ns, 12.1172 ms/op
+WorkloadWarmup   2: 64 op, 773370041.00 ns, 12.0839 ms/op
+WorkloadWarmup   3: 64 op, 777111167.00 ns, 12.1424 ms/op
+WorkloadWarmup   4: 64 op, 783670833.00 ns, 12.2449 ms/op
+WorkloadWarmup   5: 64 op, 779077125.00 ns, 12.1731 ms/op
+WorkloadWarmup   6: 64 op, 779468084.00 ns, 12.1792 ms/op
+WorkloadWarmup   7: 64 op, 786845750.00 ns, 12.2945 ms/op
+WorkloadWarmup   8: 64 op, 780807708.00 ns, 12.2001 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 782655500.00 ns, 12.2290 ms/op
+WorkloadActual   2: 64 op, 794308417.00 ns, 12.4111 ms/op
+WorkloadActual   3: 64 op, 785582666.00 ns, 12.2747 ms/op
+WorkloadActual   4: 64 op, 777564208.00 ns, 12.1494 ms/op
+WorkloadActual   5: 64 op, 784160750.00 ns, 12.2525 ms/op
+WorkloadActual   6: 64 op, 774997208.00 ns, 12.1093 ms/op
+WorkloadActual   7: 64 op, 783180958.00 ns, 12.2372 ms/op
+WorkloadActual   8: 64 op, 788600334.00 ns, 12.3219 ms/op
+WorkloadActual   9: 64 op, 777063084.00 ns, 12.1416 ms/op
+WorkloadActual  10: 64 op, 797439917.00 ns, 12.4600 ms/op
+WorkloadActual  11: 64 op, 788284000.00 ns, 12.3169 ms/op
+WorkloadActual  12: 64 op, 788386000.00 ns, 12.3185 ms/op
+WorkloadActual  13: 64 op, 785432167.00 ns, 12.2724 ms/op
+WorkloadActual  14: 64 op, 789973208.00 ns, 12.3433 ms/op
+WorkloadActual  15: 64 op, 788093833.00 ns, 12.3140 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 782655312.50 ns, 12.2290 ms/op
+WorkloadResult   2: 64 op, 794308229.50 ns, 12.4111 ms/op
+WorkloadResult   3: 64 op, 785582478.50 ns, 12.2747 ms/op
+WorkloadResult   4: 64 op, 777564020.50 ns, 12.1494 ms/op
+WorkloadResult   5: 64 op, 784160562.50 ns, 12.2525 ms/op
+WorkloadResult   6: 64 op, 774997020.50 ns, 12.1093 ms/op
+WorkloadResult   7: 64 op, 783180770.50 ns, 12.2372 ms/op
+WorkloadResult   8: 64 op, 788600146.50 ns, 12.3219 ms/op
+WorkloadResult   9: 64 op, 777062896.50 ns, 12.1416 ms/op
+WorkloadResult  10: 64 op, 788283812.50 ns, 12.3169 ms/op
+WorkloadResult  11: 64 op, 788385812.50 ns, 12.3185 ms/op
+WorkloadResult  12: 64 op, 785431979.50 ns, 12.2724 ms/op
+WorkloadResult  13: 64 op, 789973020.50 ns, 12.3433 ms/op
+WorkloadResult  14: 64 op, 788093645.50 ns, 12.3140 ms/op
+
+// AfterAll
+// Benchmark Process 12758 has exited with code 0.
+
+Mean = 12.264 ms, StdErr = 0.023 ms (0.19%), N = 14, StdDev = 0.085 ms
+Min = 12.109 ms, Q1 = 12.231 ms, Median = 12.274 ms, Q3 = 12.318 ms, Max = 12.411 ms
+IQR = 0.087 ms, LowerFence = 12.100 ms, UpperFence = 12.449 ms
+ConfidenceInterval = [12.168 ms; 12.360 ms] (CI 99.9%), Margin = 0.096 ms (0.78% of Mean)
+Skewness = -0.32, Kurtosis = 2.07, MValue = 2
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2022-09-10 14:08 (0h 0m from now) **
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts/results/MoviesBenchmark.MovieDbContextBenchMark-report.csv
+  BenchmarkDotNet.Artifacts/results/MoviesBenchmark.MovieDbContextBenchMark-report-github.md
+  BenchmarkDotNet.Artifacts/results/MoviesBenchmark.MovieDbContextBenchMark-report.html
+
+// * Detailed results *
+MovieDbContextBenchMark.FirstOrDefaultOnIquerayble: DefaultJob [id=0]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 11.634 ms, StdErr = 0.021 ms (0.18%), N = 15, StdDev = 0.082 ms
+Min = 11.437 ms, Q1 = 11.599 ms, Median = 11.654 ms, Q3 = 11.696 ms, Max = 11.727 ms
+IQR = 0.097 ms, LowerFence = 11.453 ms, UpperFence = 11.842 ms
+ConfidenceInterval = [11.546 ms; 11.722 ms] (CI 99.9%), Margin = 0.088 ms (0.75% of Mean)
+Skewness = -0.88, Kurtosis = 2.83, MValue = 2
+-------------------- Histogram --------------------
+[11.393 ms ; 11.770 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnList: DefaultJob [id=0]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 12.301 ms, StdErr = 0.018 ms (0.15%), N = 15, StdDev = 0.070 ms
+Min = 12.213 ms, Q1 = 12.235 ms, Median = 12.302 ms, Q3 = 12.360 ms, Max = 12.423 ms
+IQR = 0.125 ms, LowerFence = 12.047 ms, UpperFence = 12.548 ms
+ConfidenceInterval = [12.226 ms; 12.375 ms] (CI 99.9%), Margin = 0.074 ms (0.61% of Mean)
+Skewness = 0.15, Kurtosis = 1.5, MValue = 2
+-------------------- Histogram --------------------
+[12.176 ms ; 12.460 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync: DefaultJob [id=0]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 11.671 ms, StdErr = 0.015 ms (0.13%), N = 15, StdDev = 0.060 ms
+Min = 11.594 ms, Q1 = 11.638 ms, Median = 11.649 ms, Q3 = 11.711 ms, Max = 11.788 ms
+IQR = 0.074 ms, LowerFence = 11.527 ms, UpperFence = 11.822 ms
+ConfidenceInterval = [11.608 ms; 11.735 ms] (CI 99.9%), Margin = 0.064 ms (0.55% of Mean)
+Skewness = 0.71, Kurtosis = 2.13, MValue = 2
+-------------------- Histogram --------------------
+[11.563 ms ; 11.820 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnListAsync: DefaultJob [id=0]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 12.251 ms, StdErr = 0.021 ms (0.17%), N = 15, StdDev = 0.082 ms
+Min = 12.096 ms, Q1 = 12.201 ms, Median = 12.262 ms, Q3 = 12.314 ms, Max = 12.371 ms
+IQR = 0.114 ms, LowerFence = 12.030 ms, UpperFence = 12.485 ms
+ConfidenceInterval = [12.163 ms; 12.338 ms] (CI 99.9%), Margin = 0.088 ms (0.71% of Mean)
+Skewness = -0.15, Kurtosis = 1.83, MValue = 2
+-------------------- Histogram --------------------
+[12.053 ms ; 12.415 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnIquerayble: DefaultJob [id=1]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 11.774 ms, StdErr = 0.021 ms (0.18%), N = 15, StdDev = 0.081 ms
+Min = 11.693 ms, Q1 = 11.714 ms, Median = 11.745 ms, Q3 = 11.814 ms, Max = 11.943 ms
+IQR = 0.100 ms, LowerFence = 11.564 ms, UpperFence = 11.963 ms
+ConfidenceInterval = [11.687 ms; 11.860 ms] (CI 99.9%), Margin = 0.086 ms (0.73% of Mean)
+Skewness = 0.87, Kurtosis = 2.52, MValue = 2
+-------------------- Histogram --------------------
+[11.650 ms ; 11.987 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnList: DefaultJob [id=1]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 12.228 ms, StdErr = 0.024 ms (0.20%), N = 15, StdDev = 0.093 ms
+Min = 12.059 ms, Q1 = 12.172 ms, Median = 12.241 ms, Q3 = 12.289 ms, Max = 12.397 ms
+IQR = 0.117 ms, LowerFence = 11.997 ms, UpperFence = 12.464 ms
+ConfidenceInterval = [12.128 ms; 12.327 ms] (CI 99.9%), Margin = 0.099 ms (0.81% of Mean)
+Skewness = -0.17, Kurtosis = 2.09, MValue = 2
+-------------------- Histogram --------------------
+[12.009 ms ; 12.447 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync: DefaultJob [id=1]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 11.808 ms, StdErr = 0.039 ms (0.33%), N = 15, StdDev = 0.152 ms
+Min = 11.575 ms, Q1 = 11.714 ms, Median = 11.784 ms, Q3 = 11.905 ms, Max = 12.065 ms
+IQR = 0.191 ms, LowerFence = 11.427 ms, UpperFence = 12.192 ms
+ConfidenceInterval = [11.646 ms; 11.970 ms] (CI 99.9%), Margin = 0.162 ms (1.37% of Mean)
+Skewness = 0.31, Kurtosis = 1.81, MValue = 2
+-------------------- Histogram --------------------
+[11.495 ms ; 12.118 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnListAsync: DefaultJob [id=1]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 12.286 ms, StdErr = 0.015 ms (0.13%), N = 13, StdDev = 0.056 ms
+Min = 12.200 ms, Q1 = 12.252 ms, Median = 12.287 ms, Q3 = 12.314 ms, Max = 12.403 ms
+IQR = 0.061 ms, LowerFence = 12.160 ms, UpperFence = 12.406 ms
+ConfidenceInterval = [12.219 ms; 12.352 ms] (CI 99.9%), Margin = 0.067 ms (0.54% of Mean)
+Skewness = 0.29, Kurtosis = 2.44, MValue = 2
+-------------------- Histogram --------------------
+[12.169 ms ; 12.415 ms) | @@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnIquerayble: DefaultJob [id=10]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 11.718 ms, StdErr = 0.018 ms (0.15%), N = 15, StdDev = 0.070 ms
+Min = 11.611 ms, Q1 = 11.666 ms, Median = 11.729 ms, Q3 = 11.759 ms, Max = 11.845 ms
+IQR = 0.093 ms, LowerFence = 11.526 ms, UpperFence = 11.899 ms
+ConfidenceInterval = [11.644 ms; 11.793 ms] (CI 99.9%), Margin = 0.075 ms (0.64% of Mean)
+Skewness = 0.08, Kurtosis = 1.9, MValue = 2
+-------------------- Histogram --------------------
+[11.574 ms ; 11.849 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnList: DefaultJob [id=10]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 12.205 ms, StdErr = 0.021 ms (0.18%), N = 14, StdDev = 0.080 ms
+Min = 12.011 ms, Q1 = 12.163 ms, Median = 12.221 ms, Q3 = 12.256 ms, Max = 12.314 ms
+IQR = 0.092 ms, LowerFence = 12.025 ms, UpperFence = 12.394 ms
+ConfidenceInterval = [12.115 ms; 12.295 ms] (CI 99.9%), Margin = 0.090 ms (0.74% of Mean)
+Skewness = -0.85, Kurtosis = 3.05, MValue = 2
+-------------------- Histogram --------------------
+[11.968 ms ; 12.347 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync: DefaultJob [id=10]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 11.705 ms, StdErr = 0.015 ms (0.13%), N = 15, StdDev = 0.058 ms
+Min = 11.565 ms, Q1 = 11.680 ms, Median = 11.715 ms, Q3 = 11.747 ms, Max = 11.789 ms
+IQR = 0.068 ms, LowerFence = 11.578 ms, UpperFence = 11.849 ms
+ConfidenceInterval = [11.644 ms; 11.767 ms] (CI 99.9%), Margin = 0.062 ms (0.53% of Mean)
+Skewness = -0.75, Kurtosis = 2.99, MValue = 2
+-------------------- Histogram --------------------
+[11.535 ms ; 11.812 ms) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+MovieDbContextBenchMark.FirstOrDefaultOnListAsync: DefaultJob [id=10]
+Runtime = .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 12.264 ms, StdErr = 0.023 ms (0.19%), N = 14, StdDev = 0.085 ms
+Min = 12.109 ms, Q1 = 12.231 ms, Median = 12.274 ms, Q3 = 12.318 ms, Max = 12.411 ms
+IQR = 0.087 ms, LowerFence = 12.100 ms, UpperFence = 12.449 ms
+ConfidenceInterval = [12.168 ms; 12.360 ms] (CI 99.9%), Margin = 0.096 ms (0.78% of Mean)
+Skewness = -0.32, Kurtosis = 2.07, MValue = 2
+-------------------- Histogram --------------------
+[12.063 ms ; 12.457 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.2, OS=macOS Monterey 12.5.1 (21G83) [Darwin 21.6.0]
+Apple M1 Pro, 1 CPU, 10 logical and 10 physical cores
+.NET SDK=6.0.400
+  [Host]     : .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD  [AttachedDebugger]
+  DefaultJob : .NET 6.0.8 (6.0.822.36306), Arm64 RyuJIT AdvSIMD
+
+
+|                          Method | id |     Mean |    Error |   StdDev |
+|-------------------------------- |--- |---------:|---------:|---------:|
+|      FirstOrDefaultOnIquerayble |  0 | 11.63 ms | 0.088 ms | 0.082 ms |
+|            FirstOrDefaultOnList |  0 | 12.30 ms | 0.074 ms | 0.070 ms |
+| FirstOrDefaultOnIqueraybleAsync |  0 | 11.67 ms | 0.064 ms | 0.060 ms |
+|       FirstOrDefaultOnListAsync |  0 | 12.25 ms | 0.088 ms | 0.082 ms |
+|      FirstOrDefaultOnIquerayble |  1 | 11.77 ms | 0.086 ms | 0.081 ms |
+|            FirstOrDefaultOnList |  1 | 12.23 ms | 0.099 ms | 0.093 ms |
+| FirstOrDefaultOnIqueraybleAsync |  1 | 11.81 ms | 0.162 ms | 0.152 ms |
+|       FirstOrDefaultOnListAsync |  1 | 12.29 ms | 0.067 ms | 0.056 ms |
+|      FirstOrDefaultOnIquerayble | 10 | 11.72 ms | 0.075 ms | 0.070 ms |
+|            FirstOrDefaultOnList | 10 | 12.21 ms | 0.090 ms | 0.080 ms |
+| FirstOrDefaultOnIqueraybleAsync | 10 | 11.71 ms | 0.062 ms | 0.058 ms |
+|       FirstOrDefaultOnListAsync | 10 | 12.26 ms | 0.096 ms | 0.085 ms |
+
+// * Warnings *
+Environment
+  Summary -> Benchmark was executed with attached debugger
+
+// * Hints *
+Outliers
+  MovieDbContextBenchMark.FirstOrDefaultOnIquerayble: Default      -> 1 outlier  was  detected (11.44 ms)
+  MovieDbContextBenchMark.FirstOrDefaultOnListAsync: Default       -> 2 outliers were removed (12.45 ms, 12.48 ms)
+  MovieDbContextBenchMark.FirstOrDefaultOnList: Default            -> 1 outlier  was  removed, 2 outliers were detected (12.01 ms, 12.43 ms)
+  MovieDbContextBenchMark.FirstOrDefaultOnIqueraybleAsync: Default -> 1 outlier  was  detected (11.57 ms)
+  MovieDbContextBenchMark.FirstOrDefaultOnListAsync: Default       -> 1 outlier  was  removed (12.46 ms)
+
+// * Legends *
+  id     : Value of the 'id' parameter
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 ms   : 1 Millisecond (0.001 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:03:54 (234.49 sec), executed benchmarks: 12
+
+Global total time: 00:03:57 (237.89 sec), executed benchmarks: 12
+// * Artifacts cleanup *
