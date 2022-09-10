@@ -1,17 +1,33 @@
 ﻿<Properties StartupConfiguration="{DD8B251E-D15C-4996-B81F-8E8CCF44D1CC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PartyPlanner/Pages/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PartyPlanner/Pages/Shared/_LoginPartial.cshtml">
     <Files>
-      <File FileName="PartyPlanner/Pages/Index.cshtml.cs" Line="75" Column="18" />
-      <File FileName="PartyPlanner/Pages/Index.cshtml" Line="73" Column="1" />
-      <File FileName="PartyPlanner/Pages/Shared/_Layout.cshtml" Line="42" Column="40" />
+      <File FileName="PartyPlanner/Pages/Index.cshtml.cs" Line="48" Column="37" />
+      <File FileName="PartyPlanner/Pages/Index.cshtml" Line="11" Column="1" />
+      <File FileName="PartyPlanner/Pages/Shared/_Layout.cshtml" Line="13" Column="109" />
       <File FileName="PartyPlanner/Pages/Details.cshtml.cs" Line="36" Column="35" />
       <File FileName="PartyPlanner/Pages/Details.cshtml" Line="1" Column="1" />
+      <File FileName="PartyPlanner/Pages/Shared/_LoginPartial.cshtml" Line="7" Column="1" />
+      <File FileName="PartyPlanner/Areas/Identity/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="PartyPlanner/Areas/Identity/Pages/Account/Login.cshtml.cs" Line="112" Column="1" />
+      <File FileName="PartyPlanner/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PartyPlanner" expanded="True">
             <Node name="PartyPlanner" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True">
+                    <Node name="Account" expanded="True">
+                      <Node name="Login.cshtml" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
               <Node name="Features" expanded="True">
                 <Node name="Parties" expanded="True">
                   <Node name="Models" expanded="True" />
@@ -31,11 +47,14 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/LinearSearch/PartyPlanner/PartyPlanner/Areas/Identity/Pages/Account/Login.cshtml.cs" relfile="PartyPlanner/Areas/Identity/Pages/Account/Login.cshtml.cs" line="95" column="1" />
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/LinearSearch/PartyPlanner/PartyPlanner/Areas/Identity/Pages/Account/Login.cshtml.cs" relfile="PartyPlanner/Areas/Identity/Pages/Account/Login.cshtml.cs" line="112" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.PartyPlanner PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
 </Properties>

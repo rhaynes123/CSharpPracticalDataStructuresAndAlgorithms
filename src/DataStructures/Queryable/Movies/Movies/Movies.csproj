@@ -20,6 +20,8 @@
     <None Remove="Swashbuckle.AspNetCore" />
     <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
     <None Remove="Features\Models\Enums\" />
+    <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
+    <None Remove="Bogus" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -43,5 +45,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.8" />
   </ItemGroup>
 </Project>

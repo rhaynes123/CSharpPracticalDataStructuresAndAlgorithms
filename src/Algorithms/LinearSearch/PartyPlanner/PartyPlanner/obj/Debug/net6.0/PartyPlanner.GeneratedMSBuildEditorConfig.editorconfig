@@ -15,6 +15,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/LinearSearch/PartyPlanner/PartyPlanner
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/LinearSearch/PartyPlanner/PartyPlanner/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/LinearSearch/PartyPlanner/PartyPlanner/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/LinearSearch/PartyPlanner/PartyPlanner/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/LinearSearch/PartyPlanner/PartyPlanner/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/LinearSearch/PartyPlanner/PartyPlanner/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
