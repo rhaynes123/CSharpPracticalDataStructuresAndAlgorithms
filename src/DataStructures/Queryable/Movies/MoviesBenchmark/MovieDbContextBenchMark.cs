@@ -111,6 +111,8 @@ namespace MoviesBenchmark
                 .EnableDetailedErrors()
                 .UseInMemoryDatabase(databaseName:$"FakeMovies{Guid.NewGuid()}");
             movieDbContext = new MovieDbContext(builder.Options);
+            movieDbContext.Database.EnsureDeleted();
+            movieDbContext.Database.EnsureCreated();
             SeedData();
         }
 
