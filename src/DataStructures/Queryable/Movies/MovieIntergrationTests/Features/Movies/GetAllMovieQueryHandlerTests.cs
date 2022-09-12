@@ -1,4 +1,4 @@
-﻿namespace MovieIntergrationTests.Features.Movies;
+﻿namespace MovieIntegrationTests.Features.Movies;
 
 public class GetAllMovieQueryHandlerTests : IClassFixture<MovieDbContextFixture>
 {

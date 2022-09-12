@@ -5,7 +5,7 @@ using Movies.Data;
 using Movies.Features.Models;
 using Movies.Features.Models.Enums;
 
-namespace MovieIntergrationTests.Features.Movies;
+namespace MovieIntegrationTests.Features.Movies;
 
 // https://www.youtube.com/watch?v=ZTWl2s8ScMc
 //https://stackoverflow.com/questions/54264787/unit-testing-with-ef-core-and-in-memory-database

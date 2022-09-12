@@ -1,5 +1,5 @@
 ﻿using System;
-namespace MovieIntergrationTests.Features.Movies
+namespace MovieIntegrationTests.Features.Movies
 {
     public class CreateMovieCommandHandlerTests : IClassFixture<MovieDbContextFixture>
     {

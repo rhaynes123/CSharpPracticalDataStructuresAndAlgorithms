@@ -6,8 +6,10 @@ using MediatR;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Movies.Data;
+using OpenQA.Selenium;
+using Microsoft.AspNetCore.TestHost;
 
-namespace MovieIntergrationTests.Pages
+namespace MovieIntegrationTests.Pages
 {
     public class MovieWebApplicationFactory: WebApplicationFactory<Program>
     {
@@ -15,9 +17,16 @@ namespace MovieIntergrationTests.Pages
         // https://lee-jdale.medium.com/testing-in-net-with-webapplicationfactory-including-minimal-apis-ddcb4ed0aef5
         // https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-6.0
         // https://github.com/dotnet-architecture/eShopOnWeb/blob/main/tests/FunctionalTests/Web/WebTestFixture.cs
+        // https://visualstudiomagazine.com/articles/2017/07/01/testserver.aspx
+        public TestServer testServer;
         public MovieWebApplicationFactory()
         {
            
+        }
+
+        protected override Microsoft.AspNetCore.Hosting.IWebHostBuilder? CreateWebHostBuilder()
+        {
+            return base.CreateWebHostBuilder();
         }
         protected override IHost CreateHost(IHostBuilder builder)
         {
@@ -33,7 +42,7 @@ namespace MovieIntergrationTests.Pages
                     .UseApplicationServiceProvider(scopedServices)
                     .Options;
                 });
-
+                testServer = new TestServer(builder);
                 services.AddMediatR(typeof(Program));
             });
             return base.CreateHost(builder);

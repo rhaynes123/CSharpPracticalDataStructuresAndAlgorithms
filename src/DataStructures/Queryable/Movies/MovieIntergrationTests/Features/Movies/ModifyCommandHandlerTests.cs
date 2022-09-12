@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace MovieIntergrationTests.Features.Movies
+namespace MovieIntegrationTests.Features.Movies
 {
     public class ModifyCommandHandlerTests :IClassFixture<MovieDbContextFixture>
     {
