@@ -1,47 +1,57 @@
 ﻿<Properties StartupConfiguration="{EDB3FB82-E3A4-4F58-B484-E6FA15A337EA}|Default">
-  <MonoDevelop.Ide.ItemProperties.MoviesBenchmark FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Movies/Features/Models/Enums/Genre.cs">
+  <MonoDevelop.Ide.ItemProperties.Movies PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Pages/All.cshtml.cs" relfile="Movies/Pages/All.cshtml.cs" line="44" column="1" />
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesTests/Features/Movies/MovieDbContexFixture.cs" relfile="MoviesTests/Features/Movies/MovieDbContexFixture.cs" line="17" column="1" />
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesTests/Features/Movies/GetAllMovieQueryHandlerTests.cs" relfile="MoviesTests/Features/Movies/GetAllMovieQueryHandlerTests.cs" line="20" column="1" />
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/Features/Movies/GetAllMovieQueryHandlerTests.cs" relfile="MovieIntergrationTests/Features/Movies/GetAllMovieQueryHandlerTests.cs" line="22" column="1" />
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/Features/Movies/MovieDbContexFixture.cs" relfile="MovieIntergrationTests/Features/Movies/MovieDbContexFixture.cs" line="38" column="1" />
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/Pages/IndexPageTests.cs" relfile="MovieIntergrationTests/Pages/IndexPageTests.cs" line="25" column="1" />
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/Pages/IndexPageTests.cs" relfile="MovieIntergrationTests/Pages/IndexPageTests.cs" line="54" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.MoviesBenchmark PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieIntergrationTests/Pages/IndexPageTests.cs">
     <Files>
-      <File FileName="Movies/Pages/All.cshtml.cs" Line="42" Column="1" />
-      <File FileName="Movies/Features/Models/Enums/Genre.cs" Line="12" Column="20" />
-      <File FileName="Movies/Pages/Edit.cshtml.cs" Line="43" Column="10" />
-      <File FileName="Movies/Features/Models/Movie.cs" Line="8" Column="23" />
-      <File FileName="Movies/Pages/All.cshtml" Line="15" Column="104" />
-      <File FileName="Movies/Pages/Edit.cshtml" Line="30" Column="110" />
-      <File FileName="Movies/Pages/Create.cshtml" Line="28" Column="110" />
-      <File FileName="Movies/Migrations/20220905004645_MakeGenreEnum.cs" Line="1" Column="1" />
+      <File FileName="Movies/Program.cs" Line="1" Column="1" />
+      <File FileName="Movies/Movies.csproj" Line="51" Column="58" />
+      <File FileName="MovieIntergrationTests/Features/Movies/CreateMovieCommandHandlerTests.cs" Line="18" Column="24" />
+      <File FileName="MovieIntergrationTests/Pages/MovieWebApplicationFactory.cs" Line="45" Column="45" />
+      <File FileName="MovieIntergrationTests/Pages/IndexPageTests.cs" Line="42" Column="137" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Movies" expanded="True">
+            <Node name="MovieIntergrationTests" expanded="True">
+              <Node name="Features" expanded="True">
+                <Node name="Movies" expanded="True" />
+              </Node>
+              <Node name="Pages" expanded="True" />
+            </Node>
             <Node name="Movies" expanded="True">
               <Node name="Features" expanded="True">
                 <Node name="Models" expanded="True">
                   <Node name="Enums" expanded="True" />
                 </Node>
               </Node>
-              <Node name="Migrations" expanded="True" />
-              <Node name="Pages" expanded="True">
-                <Node name="All.cshtml" expanded="True" />
-                <Node name="Create.cshtml" expanded="True" />
-                <Node name="Edit.cshtml" expanded="True" />
-              </Node>
-              <Node name="appsettings.json" expanded="True" />
             </Node>
+            <Node name="MoviesBenchmark" expanded="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Movies" expanded="True" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Movies PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Pages/All.cshtml.cs" relfile="Movies/Pages/All.cshtml.cs" line="44" column="1" />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -42,7 +42,6 @@ namespace MovieIntegrationTests.Pages
                     .UseApplicationServiceProvider(scopedServices)
                     .Options;
                 });
-                testServer = new TestServer(builder);
                 services.AddMediatR(typeof(Program));
             });
             return base.CreateHost(builder);

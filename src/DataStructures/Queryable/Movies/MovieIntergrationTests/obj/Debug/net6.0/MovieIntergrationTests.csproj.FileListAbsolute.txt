@@ -670,3 +670,4 @@
 /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/bin/Debug/net6.0/Microsoft.Extensions.Hosting.dll
 /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/bin/Debug/net6.0/System.IO.Pipelines.dll
 /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/obj/Debug/net6.0/MvcTestingAppManifest.json
+/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/bin/Debug/net6.0/WebDriver.dll

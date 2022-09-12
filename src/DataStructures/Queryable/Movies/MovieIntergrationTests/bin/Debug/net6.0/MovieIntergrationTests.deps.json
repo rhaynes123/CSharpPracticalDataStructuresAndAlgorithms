@@ -42,6 +42,7 @@
           "Microsoft.EntityFrameworkCore.InMemory": "6.0.8",
           "Microsoft.NET.Test.Sdk": "17.3.1",
           "Movies": "1.0.0",
+          "Selenium.WebDriver": "4.4.0",
           "Selenium.WebDriver.ChromeDriver": "105.0.5195.5200",
           "coverlet.collector": "3.1.2",
           "xunit": "2.4.2",
@@ -2542,6 +2543,20 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
+      "Selenium.WebDriver/4.4.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/net5.0/WebDriver.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/WebDriver.dll": {}
+        }
+      },
       "Selenium.WebDriver.ChromeDriver/105.0.5195.5200": {},
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.6": {
         "dependencies": {
@@ -6299,6 +6314,13 @@
       "sha512": "sha512-VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "Selenium.WebDriver/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gg/fFUW+SQEdOMaZvkKSau6m4xbMG2qBW6cCW6nGW1CtO0coA8OLYpHcQLpsKcc6q68i/Uq1wjtiVfiNXykJUQ==",
+      "path": "selenium.webdriver/4.4.0",
+      "hashPath": "selenium.webdriver.4.4.0.nupkg.sha512"
     },
     "Selenium.WebDriver.ChromeDriver/105.0.5195.5200": {
       "type": "package",

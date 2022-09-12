@@ -288,3 +288,4 @@
 /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/bin/Debug/net6.0/MediatR.dll
 /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/bin/Debug/net6.0/MediatR.Contracts.dll
 /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/bin/Debug/net6.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll

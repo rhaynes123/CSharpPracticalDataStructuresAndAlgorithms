@@ -2512,6 +2512,18 @@
           }
         }
       },
+      "Selenium.WebDriver/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/net5.0/WebDriver.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/WebDriver.dll": {}
+        }
+      },
       "Selenium.WebDriver.ChromeDriver/105.0.5195.5200": {
         "type": "package",
         "build": {
@@ -8572,6 +8584,25 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
+    "Selenium.WebDriver/4.4.0": {
+      "sha512": "gg/fFUW+SQEdOMaZvkKSau6m4xbMG2qBW6cCW6nGW1CtO0coA8OLYpHcQLpsKcc6q68i/Uq1wjtiVfiNXykJUQ==",
+      "type": "package",
+      "path": "selenium.webdriver/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net45/WebDriver.dll",
+        "lib/net46/WebDriver.dll",
+        "lib/net47/WebDriver.dll",
+        "lib/net48/WebDriver.dll",
+        "lib/net5.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.1/WebDriver.dll",
+        "selenium.webdriver.4.4.0.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
+    },
     "Selenium.WebDriver.ChromeDriver/105.0.5195.5200": {
       "sha512": "/OV++ThfRp7YcWilvbbfeZQDwtlQr0Gbkczxg+ll1EvTfxI02yjK52DSNyy39NkgsD4/643PZ2icAdTBSylzAw==",
       "type": "package",
@@ -12821,6 +12852,7 @@
       "Microsoft.EntityFrameworkCore.InMemory >= 6.0.8",
       "Microsoft.NET.Test.Sdk >= 17.3.1",
       "Movies >= 1.0.0",
+      "Selenium.WebDriver >= 4.4.0",
       "Selenium.WebDriver.ChromeDriver >= 105.0.5195.5200",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.2",
@@ -12896,6 +12928,10 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.3.1, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[4.4.0, )"
           },
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",

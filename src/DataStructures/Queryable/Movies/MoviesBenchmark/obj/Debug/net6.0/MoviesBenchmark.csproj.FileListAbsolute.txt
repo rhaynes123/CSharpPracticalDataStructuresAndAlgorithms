@@ -314,3 +314,4 @@
 /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/obj/Debug/net6.0/MoviesBenchmark.pdb
 /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/obj/Debug/net6.0/MoviesBenchmark.genruntimeconfig.cache
 /Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/obj/Debug/net6.0/ref/MoviesBenchmark.dll
+/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll
