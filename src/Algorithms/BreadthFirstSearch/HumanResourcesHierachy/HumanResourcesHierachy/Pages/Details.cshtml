@@ -1,0 +1,78 @@
+@page
+@model HumanResourcesHierachy.Pages.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+@{
+#region
+// https://www.mikesdotnetting.com/article/208/practical-recursion-in-asp-net-web-pages-with-webmatrix
+// https://www.koderdojo.com/blog/breadth-first-search-and-shortest-path-in-csharp-and-net-core
+// https://github.com/RikamPalkar/DSA/blob/main/Graphs/Graph%20Traversal%20Algorithms/BFS/BFS%20Recursion.cs
+// https://stackoverflow.com/questions/5111645/breadth-first-traversal
+#endregion
+}
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Employee.Employee.EmployeeNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Employee.Employee.EmployeeNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Employee.Employee.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Employee.Employee.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Employee.Employee.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Employee.Employee.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Employee.Employee.Manager)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Employee.Employee.Manager.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Employee.Employee.DateOfBirth)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Employee.Employee.DateOfBirth.ToShortDateString()
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Employee.Employee.CreatedDateTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Employee.Employee.CreatedDateTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <h3>Subordinates</h3>
+        @if(Model.Employee.Subordinates is not null && Model.Employee.Subordinates.Any())
+        {
+            <ul>
+                @foreach (var employee in Model.Employee.Employee.Subordinates)
+                {
+                        string fullName = $"{employee.FirstName} {employee.LastName}";
+                        <li>@fullName</li>
+                }
+            </ul>
+        }
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Employee?.Employee.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
+@{
+
+ }

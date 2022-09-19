@@ -1,0 +1,62 @@
+@page
+@model HumanResourcesHierachy.Pages.CreateModel
+@using HumanResourcesHierachy.Features.Employees.Models.Enums
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Employee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Employee.EmployeeNumber" class="control-label"></label>
+                <input asp-for="Employee.EmployeeNumber" class="form-control" value="@Guid.NewGuid()" hidden/>
+                <span asp-validation-for="Employee.EmployeeNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.FirstName" class="control-label"></label>
+                <input asp-for="Employee.FirstName" class="form-control" />
+                <span asp-validation-for="Employee.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.LastName" class="control-label"></label>
+                <input asp-for="Employee.LastName" class="form-control" />
+                <span asp-validation-for="Employee.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.ManagerId" class="control-label"></label>
+                <select asp-for="Employee.ManagerId" class ="form-control" asp-items="ViewBag.ManagerId">
+                    <option value="">Please Select</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.Role" class="control-label"></label>
+                <select asp-for="Employee.Role" class="form-control" asp-items="Html.GetEnumSelectList<Role>()"></select>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.DateOfBirth" class="control-label"></label>
+                <input asp-for="Employee.DateOfBirth" class="form-control" type="date" value="@DateTime.Now" />
+                <span asp-validation-for="Employee.DateOfBirth" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
