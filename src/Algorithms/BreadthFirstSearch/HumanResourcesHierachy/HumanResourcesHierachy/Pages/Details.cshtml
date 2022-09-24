@@ -1,5 +1,7 @@
 @page
 @model HumanResourcesHierachy.Pages.DetailsModel
+@using HumanResourcesHierachy.Features.Employees.Models
+
 
 @{
     ViewData["Title"] = "Details";
@@ -7,13 +9,30 @@
 
 <h1>Details</h1>
 @{
-#region
-// https://www.mikesdotnetting.com/article/208/practical-recursion-in-asp-net-web-pages-with-webmatrix
-// https://www.koderdojo.com/blog/breadth-first-search-and-shortest-path-in-csharp-and-net-core
-// https://github.com/RikamPalkar/DSA/blob/main/Graphs/Graph%20Traversal%20Algorithms/BFS/BFS%20Recursion.cs
-// https://stackoverflow.com/questions/5111645/breadth-first-traversal
-#endregion
+    #region
+    // https://www.mikesdotnetting.com/article/208/practical-recursion-in-asp-net-web-pages-with-webmatrix
+    // https://www.koderdojo.com/blog/breadth-first-search-and-shortest-path-in-csharp-and-net-core
+    // https://github.com/RikamPalkar/DSA/blob/main/Graphs/Graph%20Traversal%20Algorithms/BFS/BFS%20Recursion.cs
+    // https://stackoverflow.com/questions/5111645/breadth-first-traversal
+    // https://www.mikesdotnetting.com/article/344/what-happened-to-helpers-in-asp-net-core
+    #endregion
+    void BuildTree(ICollection<Employee> employees)
+    {
+        if (employees is not null && employees.Count is not 0)
+        {
+            <ul>
+                @foreach (var employee in employees)
+                    {
+                        string fullName = $"{employee.FirstName} {employee.LastName}";
+                    <li>@fullName</li>
+                        BuildTree(employee.Subordinates);
+                    }
+            </ul>
+        }
+
+    }
 }
+
 <div>
     <h4>Employee</h4>
     <hr />
@@ -58,21 +77,10 @@
 </div>
 <div>
     <h3>Subordinates</h3>
-        @if(Model.Employee.Subordinates is not null && Model.Employee.Subordinates.Any())
-        {
-            <ul>
-                @foreach (var employee in Model.Employee.Employee.Subordinates)
-                {
-                        string fullName = $"{employee.FirstName} {employee.LastName}";
-                        <li>@fullName</li>
-                }
-            </ul>
-        }
-</div>
+   @{ BuildTree(Model.Employee.Employee.Subordinates);}
+    
+    </div>
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Employee?.Employee.Id">Edit</a> |
     <a asp-page="./Index">Back to List</a>
 </div>
-@{
-
- }

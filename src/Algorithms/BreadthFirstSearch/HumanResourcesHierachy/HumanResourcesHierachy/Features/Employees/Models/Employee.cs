@@ -19,7 +19,7 @@ public sealed class Employee
     [Required]
     public string? LastName { get; set; }
     public int? ManagerId { get; set; }
-    public Employee Manager { get; set; }
+    public Employee Manager { get; set; } = null!;
     [Required]
     [DisplayFormat(DataFormatString = "{0:dd MMM yyyy}")]
     public DateOnly DateOfBirth { get; set; }

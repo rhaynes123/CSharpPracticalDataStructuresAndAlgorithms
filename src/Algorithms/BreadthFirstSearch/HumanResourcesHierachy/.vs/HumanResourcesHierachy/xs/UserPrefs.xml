@@ -1,4 +1,48 @@
 ﻿<Properties StartupConfiguration="{7534E2E6-18EB-4CE4-AC31-2BF25262A9F0}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/BreadthFirstSearch/HumanResourcesHierachy/HumanResourcesHierachy/Features/Employees/Repositories/EmployeeRepository.cs" relfile="HumanResourcesHierachy/Features/Employees/Repositories/EmployeeRepository.cs" line="40" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.HumanResourcesHierachy PreferredExecutionTarget="/Applications/Safari.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HumanResourcesHierachy FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HumanResourcesHierachy/Pages/Create.cshtml.cs">
+    <Files>
+      <File FileName="HumanResourcesHierachy/Pages/Index.cshtml.cs" Line="18" Column="6" />
+      <File FileName="HumanResourcesHierachy/Pages/Details.cshtml.cs" Line="1" Column="1" />
+      <File FileName="HumanResourcesHierachy/Pages/Create.cshtml.cs" Line="50" Column="10" />
+      <File FileName="HumanResourcesHierachy/Features/Employees/Models/Employee.cs" Line="19" Column="15" />
+      <File FileName="HumanResourcesHierachy/Features/Employees/Repositories/EmployeeRepository.cs" Line="63" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HumanResourcesHierachy" expanded="True">
+            <Node name="HumanResourcesHierachy" expanded="True">
+              <Node name="DAL" expanded="True" />
+              <Node name="Features" expanded="True">
+                <Node name="Employees" expanded="True">
+                  <Node name="DTOS" expanded="True" />
+                  <Node name="Models" expanded="True" />
+                  <Node name="Repositories" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="Create.cshtml" expanded="True">
+                  <Node name="Create.cshtml.cs" selected="True" />
+                </Node>
+                <Node name="Details.cshtml" expanded="True" />
+                <Node name="Index.cshtml" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

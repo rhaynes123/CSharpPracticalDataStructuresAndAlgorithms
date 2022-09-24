@@ -11,7 +11,7 @@ namespace HumanResourcesHierachy.Features.Employees.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public Employee Employee { get; set; }
+        public Employee Employee { get; set; } = default!;
         [Required]
         public Enums.Role Role { get; set; }
         [Required]

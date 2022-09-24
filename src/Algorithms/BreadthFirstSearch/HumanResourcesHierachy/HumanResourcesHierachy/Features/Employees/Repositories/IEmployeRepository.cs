@@ -8,9 +8,7 @@ namespace HumanResourcesHierachy.Features.Employees.Repositories
     {
         Task<IQueryable<Employee>> GetAllEmployeesAsync();
         Task<EmployeeDTO> GetEmployeeByIdAsync(int Id);
-        Task<EmployeeDTO> GetEmployeeByIdAsync(Guid Number);
         Task<bool> CreateEmployeeAsync(Employee employee);
-        Task<bool> ModifyEmployeeAsync(Employee employee);
     }
 }
 

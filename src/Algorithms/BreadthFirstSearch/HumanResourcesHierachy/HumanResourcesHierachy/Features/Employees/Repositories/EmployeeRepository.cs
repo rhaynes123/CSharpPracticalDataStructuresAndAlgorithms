@@ -48,11 +48,6 @@ namespace HumanResourcesHierachy.Features.Employees.Repositories
                 return null!;
             }
 
-            //Hoping to not need this call
-            //var subordinates = await _dbContext.Employees
-            //    .Where(emp => emp.ManagerId == employee.Id)
-            //    .ToArrayAsync();
-
             var employeeRoles = await _dbContext.EmployeeRoles
                 .Where(empRole => empRole.Employee.Id == Id)
                 .OrderByDescending( role => role)
@@ -63,15 +58,6 @@ namespace HumanResourcesHierachy.Features.Employees.Repositories
             return new EmployeeDTO(employee: employee!, currentRole: currentRole!.Role, roles: employeeRoles, subordinates: employee.Subordinates);
         }
 
-        public Task<EmployeeDTO> GetEmployeeByIdAsync(Guid Number)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> ModifyEmployeeAsync(Employee employee)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
 

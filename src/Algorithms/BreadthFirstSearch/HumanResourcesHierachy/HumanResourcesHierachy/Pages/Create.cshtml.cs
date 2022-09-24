@@ -30,7 +30,8 @@ public class CreateModel : PageModel
             .Any(r => r.Role == Role.Manager
             || r.Role == Role.CTO
             || r.Role == Role.CEO
-            || r.Role == Role.SeniorSoftwareEngineer));
+            || r.Role == Role.SeniorSoftwareEngineer
+            && r.DeactivatedDateTime == null));
 
         ViewData["ManagerId"] = new SelectList(managers, "Id", "FirstName");
         return Page();
