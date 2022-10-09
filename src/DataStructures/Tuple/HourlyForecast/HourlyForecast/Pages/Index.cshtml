@@ -1,0 +1,83 @@
+﻿@page
+@model IndexModel
+@{
+    #region
+    /*
+ * https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+ * https://www.w3schools.com/html/html5_geolocation.asp
+ * https://www.freecodecamp.org/news/how-to-get-user-location-with-javascript-geolocation-api/
+ * https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
+ * https://www.javascripttutorial.net/web-apis/javascript-geolocation/
+ * https://www.javascripttutorial.net/es6/javascript-class/
+ * https://flaviocopes.com/fix-cannot-use-import-outside-module/
+ * https://stackoverflow.com/questions/12989741/the-property-value-does-not-exist-on-value-of-type-htmlelement
+
+*/
+    #endregion
+    ViewData["Title"] = "Home page";
+}
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<div class="text-center">
+    <h1 class="display-4">Welcome To Your Local Forecast</h1>
+</div>
+@Html.AntiForgeryToken()
+<div class="spinner-border text-info" role="status" id="spnId">
+</div>
+<div id="errorAlertId" class="alert alert-danger" hidden role="alert">
+
+</div>
+<form method="get">
+
+    <input asp-for="Longitude" />
+    <input asp-for="Latitude" />
+
+    <button id="getweatherBtn" class="btn btn-success" type="submit">Get Weather</button>
+    <div id="forecasts">
+        <table class="table table-borded">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Feels Like</th>
+                    <th>Temp</th>
+                    <th>Main</th>
+                    <th>Description</th>
+                    <th>Symbol</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.weatherResponse is not null
+                      && Model.weatherResponse.Weathers is not null
+                      && Model.weatherResponse.Main is not null
+                      && Model.weatherResponse.Weathers.Any())
+                    {
+                        <tr>
+                            <td>@Model.weatherResponse.Main.FeelsLike</td>
+                            <td>@Model.weatherResponse.Main.Temp</td>
+                            @{ var weatherList = Model.weatherResponse.Weathers.ToArray(); }
+                            
+                            @foreach (var item in weatherList)
+                            {
+                                string imageurl = $"http://openweathermap.org/img/w/{item.Icon}.png";
+                                <td>@item.Main</td>
+                                <td>@item.Description</td>
+                                <td><img src="@imageurl" /></td>
+                            }
+                        </tr>
+
+                    }
+            </tbody>
+        </table>
+    </div>
+</form>
+@section scripts
+{
+    <script>
+        $(function () {
+            try {
+                getCurrentLocation();
+            }
+            catch (error) {
+                raiseError(error.message);
+            }
+        });
+    </script>
+}

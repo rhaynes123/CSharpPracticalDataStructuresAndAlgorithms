@@ -22,11 +22,11 @@
         {
             <ul>
                 @foreach (var employee in employees)
-                    {
-                        string fullName = $"{employee.FirstName} {employee.LastName}";
+                {
+                    string fullName = $"{employee.FirstName} {employee.LastName}";
                     <li>@fullName</li>
-                        BuildTree(employee.Subordinates);
-                    }
+                    BuildTree(employee.Subordinates);
+                }
             </ul>
         }
 
