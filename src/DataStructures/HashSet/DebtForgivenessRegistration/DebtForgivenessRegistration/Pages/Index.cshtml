@@ -1,0 +1,88 @@
+﻿@page "{handler?}"
+@model IndexModel
+@{
+    #region
+    /*
+    * https://jakeydocs.readthedocs.io/en/latest/mvc/views/partial.html
+    * https://www.mikesdotnetting.com/article/349/razor-pages-and-bootstrap-modal-master-details
+    * https://www.learnrazorpages.com/razor-pages/partial-pages
+    * http://binaryintellect.net/articles/65cfe9cd-b98f-48b7-825d-31ae8008a91a.aspx
+    * https://www.aspsnippets.com/Articles/ASPNet-Core-Razor-Pages-Load-Partial-View-using-jQuery-AJAX.aspx
+    * https://javascript.info/script-async-defer
+    * https://www.learnrazorpages.com/razor-pages/routing
+    * https://learn.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-6.0&tabs=visual-studio
+    * https://stackoverflow.com/questions/50815280/razor-pages-form-page-handler-not-working-with-get-method
+    */
+    #endregion
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To The Loan Debt Forgiveness Program</h1>
+</div>
+@Html.AntiForgeryToken()
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Social</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.customers is not null && Model.customers.Any())
+            {
+                foreach (var customer in Model.customers)
+                {
+                    <tr>
+                        <td>@customer.Id</td>
+                        <td>@customer.FirstName</td>
+                        <td>@customer.LastName</td>
+                        <td>@customer.SocialSecurityNumber</td>
+                        <td><button type="button" id="custDetailBtn" class="btn btn-info" data-toggle="modal" data-target="#detailModal" data-id="@customer.Id">Details</button></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<!-- Modal -->
+<div id="detailModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End Modal-->
+
+@section scripts
+{
+    <script defer type="text/javascript">
+        $(function () {
+            $("#custDetailBtn").on('click', function () {
+                let customerId = $(this).data('id');
+                LoadDetailModal(customerId);
+            });
+        });
+    </script>
+}
