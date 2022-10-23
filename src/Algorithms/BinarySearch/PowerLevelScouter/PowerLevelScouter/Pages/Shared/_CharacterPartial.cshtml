@@ -1,0 +1,62 @@
+﻿
+@using PowerLevelScouter.Models
+@model IEnumerable<Character>
+@{
+    /*https://learn.microsoft.com/en-us/aspnet/core/mvc/views/partial?view=aspnetcore-6.0
+    * https://stackoverflow.com/questions/62377426/model-in-partial-view-is-null-asp-net-core-razor-pages
+    */
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Power Level</th>
+                <th>How Strong are They?</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model is null || !Model.Any())
+            {
+
+            }
+            else
+            {
+                @foreach (var character in Model)
+                {
+                    <tr>
+                        <td>@character.Id</td>
+                        <td>@character.Name</td>
+                        <td>@character.PowerLevel</td>
+                        <td><button class="btn btn-info" type="submit" id="btnRank" onclick="GetRank('@character.Id', '@ViewData["UrlToPostTo"]')" data-toggle="modal" data-target="#detailModal" data-id="@character.Id">Rank Em</button></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div id="detailModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <div class="spinner-border text-info" role="status"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End Modal-->

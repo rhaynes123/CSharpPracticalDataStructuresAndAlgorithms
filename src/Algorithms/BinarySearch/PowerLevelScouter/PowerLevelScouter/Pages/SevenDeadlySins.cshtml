@@ -1,0 +1,29 @@
+@page
+@model PowerLevelScouter.Pages.SevenDeadlySinsModel
+@{
+    ViewData["Title"] = "SevenDeadlySins";
+}
+
+<h1>SevenDeadlySins</h1>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<form method="get">
+
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="pull-right">
+        <input asp-for="PowerLevelToSearch" /><button id="btnSearch" type="submit" class="btn btn-success">Search By Power Level..</button>
+    </div>
+</form>
+@{
+    if (Model.Charaters is not null && Model.Charaters.Any())
+    {
+        await Html.RenderPartialAsync("~/Pages/Shared/_CharacterPartial.cshtml", Model.Charaters, new ViewDataDictionary(ViewData)
+        {
+            {"UrlToPostTo","/SevenDeadlySins?handler=OnPostAsync" }
+        });
+    }
+
+}

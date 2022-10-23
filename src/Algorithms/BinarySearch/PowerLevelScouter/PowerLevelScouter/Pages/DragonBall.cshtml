@@ -1,0 +1,31 @@
+@page
+@model PowerLevelScouter.Pages.DragonBallModel
+@{
+    ViewData["Title"] = "DragonBall";
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<h1>DragonBall</h1>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<form method="get">
+
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="pull-right">
+        <input asp-for="PowerLevelToSearch" /><button id="btnSearch" type="submit" class="btn btn-success">Search By Power Level..</button>
+    </div>
+</form>
+@{
+    if (Model.Charaters is not null && Model.Charaters.Any())
+    {
+        await Html.RenderPartialAsync("~/Pages/Shared/_CharacterPartial.cshtml", Model.Charaters, new ViewDataDictionary(ViewData)
+        {
+            {"UrlToPostTo","/DragonBall?handler=OnPostAsync" }
+        });
+    }
+
+}
