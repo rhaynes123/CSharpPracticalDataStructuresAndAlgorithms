@@ -1,7 +1,7 @@
 ﻿using System;
 namespace PowerLevelScouter.Models
 {
-    public record Character(int Id, string Name, int PowerLevel) : IComparable<Character>
+    public record Character(int Id, string Name, int PowerLevel, string ImagePath) : IComparable<Character>
     {
         /// <summary>
         /// Compares power level and intends to do so in a descending order.

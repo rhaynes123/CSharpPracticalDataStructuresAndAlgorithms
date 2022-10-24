@@ -1,19 +1,14 @@
 ﻿<Properties StartupConfiguration="{7534E2E6-18EB-4CE4-AC31-2BF25262A9F0}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/BreadthFirstSearch/HumanResourcesHierachy/HumanResourcesHierachy/Features/Employees/Repositories/EmployeeRepository.cs" relfile="HumanResourcesHierachy/Features/Employees/Repositories/EmployeeRepository.cs" line="40" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.HumanResourcesHierachy PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HumanResourcesHierachy/Pages/Create.cshtml.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HumanResourcesHierachy/Pages/Details.cshtml">
     <Files>
-      <File FileName="HumanResourcesHierachy/Pages/Index.cshtml.cs" Line="18" Column="6" />
+      <File FileName="HumanResourcesHierachy/Features/Employees/Models/Employee.cs" Line="10" Column="22" />
+      <File FileName="HumanResourcesHierachy/Features/Employees/GetAllEmployeesQueryHandler.cs" Line="1" Column="1" />
+      <File FileName="HumanResourcesHierachy/Pages/Index.cshtml.cs" Line="1" Column="1" />
       <File FileName="HumanResourcesHierachy/Pages/Details.cshtml.cs" Line="1" Column="1" />
-      <File FileName="HumanResourcesHierachy/Pages/Create.cshtml.cs" Line="50" Column="10" />
-      <File FileName="HumanResourcesHierachy/Features/Employees/Models/Employee.cs" Line="19" Column="15" />
-      <File FileName="HumanResourcesHierachy/Features/Employees/Repositories/EmployeeRepository.cs" Line="63" Column="35" />
+      <File FileName="HumanResourcesHierachy/Pages/Create.cshtml.cs" Line="20" Column="43" />
+      <File FileName="HumanResourcesHierachy/Pages/Details.cshtml" Line="7" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,15 +20,12 @@
                 <Node name="Employees" expanded="True">
                   <Node name="DTOS" expanded="True" />
                   <Node name="Models" expanded="True" />
-                  <Node name="Repositories" expanded="True" />
                 </Node>
               </Node>
               <Node name="Pages" expanded="True">
-                <Node name="Create.cshtml" expanded="True">
-                  <Node name="Create.cshtml.cs" selected="True" />
-                </Node>
-                <Node name="Details.cshtml" expanded="True" />
-                <Node name="Index.cshtml" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="Create.cshtml" expanded="True" />
+                <Node name="Details.cshtml" expanded="True" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -44,5 +36,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HumanResourcesHierachy PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/BreadthFirstSearch/HumanResourcesHierachy/HumanResourcesHierachy/Pages/Shared/_SubordinateHierachyTreePartial.cshtml" relfile="HumanResourcesHierachy/Pages/Shared/_SubordinateHierachyTreePartial.cshtml" line="16" column="1" />
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/Algorithms/BreadthFirstSearch/HumanResourcesHierachy/HumanResourcesHierachy/Pages/Shared/_SubordinateHierachyTreePartial.cshtml" relfile="HumanResourcesHierachy/Pages/Shared/_SubordinateHierachyTreePartial.cshtml" line="35" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using PowerLevelScouter.DTOs;
 using PowerLevelScouter.Models;
 using PowerLevelScouter.Repositories;
 
@@ -72,7 +73,7 @@ namespace PowerLevelScouter.Pages
                 }
                 Array.Sort(sevendeadlysinsCharacters);
                 int characterIndex = Array.BinarySearch(sevendeadlysinsCharacters, characterToRank);
-                return new OkObjectResult(characterIndex + 1);
+                return new OkObjectResult(new CharacterDetailResponse(name: characterToRank.Name, rank: characterIndex + 1, imagePath: characterToRank.ImagePath));
             }
             catch (Exception ex)
             {

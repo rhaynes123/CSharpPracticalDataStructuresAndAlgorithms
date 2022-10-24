@@ -1,17 +1,15 @@
 ﻿<Properties StartupConfiguration="{8B60D70D-EF0B-47A4-93A0-D074D1935A29}|Default">
-  <MonoDevelop.Ide.ItemProperties.HourlyForecast PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HourlyForecast PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="HourlyForecast/Pages/Index.cshtml.cs">
     <Files>
-      <File FileName="HourlyForecast/Pages/Index.cshtml.cs" Line="75" Column="10" />
-      <File FileName="HourlyForecast/Features/Weather/DTOs/WeatherResponse.cs" Line="1" Column="1" />
-      <File FileName="HourlyForecast/Features/Weather/DTOs/Weather.cs" Line="1" Column="1" />
-      <File FileName="HourlyForecast/Features/Weather/DTOs/Main.cs" Line="1" Column="1" />
-      <File FileName="HourlyForecast/Pages/Index.cshtml" Line="7" Column="1" />
-      <File FileName="HourlyForecast/scripts/functions.ts" Line="27" Column="28" />
-      <File FileName="HourlyForecast/Features/Location/DTOs/LocationRequest.cs" Line="1" Column="1" />
-      <File FileName="HourlyForecast/Pages/Shared/_Layout.cshtml" Line="48" Column="86" />
+      <File FileName="HourlyForecast/Pages/Index.cshtml.cs" Line="67" Column="27" />
+      <File FileName="HourlyForecast/Pages/Index.cshtml" Line="11" Column="60" />
+      <File FileName="HourlyForecast/Features/Weather/Services/WeatherService.cs" Line="21" Column="58" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,11 +27,8 @@
               </Node>
               <Node name="Pages" expanded="True">
                 <Node name="Shared" expanded="True" />
-                <Node name="Index.cshtml" expanded="True">
-                  <Node name="Index.cshtml.cs" selected="True" />
-                </Node>
+                <Node name="Index.cshtml" expanded="True" />
               </Node>
-              <Node name="scripts" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="js" expanded="True" />
               </Node>
@@ -46,11 +41,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Tuple/HourlyForecast/HourlyForecast/Pages/Index.cshtml.cs" relfile="HourlyForecast/Pages/Index.cshtml.cs" line="71" column="1" />
-      <Breakpoint file="/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Tuple/HourlyForecast/HourlyForecast/Pages/Index.cshtml.cs" relfile="HourlyForecast/Pages/Index.cshtml.cs" line="46" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

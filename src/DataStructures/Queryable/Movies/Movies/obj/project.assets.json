@@ -10376,11 +10376,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj",
+      "projectUniqueName": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj",
       "projectName": "Movies",
-      "projectPath": "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj",
+      "projectPath": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj",
       "packagesPath": "/Users/richardhaynes/.nuget/packages/",
-      "outputPath": "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/obj/",
+      "outputPath": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/richardhaynes/.nuget/NuGet/NuGet.Config"
@@ -10472,7 +10472,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

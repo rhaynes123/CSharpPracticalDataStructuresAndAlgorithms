@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/MovieIntergrationTests.csproj": {}
+    "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/MovieIntergrationTests.csproj": {}
   },
   "projects": {
-    "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/MovieIntergrationTests.csproj": {
+    "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/MovieIntergrationTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/MovieIntergrationTests.csproj",
+        "projectUniqueName": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/MovieIntergrationTests.csproj",
         "projectName": "MovieIntergrationTests",
-        "projectPath": "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/MovieIntergrationTests.csproj",
+        "projectPath": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/MovieIntergrationTests.csproj",
         "packagesPath": "/Users/richardhaynes/.nuget/packages/",
-        "outputPath": "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/obj/",
+        "outputPath": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MovieIntergrationTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/richardhaynes/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj": {
-                "projectPath": "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj"
+              "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj": {
+                "projectPath": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj"
               }
             }
           }
@@ -112,18 +112,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj": {
+    "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj",
+        "projectUniqueName": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj",
         "projectName": "Movies",
-        "projectPath": "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj",
+        "projectPath": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj",
         "packagesPath": "/Users/richardhaynes/.nuget/packages/",
-        "outputPath": "/Users/richardhaynes/Developer/Projects/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/obj/",
+        "outputPath": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/richardhaynes/.nuget/NuGet/NuGet.Config"
@@ -215,7 +215,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }
