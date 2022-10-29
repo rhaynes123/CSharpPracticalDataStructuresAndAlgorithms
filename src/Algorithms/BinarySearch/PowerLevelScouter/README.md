@@ -152,3 +152,45 @@ public async Task<IActionResult> OnGetAsync()
             return Page();
         }
 ```
+# The REALITY
+
+OK now that we have gone over how you could use a Binary Search its time for some reality. There are other options to get these same out comes. First instead of using any default Sort method either on Array or List I can use the OrderByDescending Linq Extension. This will allow me to no need and custom compare function on my character record. Next I can instead of using the BinarySearch I can then go and use the IndexOf function to retrive just the index of the item I'm looking for. I go into this detail not because either option is good or bad but there are always other options and more importantly there are many functions and feature in the C# language that make development much easier than using classic algorithims but only because many of these features built on top of or meant to improve those original algorithims. 
+### Updated OnPostAsync
+```C#
+ public async Task<IActionResult> OnPostAsync([FromBody] int? id)
+        {
+            if (id is null || id == default)
+            {
+                return new BadRequestResult();
+            }
+            try
+            {
+                var sevendeadlysinsCharacters = await repository.GetCharactersAsync();
+                var characterToRank = sevendeadlysinsCharacters.FirstOrDefault(character => character.Id == id);
+                if (characterToRank is null || characterToRank == default)
+                {
+                    return NotFound();
+                }
+                var ordered = sevendeadlysinsCharacters.OrderByDescending(character => character.PowerLevel);
+                int characterIndex = Array.IndexOf(ordered.ToArray(), characterToRank);
+                return new OkObjectResult(new CharacterDetailResponse(name: characterToRank.Name, rank: characterIndex + 1, imagePath: characterToRank.ImagePath));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+```
+### Updated Character
+```C#
+using System;
+namespace PowerLevelScouter.Models
+{
+    public record Character(int Id, string Name, int PowerLevel, string ImagePath)
+    {
+        
+    }
+}
+
+
+```
