@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeveloperRoadMap.Views.StepsListPage"
+             xmlns:viewModels="using:DeveloperRoadMap.ViewModels"
+             xmlns:models="clr-namespace:DeveloperRoadMap.Models"
+             xmlns:local="clr-namespace:DeveloperRoadMap.ViewModels"
+             x:DataType="viewModels:StepsListViewModel"
+             Title="Steps">
+    <ContentPage.BindingContext>
+        <local:StepsListViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem
+            x:DataType="viewModels:StepsListViewModel"
+            Text="Step Complete"
+            Command="{Binding StepCompleteCommand}">
+        </ToolbarItem>
+        <ToolbarItem
+            x:Name="CountToolBar"
+            Text="{Binding StepCount}">
+        </ToolbarItem>
+        
+    </ContentPage.ToolbarItems>
+    
+   
+    <ListView x:Name="listView" Margin="20" ItemsSource="{Binding Steps}">
+
+        <ListView.ItemTemplate>
+
+            <DataTemplate x:DataType="models:Step">
+                <ViewCell>
+                    <StackLayout Margin="20,0,0,0" Orientation="Horizontal">
+                        <Label HorizontalOptions="StartAndExpand" Text="{Binding Description}"/>
+
+                    </StackLayout>
+
+                </ViewCell>
+
+            </DataTemplate>
+
+        </ListView.ItemTemplate>
+
+
+    </ListView>
+
+</ContentPage>

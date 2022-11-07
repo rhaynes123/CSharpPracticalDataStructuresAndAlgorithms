@@ -1,0 +1,46 @@
+is_global = true
+build_property.TargetFramework = net6.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DeveloperRoadMap
+build_property.ProjectDir = /Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Stack/DeveloperRoadMap/DeveloperRoadMap/
+
+[/Users/richardhaynes/Developer/Projects/C\#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Stack/DeveloperRoadMap/DeveloperRoadMap/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DeveloperRoadMap.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/richardhaynes/Developer/Projects/C\#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Stack/DeveloperRoadMap/DeveloperRoadMap/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DeveloperRoadMap.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/richardhaynes/Developer/Projects/C\#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Stack/DeveloperRoadMap/DeveloperRoadMap/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DeveloperRoadMap.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/richardhaynes/Developer/Projects/C\#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Stack/DeveloperRoadMap/DeveloperRoadMap/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DeveloperRoadMap.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/richardhaynes/Developer/Projects/C\#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Stack/DeveloperRoadMap/DeveloperRoadMap/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DeveloperRoadMap.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/richardhaynes/Developer/Projects/C\#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Stack/DeveloperRoadMap/DeveloperRoadMap/Views/StepsListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DeveloperRoadMap.Views.StepsListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/StepsListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/StepsListPage.xaml
