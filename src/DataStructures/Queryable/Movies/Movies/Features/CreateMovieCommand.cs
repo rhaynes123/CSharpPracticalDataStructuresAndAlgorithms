@@ -1,8 +1,8 @@
 ﻿using System;
-using MediatR;
+using Mediator;
 using Movies.Features.Models;
 
 namespace Movies.Features;
 
-public record CreateMovieCommand(Movie movie): IRequest<Movie>;
+public sealed record CreateMovieCommand(Movie movie): IRequest<Movie>;
 

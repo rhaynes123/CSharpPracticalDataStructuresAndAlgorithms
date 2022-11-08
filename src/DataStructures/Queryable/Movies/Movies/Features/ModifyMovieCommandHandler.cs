@@ -1,5 +1,5 @@
 ﻿using System;
-using MediatR;
+using Mediator;
 using Microsoft.EntityFrameworkCore;
 using Movies.Data;
 using Movies.Features.Models;
@@ -13,7 +13,7 @@ public class ModifyMovieCommandHandler : IRequestHandler<ModifyMovieCommand, Mov
         _context = context ?? throw new ArgumentNullException(nameof(context));
     }
 
-    public async Task<Movie> Handle(ModifyMovieCommand request, CancellationToken cancellationToken)
+    public async ValueTask<Movie> Handle(ModifyMovieCommand request, CancellationToken cancellationToken)
     {
         _context.Attach(request.movie).State = EntityState.Modified;
         int saved = await _context.SaveChangesAsync(cancellationToken);

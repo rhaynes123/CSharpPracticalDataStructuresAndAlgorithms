@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "g1Wc80tGuwlYIkIQUJfEB5RxxT1rIbOz1+NQWRA6KyG8/NZM0LGyORCkBLxO80IdgRuY8oi21qf6LgxDn7o2gA==",
+  "dgSpecHash": "yFUmO3BGzXuzgD4GlUPz0A+gVntM8p3DJcqsyfooJlusfh5BGWfn0IfeGnc4eEY70u4miyPz0bKRP+8d10xAIQ==",
   "success": true,
   "projectFilePath": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/Movies/Movies.csproj",
   "expectedPackageFiles": [
     "/Users/richardhaynes/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/richardhaynes/.nuget/packages/mediator.abstractions/2.0.27-rc/mediator.abstractions.2.0.27-rc.nupkg.sha512",
+    "/Users/richardhaynes/.nuget/packages/mediator.sourcegenerator/2.0.27-rc/mediator.sourcegenerator.2.0.27-rc.nupkg.sha512",
     "/Users/richardhaynes/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
     "/Users/richardhaynes/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/richardhaynes/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/10.0.1/mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",

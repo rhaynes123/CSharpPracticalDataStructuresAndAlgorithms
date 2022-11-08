@@ -1,16 +1,18 @@
-﻿<Properties StartupConfiguration="{BBF51DF9-6BB3-44C8-B1B5-2BF9BF09C672}|Default" BuildWithMSBuildOnMono="True">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+﻿<Properties BuildWithMSBuildOnMono="True" StartupConfiguration="{BBF51DF9-6BB3-44C8-B1B5-2BF9BF09C672}|Default">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.DeveloperRoadMap PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DeveloperRoadMap/App.xaml.cs">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DeveloperRoadMap/ViewModels/StepsListViewModel.cs">
     <Files>
       <File FileName="DeveloperRoadMap/MainPage.xaml.cs" Line="12" Column="40" />
-      <File FileName="DeveloperRoadMap/Views/StepsListPage.xaml.cs" Line="29" Column="24" />
       <File FileName="DeveloperRoadMap/App.xaml.cs" Line="18" Column="1" />
-      <File FileName="DeveloperRoadMap/Views/StepsListPage.xaml" Line="13" Column="31" />
-      <File FileName="DeveloperRoadMap/ViewModels/StepsListViewModel.cs" Line="28" Column="10" />
+      <File FileName="DeveloperRoadMap/ViewModels/StepsListViewModel.cs" Line="33" Column="14" />
+      <File FileName="DeveloperRoadMap/Models/Extensions/ObservableQueue.cs" Line="10" Column="10" />
+      <File FileName="DeveloperRoadMap/Views/StepsListPage.xaml" Line="22" Column="40" />
+      <File FileName="DeveloperRoadMap/Views/StepsListPage.xaml.cs" Line="10" Column="8" />
+      <File FileName="DeveloperRoadMap/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="DeveloperRoadMap/MauiProgram.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,6 +21,9 @@
           <Node name="DeveloperRoadMap" expanded="True">
             <Node name="DeveloperRoadMap" expanded="True">
               <Node name="Dependencies" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Extensions" expanded="True" />
+              </Node>
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="StepsListPage.xaml" expanded="True" />
@@ -35,7 +40,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

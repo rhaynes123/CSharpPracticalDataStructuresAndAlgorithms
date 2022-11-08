@@ -22,6 +22,8 @@
     <None Remove="Features\Models\Enums\" />
     <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
     <None Remove="Bogus" />
+    <None Remove="Mediator.SourceGenerator" />
+    <None Remove="Mediator.Abstractions" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -46,6 +48,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.8" />
+    <PackageReference Include="Mediator.SourceGenerator" Version="2.0.27-rc">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Mediator.Abstractions" Version="2.0.27-rc" />
   </ItemGroup>
   <ItemGroup>
       <InternalsVisibleTo Include="MovieIntergrationTests" />

@@ -1,11 +1,11 @@
 ﻿using System;
-using MediatR;
+using Mediator;
 using Microsoft.EntityFrameworkCore;
 using Movies.Features.Models;
 
 namespace Movies.Features
 {
-    public class GetAllMovieQueryHandler : IRequestHandler<GetAllMoviesQuery, IQueryable<Movie>>
+    public class GetAllMovieQueryHandler : IQueryHandler<GetAllMoviesQuery, IQueryable<Movie>>
     {
         private readonly Movies.Data.MovieDbContext _context;
         public GetAllMovieQueryHandler(Movies.Data.MovieDbContext context)
@@ -13,9 +13,9 @@ namespace Movies.Features
             _context = context;
         }
 
-        public async Task<IQueryable<Movie>> Handle(GetAllMoviesQuery request, CancellationToken cancellationToken)
+        public ValueTask<IQueryable<Movie>> Handle(GetAllMoviesQuery request, CancellationToken cancellationToken)
         {
-            return await Task.FromResult(_context.Movies);
+            return new ValueTask<IQueryable<Movie>>(_context.Movies);
         }
     }
 }

@@ -2601,6 +2601,14 @@
         "runtime": {
           "Movies.dll": {}
         }
+      },
+      "Mediator/2.0.0.0": {
+        "runtime": {
+          "Mediator.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.27.274"
+          }
+        }
       }
     }
   },
@@ -4005,6 +4013,11 @@
     },
     "Movies/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mediator/2.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

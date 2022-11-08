@@ -1,5 +1,5 @@
 ﻿using System;
-using MediatR;
+using Mediator;
 using Movies.Features.Models;
 
 namespace Movies.Features;

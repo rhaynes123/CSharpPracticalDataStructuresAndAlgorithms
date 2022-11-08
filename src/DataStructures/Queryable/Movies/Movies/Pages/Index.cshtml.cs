@@ -1,5 +1,5 @@
 ﻿using System.Collections.Immutable;
-using MediatR;
+using Mediator;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +7,8 @@ using Movies.Features;
 using Movies.Features.Models;
 
 namespace Movies.Pages;
-
+// https://github.com/martinothamar/Mediator#32-handler-types
+// https://www.youtube.com/watch?v=aaFLtcf8cO4
 public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
