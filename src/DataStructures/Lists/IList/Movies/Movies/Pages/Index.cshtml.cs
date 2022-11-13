@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Movies.Features;
-using Movies.Features.Models;
+using Movies.Features.Movies.Models;
 
 namespace Movies.Pages;
 // https://github.com/martinothamar/Mediator#32-handler-types

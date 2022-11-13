@@ -2,9 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Movies.Features.Models.Enums;
+using Movies.Features.Movies.Models.Enums;
 
-namespace Movies.Features.Models
+namespace Movies.Features.Movies.Models
 {
     [Index(nameof(Title))]
     public class Movie

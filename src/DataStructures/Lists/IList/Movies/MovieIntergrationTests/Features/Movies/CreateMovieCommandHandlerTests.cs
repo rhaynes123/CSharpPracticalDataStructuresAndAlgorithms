@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
 using Movies.Data;
+using Movies.Features.Movies;
+using Movies.Features.Movies.Models;
 
 namespace MovieIntegrationTests.Features.Movies
 {

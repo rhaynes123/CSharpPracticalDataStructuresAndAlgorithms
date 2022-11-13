@@ -2,7 +2,7 @@
 using BenchmarkDotNet.Attributes;
 using Microsoft.EntityFrameworkCore;
 using Movies.Data;
-using Movies.Features.Models;
+using Movies.Features.Movies.Models;
 
 namespace MoviesBenchmark
 {

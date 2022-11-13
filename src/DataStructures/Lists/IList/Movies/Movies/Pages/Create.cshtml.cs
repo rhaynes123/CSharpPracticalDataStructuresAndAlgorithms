@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Movies.Data;
-using Movies.Features;
-using Movies.Features.Models;
+using Movies.Features.Movies;
+using Movies.Features.Movies.Models;
 
 namespace Movies.Pages
 {

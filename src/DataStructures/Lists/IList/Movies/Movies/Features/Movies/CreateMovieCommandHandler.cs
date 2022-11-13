@@ -1,7 +1,7 @@
 ﻿using Mediator;
 using Movies.Data;
 
-namespace Movies.Features
+namespace Movies.Features.Movies
 {
     public class CreateMovieCommandHandler : INotificationHandler<CreateMovieCommand>
     {

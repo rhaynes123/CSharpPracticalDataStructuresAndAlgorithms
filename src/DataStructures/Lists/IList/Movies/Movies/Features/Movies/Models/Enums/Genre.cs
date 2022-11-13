@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Movies.Features.Models.Enums
+namespace Movies.Features.Movies.Models.Enums
 {
     // https://www.csharpstar.com/csharp-interview-questions-part-4/
     // https://docs.microsoft.com/en-us/dotnet/api/system.enum.getnames?view=net-6.0

@@ -9,8 +9,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Movies.Data;
 using Movies.Features;
-using Movies.Features.Models;
-using Movies.Features.Models.Enums;
+using Movies.Features.Movies.Models;
+using Movies.Features.Movies.Models.Enums;
 
 namespace Movies.Pages
 {

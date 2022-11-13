@@ -1,6 +1,6 @@
 ﻿using System;
 using Mediator;
-using Movies.Features.Models;
+using Movies.Features.Movies.Models;
 
 namespace Movies.Features
 {

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Movies.Data;
-using Movies.Features.Models;
+using Movies.Features.Movies.Models;
 
 namespace Movies.Pages
 {

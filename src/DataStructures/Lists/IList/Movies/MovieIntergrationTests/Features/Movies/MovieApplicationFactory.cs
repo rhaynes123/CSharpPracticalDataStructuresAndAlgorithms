@@ -11,8 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Movies.Data;
-using Movies.Features.Models;
-using Movies.Features.Models.Enums;
+using Movies.Features.Movies.Models;
+using Movies.Features.Movies.Models.Enums;
 
 namespace MovieIntegrationTests.Features.Movies;
 

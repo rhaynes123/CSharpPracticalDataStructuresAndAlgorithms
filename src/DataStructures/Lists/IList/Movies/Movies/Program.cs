@@ -9,14 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddMediator( options: options => options.ServiceLifetime = ServiceLifetime.Scoped);
 string mySqlConnectionString = builder.Configuration.GetConnectionString("Movies")!;
-
-
 builder.Services.AddDbContext<MovieDbContext>(options =>
                 options.UseMySql(
                     mySqlConnectionString, ServerVersion.AutoDetect(mySqlConnectionString),
                     options => options.EnableRetryOnFailure(maxRetryCount: 3, maxRetryDelay: TimeSpan.FromSeconds(10), errorNumbersToAdd: null))
                     .EnableDetailedErrors()
                     .EnableSensitiveDataLogging());
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetConnectionString("Cache");
+    options.InstanceName = "Movies";
+});
 var app = builder.Build();
 using (var serviceScope = app.Services.CreateScope())
 {

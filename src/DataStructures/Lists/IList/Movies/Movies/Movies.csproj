@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <None Remove="Features\" />
-    <None Remove="Features\Models\" />
     <None Remove="Data\" />
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
@@ -21,7 +20,6 @@
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Swashbuckle.AspNetCore" />
     <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
-    <None Remove="Features\Models\Enums\" />
     <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
     <None Remove="Bogus" />
     <None Remove="Mediator.SourceGenerator" />
@@ -30,12 +28,17 @@
     <None Remove="MySql.EntityFrameworkCore" />
     <None Remove="MySql.Data" />
     <None Remove="MySql.Data.EntityFrameworkCore" />
+    <None Remove="Microsoft.Extensions.Caching.StackExchangeRedis" />
+    <None Remove="Features\Movies\" />
+    <None Remove="Features\Movies\Models\" />
+    <None Remove="Features\Movies\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
-    <Folder Include="Features\Models\" />
     <Folder Include="Data\" />
-    <Folder Include="Features\Models\Enums\" />
+    <Folder Include="Features\Movies\" />
+    <Folder Include="Features\Movies\Models\" />
+    <Folder Include="Features\Movies\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
@@ -51,6 +54,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.2" />
   </ItemGroup>
   <ItemGroup>
       <InternalsVisibleTo Include="MovieIntergrationTests" />

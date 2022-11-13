@@ -2,7 +2,7 @@
 using Mediator;
 using Microsoft.EntityFrameworkCore;
 using Movies.Data;
-using Movies.Features.Models;
+using Movies.Features.Movies.Models;
 namespace Movies.Features;
 
 public class ModifyMovieCommandHandler : IRequestHandler<ModifyMovieCommand, Movie>

@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
-using Movies.Features.Models;
+using Movies.Features.Movies.Models;
 
 namespace Movies.Data
 {

@@ -3,9 +3,18 @@
 # https://geshan.com.np/blog/2022/02/mysql-docker-compose/
 # https://www.softwaretestinghelp.com/mysql-docker/
 # https://hevodata.com/learn/docker-mysql/
+# https://geshan.com.np/blog/2022/01/redis-docker/
+# https://cloudinfrastructureservices.co.uk/run-redis-with-docker-compose/
 version: '3.4'
 
 services:
+  rediscache: 
+    image: redis
+    restart: always
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports: 
+      - '6379:6379'
   db: #This needs to be the name of the server expected in the connections strings. Even if the app is running from our local.
     image: mysql:8.0
     environment:
@@ -32,10 +41,13 @@ services:
   movies:
     depends_on:
       - db
+      - rediscache
     image: ${DOCKER_REGISTRY-}movies
     build:
       context: .
       dockerfile: Movies/Dockerfile
 volumes:
     localdbdata:
+      driver: local
+    rediscache: 
       driver: local

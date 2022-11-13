@@ -1,8 +1,8 @@
 ﻿using System;
 using Mediator;
-using Movies.Features.Models;
+using Movies.Features.Movies.Models;
 
-namespace Movies.Features;
+namespace Movies.Features.Movies;
 
 public sealed record CreateMovieCommand(Movie movie): INotification;
 
