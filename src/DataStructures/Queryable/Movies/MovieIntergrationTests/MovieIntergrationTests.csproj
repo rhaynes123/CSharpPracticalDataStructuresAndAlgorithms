@@ -27,6 +27,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.8" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="105.0.5195.5200" />
     <PackageReference Include="Selenium.WebDriver" Version="4.4.0" />
+    <PackageReference Include="Testcontainers" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,6 +43,7 @@
     <None Remove="Microsoft.AspNetCore.Mvc.Testing" />
     <None Remove="Selenium.WebDriver.ChromeDriver" />
     <None Remove="Selenium.WebDriver" />
+    <None Remove="Testcontainers" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />

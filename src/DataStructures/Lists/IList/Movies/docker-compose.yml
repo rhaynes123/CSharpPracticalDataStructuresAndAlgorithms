@@ -1,0 +1,41 @@
+# https://code-maze.com/mysql-aspnetcore-docker-compose/
+# https://medium.com/@chrischuck35/how-to-create-a-mysql-instance-with-docker-compose-1598f3cc1bee
+# https://geshan.com.np/blog/2022/02/mysql-docker-compose/
+# https://www.softwaretestinghelp.com/mysql-docker/
+# https://hevodata.com/learn/docker-mysql/
+version: '3.4'
+
+services:
+  db: #This needs to be the name of the server expected in the connections strings. Even if the app is running from our local.
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: 'Movies'
+      # When using the root user we only need to set this value
+      MYSQL_ROOT_PASSWORD: 'Password'
+      # If you don't want to use the root user then comment out the MYSQL_ROOT_PASSWORD and use these below
+      #MYSQL_USER: 'user' # This can be any user you choose
+      # You can use whatever password you like
+      #MYSQL_PASSWORD: 'password' # this can be whatever password you choose
+      # If you don't want to authenticate at all running locally then uncomment out the lines below
+      #MYSQL_ROOT_PASSWORD: ""
+      #MYSQL_ALLOW_EMPTY_PASSWORD: yes
+      
+    volumes:
+       - localdbdata:/var/lib/mysql
+    restart: always
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3306:3306'
+    expose:
+      # Opens port 3306 on the container
+      - '3306'
+  movies:
+    depends_on:
+      - db
+    image: ${DOCKER_REGISTRY-}movies
+    build:
+      context: .
+      dockerfile: Movies/Dockerfile
+volumes:
+    localdbdata:
+      driver: local

@@ -17,6 +17,32 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "Docker.DotNet/3.125.12": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Buffers": "4.5.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.1/Docker.DotNet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Docker.DotNet.dll": {}
+        }
+      },
+      "Docker.DotNet.X509/3.125.12": {
+        "type": "package",
+        "dependencies": {
+          "Docker.DotNet": "3.125.12"
+        },
+        "compile": {
+          "lib/netstandard2.1/Docker.DotNet.X509.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Docker.DotNet.X509.dll": {}
+        }
+      },
       "FluentAssertions/6.7.0": {
         "type": "package",
         "dependencies": {
@@ -39,6 +65,19 @@
         },
         "runtime": {
           "lib/netstandard1.0/Humanizer.dll": {}
+        }
+      },
+      "Mediator.Abstractions/2.0.27-rc": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.1/Mediator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Mediator.dll": {}
         }
       },
       "MediatR/10.0.1": {
@@ -2341,6 +2380,15 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
+      "Portable.BouncyCastle/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -2528,6 +2576,15 @@
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
+      "SharpZipLib/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/ICSharpCode.SharpZipLib.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.6": {
@@ -4092,6 +4149,24 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Testcontainers/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Docker.DotNet": "3.125.12",
+          "Docker.DotNet.X509": "3.125.12",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.26",
+          "Portable.BouncyCastle": "1.9.0",
+          "SharpZipLib": "1.4.0",
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/netstandard2.1/Testcontainers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Testcontainers.dll": {}
+        }
+      },
       "xunit/2.4.2": {
         "type": "package",
         "dependencies": {
@@ -4182,6 +4257,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
+          "Mediator.Abstractions": "2.0.27-rc",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.InMemory": "6.0.8",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
@@ -4273,6 +4349,40 @@
         "coverlet.collector.nuspec"
       ]
     },
+    "Docker.DotNet/3.125.12": {
+      "sha512": "lkDh6PUV8SIM1swPCkd3f+8zGB7Z9Am3C2XBLqAjyIIp5jQBCsDFrtbtA1QiVdFMWdYcJscrX/gzzG50kRj0jQ==",
+      "type": "package",
+      "path": "docker.dotnet/3.125.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "docker.dotnet.3.125.12.nupkg.sha512",
+        "docker.dotnet.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Docker.DotNet.dll",
+        "lib/netstandard2.0/Docker.DotNet.pdb",
+        "lib/netstandard2.1/Docker.DotNet.dll",
+        "lib/netstandard2.1/Docker.DotNet.pdb"
+      ]
+    },
+    "Docker.DotNet.X509/3.125.12": {
+      "sha512": "CwxE5BUJNdKvhLD2NZuxzGd2y6o+grkIJQr3JavEUILTlJd0tZMVDfge63wWTuzsbq4sTEhE4bZBLEgG/0vzgw==",
+      "type": "package",
+      "path": "docker.dotnet.x509/3.125.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "docker.dotnet.x509.3.125.12.nupkg.sha512",
+        "docker.dotnet.x509.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Docker.DotNet.X509.dll",
+        "lib/netstandard2.0/Docker.DotNet.X509.pdb",
+        "lib/netstandard2.1/Docker.DotNet.X509.dll",
+        "lib/netstandard2.1/Docker.DotNet.X509.pdb"
+      ]
+    },
     "FluentAssertions/6.7.0": {
       "sha512": "PWbow/R3MnYDP8UW7zh/w80rGb+1NufGoNJeuzouTo2bqpvwNTFxbDwF6XWfFZ5IuquL2225Um+qSyZ8jVsT+w==",
       "type": "package",
@@ -4313,6 +4423,19 @@
         "humanizer.core.2.2.0.nupkg.sha512",
         "humanizer.core.nuspec",
         "lib/netstandard1.0/Humanizer.dll"
+      ]
+    },
+    "Mediator.Abstractions/2.0.27-rc": {
+      "sha512": "P95aSCXMQOzqs0IY0LaNRHzTO3i7LJckq+Ci6z+fxEX2aWOZAzB3wnQQHnXBJvl+8xqFbkQctZhIZtHWpF7t2g==",
+      "type": "package",
+      "path": "mediator.abstractions/2.0.27-rc",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/Mediator.dll",
+        "lib/netstandard2.1/Mediator.xml",
+        "mediator.abstractions.2.0.27-rc.nupkg.sha512",
+        "mediator.abstractions.nuspec"
       ]
     },
     "MediatR/10.0.1": {
@@ -8360,6 +8483,21 @@
         "nuget.versioning.nuspec"
       ]
     },
+    "Portable.BouncyCastle/1.9.0": {
+      "sha512": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/BouncyCastle.Crypto.dll",
+        "lib/net40/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.9.0.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
+      ]
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "sha512": "HdSSp5MnJSsg08KMfZThpuLPJpPwE5hBXvHwoKWosyHHfe8Mh5WKT0ylEOf6yNzX6Ngjxe4Whkafh5q7Ymac4Q==",
       "type": "package",
@@ -8620,6 +8758,27 @@
         "nupkg-icon.png",
         "selenium.webdriver.chromedriver.105.0.5195.5200.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
+    "SharpZipLib/1.4.0": {
+      "sha512": "CdkbBSPIpHD8xBlu+8kDJiqc1Tf9iV89BObnqcvEbwysXSj5h1MfaeLgeeaxPZmi7CTJO8FDofBBNxBW0Vml7A==",
+      "type": "package",
+      "path": "sharpziplib/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/sharpziplib-nuget-256x256.png",
+        "lib/net6.0/ICSharpCode.SharpZipLib.dll",
+        "lib/net6.0/ICSharpCode.SharpZipLib.pdb",
+        "lib/net6.0/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.4.0.nupkg.sha512",
+        "sharpziplib.nuspec"
       ]
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.6": {
@@ -12691,6 +12850,25 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Testcontainers/2.2.0": {
+      "sha512": "mqzDSr51t9g+gHUy7KYij6EQ0ixofqjq8GtO8nfIPSf/Xohdl0vgd3z/WB0AFprXXDYVpwSVXyEtYqo4EXPRpQ==",
+      "type": "package",
+      "path": "testcontainers/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "docs/banner.png",
+        "docs/logo.png",
+        "lib/netstandard2.0/Testcontainers.dll",
+        "lib/netstandard2.0/Testcontainers.xml",
+        "lib/netstandard2.1/Testcontainers.dll",
+        "lib/netstandard2.1/Testcontainers.xml",
+        "testcontainers.2.2.0.nupkg.sha512",
+        "testcontainers.nuspec"
+      ]
+    },
     "xunit/2.4.2": {
       "sha512": "6Mj73Ont3zj2CJuoykVJfE0ZmRwn7C+pTuRP8c4bnaaTFjwNG6tGe0prJ1yIbMe9AHrpDys63ctWacSsFJWK/w==",
       "type": "package",
@@ -12854,6 +13032,7 @@
       "Movies >= 1.0.0",
       "Selenium.WebDriver >= 4.4.0",
       "Selenium.WebDriver.ChromeDriver >= 105.0.5195.5200",
+      "Testcontainers >= 2.2.0",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.2",
       "xunit.runner.visualstudio >= 2.4.5"
@@ -12936,6 +13115,10 @@
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
             "version": "[105.0.5195.5200, )"
+          },
+          "Testcontainers": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

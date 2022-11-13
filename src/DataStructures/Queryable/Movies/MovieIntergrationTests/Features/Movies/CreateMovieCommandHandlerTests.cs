@@ -1,12 +1,12 @@
 ﻿using System;
 namespace MovieIntegrationTests.Features.Movies
 {
-    public class CreateMovieCommandHandlerTests : IClassFixture<MovieDbContextFixture>
+    public class CreateMovieCommandHandlerTests 
     {
-        private readonly MovieDbContextFixture contextfixture;
+        private readonly MovieApplicationFactory movieApplicationFactory;
         public CreateMovieCommandHandlerTests(MovieDbContextFixture fixture)
         {
-            contextfixture = fixture;
+            movieApplicationFactory = new MovieApplicationFactory<Program>();
         }
 
         [Fact]

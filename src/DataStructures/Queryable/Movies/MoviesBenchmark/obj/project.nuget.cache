@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VfXc2spxiseAdz09UTJONGSdGEj2omGMECy00VIzDmJ9DBbMdOlmEcnzowadriDGOKp17fasOkumEvYwB1pWSw==",
+  "dgSpecHash": "5IWuEu0H/lvZlvdhOZa0fGo/s9lyFdrpcqc1NpvXgLP7iM1I4S1WDcug0CnvV1kq6L710Q1sWrujLuN95+Zvow==",
   "success": true,
   "projectFilePath": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queryable/Movies/MoviesBenchmark/MoviesBenchmark.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "/Users/richardhaynes/.nuget/packages/commandlineparser/2.4.3/commandlineparser.2.4.3.nupkg.sha512",
     "/Users/richardhaynes/.nuget/packages/humanizer.core/2.2.0/humanizer.core.2.2.0.nupkg.sha512",
     "/Users/richardhaynes/.nuget/packages/iced/1.17.0/iced.1.17.0.nupkg.sha512",
+    "/Users/richardhaynes/.nuget/packages/mediator.abstractions/2.0.27-rc/mediator.abstractions.2.0.27-rc.nupkg.sha512",
     "/Users/richardhaynes/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
     "/Users/richardhaynes/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/richardhaynes/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/10.0.1/mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
