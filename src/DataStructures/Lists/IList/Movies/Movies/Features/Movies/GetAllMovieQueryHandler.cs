@@ -5,6 +5,7 @@ using Microsoft.Extensions.Caching.Distributed;
 using Movies.Data;
 using Movies.Features.Movies.Models;
 using Movies.Features.Movies.Extensions;
+using Movies.Data.Settings;
 
 namespace Movies.Features
 {
@@ -12,20 +13,20 @@ namespace Movies.Features
     {
         private readonly MovieDbContext _context;
         private readonly IDistributedCache _cache;
-        private readonly string _cacheKey;
+        private readonly RedisSettings _redisSettings;
         public GetAllMovieQueryHandler(MovieDbContext context
             ,IDistributedCache cache
-            ,IConfiguration configuration)
+            , RedisSettings redisSettings)
         {
             _context = context;
             _cache = cache;
-            _cacheKey = configuration["Redis:Key"];
+            _redisSettings = redisSettings;
         }
 
         public async ValueTask<IQueryable<Movie>> Handle(GetAllMoviesQuery request, CancellationToken cancellationToken)
         {
             IQueryable<Movie> movies = await _context.Movies
-                .AsCachedQueryable(_cache, _cacheKey);
+                .AsCachedQueryable(_cache, _redisSettings.keys.First());// This is an awful way to get the key but it will work for demo purposes
             return await ValueTask.FromResult(movies);
         }
     }

@@ -32,6 +32,8 @@
     <None Remove="Features\Movies\" />
     <None Remove="Features\Movies\Models\" />
     <None Remove="Features\Movies\Extensions\" />
+    <None Remove="Data\Interceptors\" />
+    <None Remove="Data\Settings\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -39,6 +41,8 @@
     <Folder Include="Features\Movies\" />
     <Folder Include="Features\Movies\Models\" />
     <Folder Include="Features\Movies\Extensions\" />
+    <Folder Include="Data\Interceptors\" />
+    <Folder Include="Data\Settings\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />

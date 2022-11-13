@@ -10,9 +10,12 @@ namespace Movies.Features.Movies.Extensions
     // " hgetall <key>" Ex. "hgetall MoviesMovies_Redis_Key" This get all data for that key
     // " hget <key> data " Ex. "hget MoviesMovies_Redis_Key data" This will get specifically the data field of that key
     #endregion
+    #region Helpful Links
+    // https://www.youtube.com/watch?v=UrQWii_kfIE
+    // https://sahansera.dev/distributed-caching-aspnet-core-redis/
+    #endregion
     /// <summary>
     /// Extension to the IDistributedCache
-    /// https://www.youtube.com/watch?v=UrQWii_kfIE
     /// </summary>
     /// <remarks> Run this command if you want to create the redis docker image manually" docker run --name redis-cache -p 5002:6379 -d redis " </remarks>
     public static class DistributedCacheExtension
@@ -76,6 +79,18 @@ namespace Movies.Features.Movies.Extensions
             {
                 Debug.Write(ex);
                 return (false, default!);
+            }
+        }
+
+        public static async ValueTask TryRemoveAsync(this IDistributedCache cache, string key)
+        {
+            try
+            {
+                await cache.RemoveAsync(key);
+            }
+            catch (Exception ex)
+            {
+                Debug.Write(ex);
             }
         }
     }
