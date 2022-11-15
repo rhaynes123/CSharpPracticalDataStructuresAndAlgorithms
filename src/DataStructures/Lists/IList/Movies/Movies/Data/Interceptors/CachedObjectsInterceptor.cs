@@ -22,14 +22,14 @@ namespace Movies.Data.Interceptors
             // Something like this works fine if your system only has one key
             //await _cache.TryRemoveAsync(_cacheKey);
 
-            if (redisSettings is null || redisSettings.keys is null || !redisSettings.keys.Any())
-            {
-                return await base.SavedChangesAsync(eventData, result, cancellationToken);
-            }
-            foreach (var key in redisSettings.keys)
-            {
-                await _cache.TryRemoveAsync(key); // This is a better approach if you have mutliple keys
-            }
+            //if (redisSettings is null || redisSettings.keys is null || !redisSettings.keys.Any())
+            //{
+            //    return await base.SavedChangesAsync(eventData, result, cancellationToken);
+            //}
+            //foreach (var key in redisSettings.keys)
+            //{
+            //    await _cache.TryRemoveAsync(key); // This is a better approach if you have mutliple keys
+            //}
             return await base.SavedChangesAsync(eventData, result, cancellationToken);
         }
     }
