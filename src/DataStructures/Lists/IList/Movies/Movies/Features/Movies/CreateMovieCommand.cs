@@ -4,5 +4,5 @@ using Movies.Features.Movies.Models;
 
 namespace Movies.Features.Movies;
 
-public sealed record CreateMovieCommand(Movie movie): INotification;
+public sealed record CreateMovieCommand(Movie movie): ICachable;
 

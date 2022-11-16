@@ -3,6 +3,7 @@ using Microsoft.Extensions.Caching.Distributed;
 using Movies.Data;
 using Movies.Data.Settings;
 using Movies.Features.Movies.Extensions;
+using Movies.Features.Movies.Models;
 
 namespace Movies.Features.Movies
 {
@@ -25,7 +26,7 @@ namespace Movies.Features.Movies
     /// In this case that even't is the creation of a new movie. One Handler will save to the database
     /// Another will clear our cache data
     /// </summary>
-    public class RemoveMovieCacheHandler : INotificationHandler<CreateMovieCommand>
+    public class RemoveMovieCacheHandler : INotificationHandler<ICachable>
     {
         private readonly IDistributedCache _cache;
         private readonly RedisSettings redisSettings;
@@ -34,7 +35,7 @@ namespace Movies.Features.Movies
             _cache = cache;
             redisSettings = redis;
         }
-        public async ValueTask Handle(CreateMovieCommand notification, CancellationToken cancellationToken)
+        public async ValueTask Handle(ICachable notification, CancellationToken cancellationToken)
         {
             if (redisSettings is null || redisSettings.keys is null || !redisSettings.keys.Any())
             {
