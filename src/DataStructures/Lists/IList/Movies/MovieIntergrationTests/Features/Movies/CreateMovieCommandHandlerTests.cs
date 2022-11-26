@@ -13,7 +13,7 @@ namespace MovieIntegrationTests.Features.Movies
         public CreateMovieCommandHandlerTests(MovieApplicationFactory movieApplicationFactory)
         {
             contextfixture = movieApplicationFactory;
-            movieDbContext = contextfixture.Services.GetRequiredService<MovieDbContext>();
+            movieDbContext = contextfixture.DbContext;
         }
 
         [Fact]

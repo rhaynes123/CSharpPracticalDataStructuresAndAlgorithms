@@ -2,7 +2,6 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Movies.Data;
-using Movies.Data.Interceptors;
 using Movies.Data.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,14 +13,12 @@ builder.Configuration.GetSection("Redis").Bind(redisSettings);
 builder.Services.AddRazorPages();
 builder.Services.AddMediator( options: options => options.ServiceLifetime = ServiceLifetime.Scoped);
 builder.Services.AddSingleton<RedisSettings>(redisSettings);
-builder.Services.AddSingleton<CachedObjectsInterceptor>();
 
 builder.Services.AddDbContext<MovieDbContext>( (serviceProvider, optionsBuilder) =>
 {
-    var cachedInterceptor = serviceProvider.GetRequiredService<CachedObjectsInterceptor>();
     optionsBuilder.UseMySql(mySqlConnectionString, ServerVersion.AutoDetect(mySqlConnectionString), optionsBuilder => optionsBuilder
-        .EnableRetryOnFailure(maxRetryCount: 3, maxRetryDelay: TimeSpan.FromSeconds(10), errorNumbersToAdd: null))
-        .AddInterceptors(cachedInterceptor);
+        .EnableRetryOnFailure(maxRetryCount: 3, maxRetryDelay: TimeSpan.FromSeconds(10), errorNumbersToAdd: null));
+        
     optionsBuilder.EnableDetailedErrors();
     optionsBuilder.EnableSensitiveDataLogging();
 });

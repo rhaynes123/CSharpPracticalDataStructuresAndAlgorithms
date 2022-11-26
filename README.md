@@ -49,22 +49,32 @@ While out the box C# does provide many of the classic data structures like Array
 
  To attempt to try and make each project as easy to follow I've seperated the projects into two main groups Data Structures and Algorithims. This does not mean that you will not find projects that do no use both in fact that defeats much of the reason this project exists however there are situations where a particular data structure is best for a problem regardless of the algorithim and there are times where an algorithim is best for a use case regardless of the data structure. Again I intend to do my best to point all of that out as we go on this journey.
  # Data Structures
+ 
  ## Array
  So we are going to start off with the most common and basic data structure in programming the Array. **Note** this is not the most common in the C# realm as that honor goes to List for reasons I'll get into in the list section but this is still the best place to start.
 [Code Example](src/DataStructures/Array)
+
  ## Dictionary
  The next section I've layed out is also very simple in that we are using a Dictionary.
  [Code Example](src/DataStructures/Dictionary/)
+
  ## IEnumerable
  This section was amazingly simple to flesh out because the IEnumerable type is among the simpliest collections types to use and because of that it ends up being the most flexible out of all the collection types in C#.
  [Code Example](src/DataStructures/Enumerable/)
+
  ## IQueryable
  This section will cover the IQueryable interface and how it can help write highly organized and flexible data access code.
  [Code Example](src/DataStructures/Queryable/)
+
  ## Lists
  Because of the power, flexibility and popularity of Lists in C# I've broken this section out into a number of sub-sections to go over some of what I believe to be very good use cases for different types of Lists. In C# please note that none of these derivatives of list are exclusive to list alone.
  * List [Code Example](src/DataStructures/Lists/List/SecretaryOfStateQue)
  * ReadOnly [Code Example](src/DataStructures/Lists/ReadOnly/CourseRegistration)
+ * IList [Code Example](src/DataStructures/Lists/IList)
+
+ ## HashSet
+ The C# HashSet is a very powerful and often under used data structure. It is a collection of unique values. It has very fast read ability because it uses hashing algorithims behind the scenes to ensure that every value is unqiue and allowing for very targeted searching. 
+ [Code Example](src/DataStructures/HashSet)
  
 
  # Algorithims
@@ -72,3 +82,11 @@ While out the box C# does provide many of the classic data structures like Array
  This is our first Algorithim just do to ease of use. C# provides a number of functions in its data structures that take advantage of the Quick sort algorithim. Array.Sort, List.Sort and IEnumerable.OrderBy all use the Quick sort logic.
  [C# Sorting Examples](https://www.geeksforgeeks.org/different-ways-to-sort-an-array-in-descending-order-in-c-sharp/).
  [Code Examples](src/Algorithms/QuickSort/)
+ ## Binary Search
+ Another very classic algorithim that as with many others there are a number of built in functions that allow developers to leverage existing code without making our own versions.
+ [Code Examples](src/Algorithms/BinarySearch)
+
+ ## Roadmap
+ This section is a short list of items on the road map to improve on the examples based on feedback.
+ * Refine the List project. It has a lot going on creatin varying amounts of confusion
+ * Include discussion of Big O notations and space time complexity scenarios.

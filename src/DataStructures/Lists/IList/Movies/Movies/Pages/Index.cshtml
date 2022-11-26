@@ -12,7 +12,6 @@
     <table class="table table-borded">
         <thead class="thead-dark">
             <tr>
-                <th>#</th>
                 <th>Title</th>
                 <th>Genre</th>
                 <th>Release Date</th>
@@ -26,7 +25,6 @@
                 foreach (var movie in Model.Movies)
                 {
                     <tr>
-                        <td>@movie.ID</td>
                         <td>@movie.Title</td>
                         <td>@movie.Genre</td>
                         <td>@Html.DisplayFor(modelItem => movie.ReleaseDate)</td>
@@ -36,6 +34,16 @@
                 }
 
             }
-            </tbody>
-        </table>
+        </tbody>
+    </table>
+    
+    <div>
+        <a asp-page="./Index" class="btn btn-primary" asp-route-currentPage="@(Model.CurrentPage - 1)">Back</a>
+        @for(int indexOfPage = 1; indexOfPage <= Model.TotalPages; indexOfPage++)
+        {
+            <a asp-page="./Index" class="btn btn-primary" asp-route-currentPage="@indexOfPage">@indexOfPage</a>
+        }
+        <a asp-page="./Index" class="btn btn-primary" asp-route-currentPage="@(Model.CurrentPage + 1)">Next</a>
+    </div>
+    
 </div>
