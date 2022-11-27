@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44426",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queues/PriorityQueue/EmergencyDispatch/EmergencyDispatch/ClientApp/",
+"MaxTimeoutInSeconds": "120"
+}
+}

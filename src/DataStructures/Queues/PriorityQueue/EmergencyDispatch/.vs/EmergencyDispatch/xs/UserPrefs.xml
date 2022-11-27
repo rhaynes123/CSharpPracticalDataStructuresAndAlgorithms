@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{23502C37-CC11-45DE-97D2-C7FD8A8E4CE6}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmergencyDispatch/.gitignore">
+    <Files>
+      <File FileName="EmergencyDispatch/.gitignore" Line="271" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EmergencyDispatch" expanded="True">
+            <Node name="EmergencyDispatch" expanded="True">
+              <Node name="Models" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.EmergencyDispatch PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
