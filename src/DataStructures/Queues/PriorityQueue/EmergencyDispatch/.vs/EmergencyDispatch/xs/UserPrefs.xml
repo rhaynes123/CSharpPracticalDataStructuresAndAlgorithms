@@ -1,19 +1,30 @@
-﻿<Properties StartupConfiguration="{23502C37-CC11-45DE-97D2-C7FD8A8E4CE6}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmergencyDispatch/.gitignore">
+﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{23502C37-CC11-45DE-97D2-C7FD8A8E4CE6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmergencyDispatch/Controllers/EmergencyController.cs">
     <Files>
-      <File FileName="EmergencyDispatch/.gitignore" Line="271" Column="38" />
+      <File FileName="EmergencyDispatch/Features/Emergencies/Model/Emergency.cs" Line="8" Column="13" />
+      <File FileName="EmergencyDispatch/Features/Emergencies/Model/Enums/Category.cs" Line="11" Column="11" />
+      <File FileName="EmergencyDispatch/Features/Emergencies/Requests/EmergencyRequest.cs" Line="7" Column="35" />
+      <File FileName="EmergencyDispatch/Controllers/WeatherForecastController.cs" Line="7" Column="1" />
+      <File FileName="EmergencyDispatch/Data/ApplicationDbContext.cs" Line="16" Column="6" />
+      <File FileName="EmergencyDispatch/Program.cs" Line="30" Column="45" />
+      <File FileName="EmergencyDispatch/Controllers/EmergencyController.cs" Line="34" Column="10" />
+      <File FileName="EmergencyDispatch/Controllers/OidcConfigurationController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EmergencyDispatch" expanded="True">
             <Node name="EmergencyDispatch" expanded="True">
-              <Node name="Models" expanded="True" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Features" expanded="True">
+                <Node name="Emergencies" expanded="True">
+                  <Node name="Model" expanded="True" />
+                  <Node name="Requests" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -21,5 +32,13 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queues/PriorityQueue/EmergencyDispatch/EmergencyDispatch/Controllers/EmergencyController.cs" relfile="EmergencyDispatch/Controllers/EmergencyController.cs" line="34" column="1" />
+      <Breakpoint file="/Users/richardhaynes/Developer/Projects/C#/CSharpPracticalDataStructuresAndAlgorithms/src/DataStructures/Queues/PriorityQueue/EmergencyDispatch/EmergencyDispatch/Controllers/EmergencyController.cs" relfile="EmergencyDispatch/Controllers/EmergencyController.cs" line="48" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.EmergencyDispatch PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

@@ -86,6 +86,12 @@ While out the box C# does provide many of the classic data structures like Array
  Another very classic algorithim that as with many others there are a number of built in functions that allow developers to leverage existing code without making our own versions.
  [Code Examples](src/Algorithms/BinarySearch)
 
+ # Other Articles and Resources
+ [Linear Search and Binary search in C#](https://www.programmingempire.com/linear-search-and-binary-search-in-c/)
+ [Searching in C#.net, types of searching and implementations using C# program](https://www.includehelp.com/dot-net/searching-in-c-sharp-net-types-of-searching-and-implementations-using-c-sharp-program.aspx)
+ [DEPTH-FIRST SEARCH ALGORITHM IN C# AND .NET CORE](https://www.koderdojo.com/blog/depth-first-search-algorithm-in-csharp-and-net-core)
+ [Sorting Algorithms in C#](https://code-maze.com/sorting-algorithms-csharp/)
+
  ## Roadmap
  This section is a short list of items on the road map to improve on the examples based on feedback.
  * Refine the List project. It has a lot going on creatin varying amounts of confusion

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Duende.IdentityServer.EntityFramework.Options;
 using EmergencyDispatch.Models;
+using EmergencyDispatch.Features.Emergencies.Model;
 
 namespace EmergencyDispatch.Data;
 
@@ -13,5 +14,6 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
     {
 
     }
+    public DbSet<Emergency> Emergencies { get; set; }
 }
 

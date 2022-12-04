@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piez", "Piez\Piez.csproj", "{01EE5D03-B7E2-4BEB-BFFA-53C1DC50135E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AC6E5708-A174-4375-89F3-00A7599A261E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01EE5D03-B7E2-4BEB-BFFA-53C1DC50135E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01EE5D03-B7E2-4BEB-BFFA-53C1DC50135E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01EE5D03-B7E2-4BEB-BFFA-53C1DC50135E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01EE5D03-B7E2-4BEB-BFFA-53C1DC50135E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC6E5708-A174-4375-89F3-00A7599A261E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC6E5708-A174-4375-89F3-00A7599A261E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC6E5708-A174-4375-89F3-00A7599A261E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC6E5708-A174-4375-89F3-00A7599A261E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD535443-588E-4E83-B5CF-02A0DB29349E}
+	EndGlobalSection
+EndGlobal

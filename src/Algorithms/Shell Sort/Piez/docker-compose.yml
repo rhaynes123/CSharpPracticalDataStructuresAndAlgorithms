@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  db:
+      image: mysql:8.0
+      environment:
+        MYSQL_DATABASE: 'Piez'
+        MYSQL_ROOT_PASSWORD: 'Password'
+      volumes:
+        - localdbdata:/var/lib/mysql
+      restart: always
+      ports:
+        # <Port exposed> : < MySQL Port running inside container>
+        - '3306:3306'
+      expose:
+        # Opens port 3306 on the container
+        - '3306'
+  piez:
+    depends_on:
+      - db
+    image: ${DOCKER_REGISTRY-}piez
+    build:
+      context: .
+      dockerfile: Piez/Dockerfile
+  
+  volumes:
+  localdbdata:
+    driver: local
