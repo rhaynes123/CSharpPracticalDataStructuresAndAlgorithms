@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1704.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichsRack", "RichsRack\RichsRack.csproj", "{AA1057D9-315E-4CED-9EC0-63AC2B0B052B}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2C58FC15-1225-4FCD-8FF1-3C05FC3940BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AA1057D9-315E-4CED-9EC0-63AC2B0B052B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA1057D9-315E-4CED-9EC0-63AC2B0B052B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA1057D9-315E-4CED-9EC0-63AC2B0B052B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C58FC15-1225-4FCD-8FF1-3C05FC3940BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C58FC15-1225-4FCD-8FF1-3C05FC3940BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C58FC15-1225-4FCD-8FF1-3C05FC3940BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C58FC15-1225-4FCD-8FF1-3C05FC3940BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

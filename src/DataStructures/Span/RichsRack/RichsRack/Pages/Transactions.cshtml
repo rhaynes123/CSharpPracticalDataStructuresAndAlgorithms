@@ -1,0 +1,47 @@
+@page
+@model RichsRack.Pages.TransactionsModel
+@using RichsRack.Features.Transactions
+@using System.Runtime.InteropServices
+@{
+    ViewData["Title"] = "Transactions";
+}
+
+<h1>Transactions</h1>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+
+    </thead>
+    <tbody>
+
+        @{
+            //https://www.youtube.com/watch?v=jUZ3VKFyB-A
+            // https://stackoverflow.com/questions/57229123/how-to-use-spanbyte-in-async-method
+            // This is the first time in my life a local function felt like the thing to do :) 
+            void BuildTransactionTable(List<Transaction> transactions)
+            {
+                Span<Transaction> allTransactions = CollectionsMarshal.AsSpan(transactions);
+
+                @foreach (var item in allTransactions)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Amount</td>
+                        <td>@item.TransactionDate</td>
+                    </tr>
+                }
+
+            }
+        }
+        @{ BuildTransactionTable(Model.Transactions.ToList());}
+    </tbody>
+
+</table>

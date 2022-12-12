@@ -5,7 +5,33 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome To Rich's Rack</h1>
+    <p>We sell simple snacks to keep that edge off before dinner</p>
 </div>
 
+<div>
+    <form method="post">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Order</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Snacks)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Price</td>
+                        <td><button type="submit" class="btn btn-success" asp-page="./Index" asp-route-id="@item.Id">Order</button></td>
+                    </tr>
+
+                }
+            </tbody>
+
+        </table>
+    </form>
+</div>
