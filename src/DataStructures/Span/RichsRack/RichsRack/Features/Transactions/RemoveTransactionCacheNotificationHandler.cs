@@ -17,7 +17,7 @@ namespace RichsRack.Features.Transactions
             , ILogger<RemoveTransactionCacheNotificationHandler> logger)
 		{
             _cache = cache;
-            TransactionsKey = configuration["Redis:TransactionsKey"];
+            TransactionsKey = configuration["Redis:TransactionsKey"] ?? throw new ArgumentNullException(nameof(configuration));
             this.logger = logger;
         }
 

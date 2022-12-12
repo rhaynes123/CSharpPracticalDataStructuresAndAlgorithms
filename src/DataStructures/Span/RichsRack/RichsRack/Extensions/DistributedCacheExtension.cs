@@ -66,7 +66,11 @@ namespace RichsRack.Extensions
         {
             try
             {
-                string jsonAsString = await distributedCache.GetStringAsync(key: keyId);
+                if (string.IsNullOrWhiteSpace(keyId))
+                {
+                    throw new ArgumentNullException(nameof(keyId));
+                }
+                string jsonAsString = await distributedCache.GetStringAsync(key: keyId) ?? string.Empty;
 
                 if (string.IsNullOrWhiteSpace(jsonAsString))
                 {
