@@ -1,0 +1,66 @@
+@page
+@model SupernaturalBestiary.Pages.CreateCreatureModel
+
+@{
+    ViewData["Title"] = "CreateCreature";
+}
+
+
+<h1>CreateCreature</h1>
+
+<h4>CreatureEntity</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-page-handler="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="creatureViewModel.Name" class="control-label"></label>
+                <input asp-for="creatureViewModel.Name" class="form-control" />
+                <span asp-validation-for="creatureViewModel.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="creatureViewModel.Description" class="control-label"></label>
+                <input asp-for="creatureViewModel.Description" class="form-control" />
+                <span asp-validation-for="creatureViewModel.Description" class="text-danger"></span>
+            </div>
+
+            <!-- Add Prize -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#abilityModal">Add Ability</button>
+            @if (Model.creatureViewModel is not null && Model.creatureViewModel.Abilities is not null && Model.creatureViewModel.Abilities.Any())
+            {
+                <!-- Prizes -->
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                    @foreach (var ability in Model.creatureViewModel.Abilities)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => ability.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => ability.Description)
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+
+            <div class="form-group">
+                <button asp-page-handler="Create" type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

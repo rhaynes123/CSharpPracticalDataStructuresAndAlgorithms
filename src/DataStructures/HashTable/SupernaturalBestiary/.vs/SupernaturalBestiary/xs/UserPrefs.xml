@@ -1,0 +1,59 @@
+﻿<Properties StartupConfiguration="{750E4976-34B2-4D68-9CFC-5AFD2C436EA1}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SupernaturalBestiary PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SupernaturalBestiary/Pages/CreateCreature.cshtml">
+    <Files>
+      <File FileName="SupernaturalBestiary/Entities/CreatureEntity.cs" />
+      <File FileName="SupernaturalBestiary/Infastructure/Repositories/CreatureRepository.cs" Line="1" Column="1" />
+      <File FileName="SupernaturalBestiary/Pages/CreateCreature.cshtml" Line="63" Column="1" />
+      <File FileName="SupernaturalBestiary/Application/ViewModels/CreateCreatureViewModel.cs" Line="14" Column="80" />
+      <File FileName="SupernaturalBestiary/Program.cs" />
+      <File FileName="SupernaturalBestiary/Domain/Models/Creature.cs" />
+      <File FileName="SupernaturalBestiary/Pages/Shared/_Layout.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SupernaturalBestiary" expanded="True">
+            <Node name="SupernaturalBestiary" expanded="True">
+              <Node name="Application" expanded="True">
+                <Node name="ViewModels" expanded="True" />
+              </Node>
+              <Node name="Domain" expanded="True">
+                <Node name="Models" expanded="True" />
+              </Node>
+              <Node name="Entities" expanded="True" />
+              <Node name="Infastructure" expanded="True">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="CreateCreature.cshtml" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="bootstrap" expanded="True">
+                    <Node name="dist" expanded="True">
+                      <Node name="js" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="jquery" expanded="True">
+                    <Node name="dist" expanded="True">
+                      <Node name="jquery.js" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
