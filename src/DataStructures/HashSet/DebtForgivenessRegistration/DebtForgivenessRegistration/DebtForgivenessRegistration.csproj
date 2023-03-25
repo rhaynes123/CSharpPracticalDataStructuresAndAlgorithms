@@ -19,12 +19,14 @@
     <None Remove="Swashbuckle.AspNetCore" />
     <None Remove="Features\Customers\" />
     <None Remove="Features\Customers\Models\" />
+    <None Remove="Features\Customers\Specifications\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
     <Folder Include="Data\" />
     <Folder Include="Features\Customers\" />
     <Folder Include="Features\Customers\Models\" />
+    <Folder Include="Features\Customers\Specifications\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />

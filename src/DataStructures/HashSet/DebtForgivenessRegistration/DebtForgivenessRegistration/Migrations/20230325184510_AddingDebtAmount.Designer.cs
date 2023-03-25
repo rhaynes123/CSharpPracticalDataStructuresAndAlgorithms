@@ -3,6 +3,7 @@ using System;
 using DebtForgivenessRegistration.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DebtForgivenessRegistration.Migrations
 {
     [DbContext(typeof(RegistrarDbContext))]
-    partial class RegistrarDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230325184510_AddingDebtAmount")]
+    partial class AddingDebtAmount
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.10");

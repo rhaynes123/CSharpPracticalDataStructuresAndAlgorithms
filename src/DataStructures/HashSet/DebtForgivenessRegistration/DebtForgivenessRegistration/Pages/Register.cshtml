@@ -34,6 +34,16 @@
                 <span asp-validation-for="Customer.SocialSecurityNumber" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Customer.DebtAmount" class="control-label"></label>
+                <input asp-for="Customer.DebtAmount" class="form-control" />
+                <span asp-validation-for="Customer.DebtAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer.AgeOfDebt" class="control-label"></label>
+                <input asp-for="Customer.AgeOfDebt" class="form-control" />
+                <span asp-validation-for="Customer.AgeOfDebt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Customer.RegistrationDate" class="control-label"></label>
                 <input asp-for="Customer.RegistrationDate" class="form-control" />
                 <span asp-validation-for="Customer.RegistrationDate" class="text-danger"></span>

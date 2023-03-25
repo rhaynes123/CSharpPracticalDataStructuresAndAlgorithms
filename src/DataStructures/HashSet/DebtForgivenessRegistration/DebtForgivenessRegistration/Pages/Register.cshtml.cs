@@ -9,6 +9,7 @@ using DebtForgivenessRegistration.Data;
 using DebtForgivenessRegistration.Features.Customers.Models;
 using MediatR;
 using DebtForgivenessRegistration.Features.Customers;
+using DebtForgivenessRegistration.Features.Customers.Specifications;
 
 namespace DebtForgivenessRegistration.Pages
 {
@@ -36,6 +37,12 @@ namespace DebtForgivenessRegistration.Pages
             if (!ModelState.IsValid || Customer == null)
             {
                 ModelState.AddModelError(string.Empty,"Customer Invalid");
+                return Page();
+            }
+            var customerSpec = new CustomerWithDebtSpecification(Customer);
+            if (!customerSpec.SatisfiedBy(Customer))
+            {
+                ModelState.AddModelError(string.Empty, "Customer Does Not Meed Qualifications For Debt Forgiveness");
                 return Page();
             }
 
