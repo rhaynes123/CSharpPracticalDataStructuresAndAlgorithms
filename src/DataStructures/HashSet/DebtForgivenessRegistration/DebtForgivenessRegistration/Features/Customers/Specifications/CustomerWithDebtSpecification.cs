@@ -10,7 +10,7 @@ using DebtForgivenessRegistration.Features.Customers.Models;
  */
 namespace DebtForgivenessRegistration.Features.Customers.Specifications
 {
-	public class CustomerWithDebtSpecification: ISpecification<Customer>
+	public sealed record CustomerWithDebtSpecification: ISpecification<Customer>
 	{
         private readonly Customer _customer;
 		public CustomerWithDebtSpecification(Customer customer)

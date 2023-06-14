@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <form method="post">
+        <button type="submit" class="btn btn-primary">Generate Number</button>
+    </form>
+    <p>
+        Your Number is
+        <div id="generatedSequenceNumberId">@Model._GeneratedNumber</div><button id="copyBtnId">Copy Number</button>
+    </p>
+</div>

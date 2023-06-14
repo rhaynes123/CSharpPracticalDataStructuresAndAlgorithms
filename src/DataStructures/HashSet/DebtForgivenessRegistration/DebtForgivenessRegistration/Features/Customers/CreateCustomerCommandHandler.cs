@@ -9,7 +9,7 @@ namespace DebtForgivenessRegistration.Features.Customers;
  * https://samwalpole.com/writing-decoupled-code-with-mediatr-the-mediator-pattern
  */
 #endregion
-public class CreateCustomerCommandHandler: INotificationHandler<CreateCustomerCommand>
+public sealed class CreateCustomerCommandHandler: INotificationHandler<CreateCustomerCommand>
 {
     private readonly RegistrarDbContext _dbContext;
     public CreateCustomerCommandHandler(RegistrarDbContext dbContext)

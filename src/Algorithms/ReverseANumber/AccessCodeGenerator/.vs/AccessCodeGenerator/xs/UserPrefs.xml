@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{7E349209-AC7E-4DC9-97A2-ECA11116AFA3}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AccessCodeGenerator/Pages/Index.cshtml">
+    <Files>
+      <File FileName="AccessCodeGenerator/Pages/Index.cshtml.cs" />
+      <File FileName="AccessCodeGenerator/Pages/Index.cshtml" Line="15" Column="7" />
+      <File FileName="AccessCodeGenerator/appsettings.json" />
+      <File FileName="AccessCodeGenerator/appsettings.Development.json" />
+      <File FileName="AccessCodeGenerator/wwwroot/js/site.js" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="AccessCodeGenerator" expanded="True">
+            <Node name="AccessCodeGenerator" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.cshtml" expanded="True" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.AccessCodeGenerator PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
