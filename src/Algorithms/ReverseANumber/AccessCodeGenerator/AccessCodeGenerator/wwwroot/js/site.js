@@ -3,7 +3,7 @@
 
 // Write your JavaScript code.
 
-document.querySelector("#copyBtnId").addEventListener("click", () => {
+document.querySelector("#generatedSequenceNumberIdLink").addEventListener("click", () => {
     let generatedNumber = document.querySelector("#generatedSequenceNumberId").innerHTML;
     let clipboard = navigator.clipboard;
     clipboard.writeText(generatedNumber);

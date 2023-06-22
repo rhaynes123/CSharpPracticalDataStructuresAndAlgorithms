@@ -8,8 +8,6 @@
     <form method="post">
         <button type="submit" class="btn btn-primary">Generate Number</button>
     </form>
-    <p>
-        Your Number is
-        <div id="generatedSequenceNumberId">@Model._GeneratedNumber</div><button id="copyBtnId">Copy Number</button>
-    </p>
+    <a id="generatedSequenceNumberIdLink" href="#" data-toggle="tooltip" data-placement="left" title="Click To Copy"><div>Your Number is : @Model._GeneratedNumber</div></a>
+    <div id="generatedSequenceNumberId" hidden>@Model._GeneratedNumber</div>
 </div>
